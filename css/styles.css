@@ -68,7 +68,6 @@ nav {
     background-color: #222;
     color: white;
     width: 100%;
-    border-bottom: 1px solid white;
 }
 
 /* styles listed skills on home page */
@@ -195,11 +194,6 @@ li a{
     z-index: 1;
   }
   
-  /* Hide the links inside the navigation menu */
- /* .topnav #myLinks {
-    visibility: hidden;
-  }
-  */
   /* Style navigation menu links */
   .topnav a {
     color: white;
@@ -304,6 +298,7 @@ li a{
 
 nav {
     padding-bottom: 20px;
+    border-bottom: solid 1px white;
 }
 
 .skills li {
@@ -311,7 +306,6 @@ nav {
     font-size: 3.75rem;
     display: inline;
     position: relative;
-   
 }
 
 /* Hides hamburger menu and displays full horizontal navigation */
