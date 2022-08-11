@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/71d7f4f2d7.js" crossorigin="anonymous"></script>
+    <link href="http://fonts.cdnfonts.com/css/please-write-me-a-song" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>MTM6201 Portfolio</title>
+</head>
+<body>
+  <a id="top"></a>
+  <div class="container">
+    <ul class="skip-links">
+      <li><a href="#myLinks">Skip to main nav</a></li>
+      <li><a href="#main">Skip to main content</a></li>
+    </ul>
+    <!-- links all pages together in navigation bar -->
+    <div class="topnav">
+        <a href=#></a>
+        <!-- Navigation links (hidden by default) -->
+        <nav role="navigation" id="myLinks">
+          <a href="index.html">Home</a>
+          <a href="about.html">About</a>
+          <a href="portfolio.html">Portfolio</a>
+          <a href="contact.html">Contact</a>
+        </nav>
+        <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i class="fa fa-bars"></i>
+        </a>
+        <script>
+            function myFunction() {
+              var x = document.getElementById("myLinks");
+              if (x.style.display === "block") {
+                x.style.visibility = "hidden";
+              } else {
+                x.style.display = "block";
+              }
+            }
+            </script>
+    <!-- page content wrapped in container for styling -->
+    <main role="main" id="main">
+    <div class="container">
+        <h1>Portfolio</h1>
+        <div class="portfolio">
+            <img src="images/desktop-avatar.png" id="avatar-large" alt="an avatar of a bunny">
+            <img src="images/tablet-avatar.png" alt="an avatar of a red sun">
+            <img src="images/mobile-avatar.png" alt="an avatar of a flower">  
+            <h2>Apple Avatar Project</h2>
+        </div>
+        <div>
+            <img src="images/astro-yosh-2.png" id="yoshi" alt="a science fiction poster of a space cat">
+            <h2>Sci-fi Poster</h2>
+            <img src="images/Screenshot-2022-08-10-113550.jpg" 
+            id="joker" alt="a vector image of the joker from the batman series">
+            <h2>Joaquin Joker</h2>
+            <img src="images/jag-fox.png" id="hybrid" alt="an image of two animals photoshopped together">
+            <h2>Hybrid Animal</h2>
+        </div>
+        <div>
+            <img src="images/127.0.0.1_5500_index.html(2).jpg" alt="a screenshot of a website redesign" id="scrnsht-1">
+            <h2>Website Redesign</h2>
+            <img src="images/127.0.0.1_5500_index.html(3).jpg" alt="a screenshot of a website redesign" id="scrnsht-2">
+            <h2>Website Redesign</h2>
+            <img src="images/desktop-screenshot.png" alt="a screenshot of a website redesign - desktop version" id="scrnsht-3">
+            <h2>Website Redesign - Desktop</h2>
+            <img src="images/tablet-screenshot.png" alt="a screenshot of a website redesign - tablet version" id="scrnsht-4">
+            <h2>Website Redesign - Tablet</h2>
+            <img src="images/mobile-screenshot.png" alt="a screenshot of a website redesign - mobile version" id="scrnsht-5">
+            <h2>Website Redesign - Mobile</h2>
+        </div>
+      </div>
+    </main>
+            <footer class="copyright">
+                <h3>&copy; 2022 Jenny Wilson Designs</h3>
+            </footer>
+     </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,358 @@
+/* applies styles to every element on page, unless over-ridden */
+* {
+    font-family: 'Bahnschrift', sans-serif;
+    text-align: center;
+    background-color: #222;
+    color: #FFFFFF;
+    letter-spacing: 5px;
+    font-weight: lighter;
+} 
+
+h1 {
+    font-size: 2.75rem;
+    padding-top: 30px;
+    margin-top: 0px;
+    font-weight: lighter;
+}
+
+h2 {
+    font-size: 2rem;
+    padding-top: 10px;
+    margin-top: 0px;
+}
+
+
+h3 {
+    font-size: 1.75rem;
+    text-align: center;
+    margin-top: 0px;
+}
+
+h4 {
+    display: flex;
+    position: relative;
+    left: 30px;
+    font-size: 1.5rem;
+    text-align: center;
+    background-color: #707070;
+}
+    
+p {
+    padding: 20px;
+}
+
+/* styles skip links to be hidden and at the top of page */
+.skip-links {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  .skip-links a {
+    position: absolute;
+    top: -4em;
+    background-color: black;
+    color: white;
+    padding: .5em 1em;
+    font-weight: bold;
+    z-index: 3;
+  }
+
+.skip-links a:focus {
+    top: 0;
+    left: 650px;
+}
+
+/* styles navigation */
+nav {
+    background-color: #222;
+    color: white;
+    width: 100%;
+    border-bottom: 1px solid white;
+}
+
+/* styles listed skills on home page */
+.skills {
+    list-style-type: none;
+    display: block;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 2rem;
+    width: 100%;
+    padding: 10px;
+    font-weight: bold;
+}
+
+.skills li {
+    color: #4F4F4F;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+div.contact {
+    background-color: #707070;
+}
+
+/* parameters for 'contact' box */
+.box {
+    display: flex;
+    position: relative;
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    background-color: #707070;
+    border: 5px solid #E7759B;
+    margin-bottom: 80px;
+    margin-left: 10px;
+}
+
+#phone, #email{
+    background-color: #707070;
+    position: relative;
+    display: flex;
+    top: 30px;
+    font-size: 2rem;
+    padding: 10px;
+}
+
+#twitter, #instagram, #linked-in, #facebook {
+    color: white;
+    padding-left: 30px;
+    padding-right: 10px;
+    background-color: #707070;
+    padding-top: 50px;
+    padding-bottom: 30px;
+    font-size: 2.5rem;
+}
+
+#avatar-large, #avatar-medium, #avatar-small, #yoshi, #joker, #hybrid, #scrnsht-1, #scrnsht-2, #scrnsht-3, #scrnsht-4, #scrnsht-5 {
+    width: 50%;
+    height: auto;
+}
+
+.owner {
+    background-color:#707070;
+    text-decoration: underline;
+}
+
+
+.fa-bars {
+    font-size: 4rem;
+}
+
+#jenny {
+    max-width: 60%;
+}
+
+#p1 {
+    text-align: right;
+    font-size: 1rem;
+}
+
+#p2 {
+    text-align: left;
+    font-size: 1rem;
+}
+
+/* styles the wrapper around content */
+.container {
+    max-width: 96%;
+    margin: 0 auto;
+    color: #222;
+    margin-top: 40px;
+    color: #222;
+}
+
+/* styles footer info */
+.copyright {
+    border-top: 1px solid white;
+    font-size: .5rem;
+    padding-top: 40px;
+    padding-bottom: 20px;
+}
+
+#logo {
+    width: 150%;
+    display: block;
+    position: relative;
+    left: -100px;
+    margin: 0px;
+    padding: 0px;
+}
+
+li a{
+    text-decoration: none;
+    color: grey;
+}
+
+
+/* Style the navigation menu */
+.topnav {
+    overflow: visible;
+    background-color: #222;
+    position: relative;
+    z-index: 1;
+  }
+  
+  /* Hide the links inside the navigation menu */
+  .topnav #myLinks {
+    visibility: hidden;
+  }
+  
+  /* Style navigation menu links */
+  .topnav a {
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    display: block;
+  }
+  
+  /* Style the hamburger menu */
+  .topnav a.icon {
+    background: #222;
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  
+  /* Add dark background color on mouse-over */
+  .topnav a:hover {
+    background-color: #222;
+    
+  }
+  
+  /* Style the active link */
+  .active {
+    color: #707070;
+  }
+  
+  /* Change the hamburger icon on hover state */
+  .fa-bars:hover {
+      color: #707070;
+  }
+
+  /* progressive enhancement (mobile to tablet) */
+  @media screen and (min-width: 480px) {
+  
+      h1 {
+          font-size: 2rem;
+          padding-top: 30px;
+          margin-top: 0px;
+      }
+      
+      h2 {
+          font-size: 1.5rem;
+          padding-top: 10px;
+          margin-top: 0px;
+      }
+      
+      
+      h3 {
+          font-size: 1.25rem;
+          text-align: center;
+          margin-top: 0px;
+      }
+      
+      h4 {
+          display: flex;
+          position: relative;
+          left: 30px;
+          font-size: 1.5rem;
+          text-align: center;
+          background-color: #707070;
+      }
+  
+      p {
+          font-size: 1.5rem;
+      }
+  
+      #logo {
+          width: 100%;
+          display: flex;
+          position: relative;
+          margin: 0px;
+          padding-left: 100px;
+      }
+    
+      .box {
+          width: 96%;
+          display: flex;
+          justify-content: center;
+      }
+  }
+
+/* progressive enhancement (tablet to desktop) */
+@media screen and (min-width: 960px) {
+   
+#logo {
+    width: 100%;
+    display: inline;
+    position: relative;
+    left: -100px;
+    top: -150px;
+}
+
+nav {
+    padding-bottom: 20px;
+}
+
+.skills li {
+    top: -200px;
+    font-size: 3.75rem;
+    display: inline;
+    position: relative;
+   
+}
+
+/* Hides hamburger menu and displays full horizontal navigation */
+.fa-bars {
+    display: none;
+}
+
+.topnav #myLinks a {
+    visibility: visible;
+    display: inline-flex;
+    color: white;
+    font-size: 1.5rem;
+    padding-left: 55px;
+    padding-right: 55px;
+    padding-bottom: 40px;
+    padding-top: 10px;
+  }
+
+  .topnav {
+    border-bottom: 2px solid white;
+  }
+
+  .owner {
+    background-color:#707070;
+    text-decoration: underline;
+  }
+  
+/* LoVe HAte (link, vistited, hover, active) -  correct order for link states */
+a:link{
+    text-decoration: none;
+}
+
+a:visited{
+    text-decoration: none;
+}
+
+a:hover{
+    text-decoration: underline grey;
+}
+
+a:active{
+    text-decoration: underline grey;
+    color: grey;
+}
+
+a:focus{
+    text-decoration: underline;
+}
+
+
+}
