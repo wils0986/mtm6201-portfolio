@@ -183,7 +183,7 @@ div.contact {
 
 li a{
     text-decoration: none;
-    color: grey;
+    color: #707070;
 }
 
 
@@ -196,10 +196,10 @@ li a{
   }
   
   /* Hide the links inside the navigation menu */
-  .topnav #myLinks {
+ /* .topnav #myLinks {
     visibility: hidden;
   }
-  
+  */
   /* Style navigation menu links */
   .topnav a {
     color: white;
@@ -283,10 +283,17 @@ li a{
           justify-content: center;
       }
   }
-
+  .mainnav a{
+    display: none;
+  }
+.mainnav.show a{
+    display: block;
+}
 /* progressive enhancement (tablet to desktop) */
 @media screen and (min-width: 960px) {
-   
+.mainnav a{
+    display: inline-block;
+}
 #logo {
     width: 100%;
     display: inline;
@@ -333,26 +340,24 @@ nav {
   }
   
 /* LoVe HAte (link, vistited, hover, active) -  correct order for link states */
-a:link{
-    text-decoration: none;
-}
+    a:link{
+        text-decoration: none;
+    }
 
-a:visited{
-    text-decoration: none;
-}
+    a:visited{
+        text-decoration: none;
+    }
 
-a:hover{
-    text-decoration: underline grey;
-}
+    a:hover{
+        text-decoration: underline #E7759B;
+    }
 
-a:active{
-    text-decoration: underline grey;
-    color: grey;
-}
+    a:active{
+        text-decoration: underline #707070;
+        color: #707070;
+    }
 
-a:focus{
-    text-decoration: underline;
-}
-
-
+    a:focus{
+        text-decoration: underline;
+    }
 }

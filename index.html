@@ -5,7 +5,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/71d7f4f2d7.js" crossorigin="anonymous"></script>
-    <link href="http://fonts.cdnfonts.com/css/please-write-me-a-song" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/styles.css">
     <title>MTM6201 Portfolio</title>
@@ -20,7 +19,7 @@
       </ul>
     <div class="topnav">
         <!-- links all pages together in navigation bar -->
-        <nav role="navigation" id="myLinks">
+        <nav role="navigation" id="myLinks" class="mainnav">
           <a href="index.html">Home</a>
           <a href="about.html">About</a>
           <a href="portfolio.html">Portfolio</a>
@@ -30,16 +29,6 @@
         <a href="javascript:void(0);" class="icon" onclick="myFunction()">
           <i class="fa fa-bars" id="hamburger"></i>
         </a>
-        <script>
-            function myFunction() {
-              var x = document.getElementById("myLinks");
-              if (x.style.display === "block") {
-                x.style.visibility = "hidden";
-              } else {
-                x.style.display = "block";
-              }
-            }
-            </script> 
       </div>
       <!-- list of skills/services offered/displayed-->
         <div role="banner" class="skills">
@@ -54,5 +43,6 @@
                 </footer>   
             </div>
         </section>
+        <script src="js/main.js"></script>
 </body>
 </html>
