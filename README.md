@@ -6,27 +6,27 @@ I used **CSS** to give the website the colours, layout, fonts, and responsive de
 
 I used **JS** to create the hamburger menu for the tablet/mobile navigation. I started off with this code: 
 
-            <code>"function myFunction() {
+            function myFunction() {
               var x = document.getElementById("myLinks");
               if (x.style.display === "block") {
                 x.style.visibility = "hidden";
               } else {
                 x.style.display = "block";
               }
-            }"</code>
+            }
 
             which I found at: https://www.w3schools.com/howto/howto_js_mobile_navbar.asp 
 
 The issues I faced with this were that I could not get the hamburger menu items to appear when in tablet/mobile. I had to remove the styles and replace them with adding/removing classes. This allowed for the items not to be hidden from display (which was my issue) and rather, add/remove the classes as needed depending on what we want to see in which state. This is the optimized code: 
 
-                <code>"function myFunction() {
+                function myFunction() {
                     var x = document.getElementById("myLinks");
                     if(x.classList.contains('show')){
                     x.classList.remove('show');
                     }else{
                     x.classList.add('show');
                     }
-                }</code>
+                }
 
 I then added this code to it's own **JS** file and folder, rather than having it in the **HTML** and linked it accordingly.
 
