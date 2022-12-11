@@ -388,7 +388,7 @@ a:focus{
 img.image {
     position: relative;
     top: 140px;
-    z-index: 2;
+    z-index: 3;
     width: 30%;
 }
 
