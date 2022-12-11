@@ -23,27 +23,37 @@
           <a href="index.html">Home</a>
           <a href="about.html">About</a>
           <a href="portfolio.html">Portfolio</a>
-          <a href="animations.html">Animations</a>
           <a href="contact.html">Contact</a>
         </nav>
         <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
         <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-          <i class="fa fa-bars" id="hamburger"></i>
+          <i class="blobs" id="hamburger"></i>
         </a>
       </div>
       <!-- list of skills/services offered/displayed-->
-        <div role="banner" class="skills">
-            <img src="images/jw-designs-logo-edited-white.png" alt="pink circle with dark grey letters J W inside" id="logo">
-                <ul class="skills" id="main">
-                    <li>·Graphic Design·</li>
-                    <li>·Web Development·</li>
-                    <li>·UX/UI Design·</li>
+      <div class="fade-in-image">
+        <img src="images/jw-designs-logo-edited-2.png" alt="a circular logo with the iitials 'JW' on it" class="image">
+      </div>
+        <div class="overlay">
+      <h1>
+      <a href="" class="typewrite" data-period="2000" data-type='[ "Hi, Im Jenny.", "I am Creative.", "I Love Design.", "I Love to Develop." ]' id="typewrite">
+        <span class="wrap"></span>
+      </a>
+      </h1>
+        </div>
+            <div class="skills" id="main">
+               <ul>
+                    <li><a href="portfolio.html#ux">UX/UI Design</a></li>
+                    <li id="dot1">·</li>
+                    <li><a href="portfolio.html#web">Web Develpoment</a></li>
+                    <li id="dot2">·</li>
+                    <li><a href="portfolio.html#graphic">Graphic Design</a></li>
                 </ul> 
                 <footer class="copyright">
-                    <h3>&copy; 2022 Jenny Wilson Designs</h3>
+                    <h4>&copy; 2022 Jenny Wilson Designs</h4>
                 </footer>   
             </div>
-          </div>
+        </div>
           <!-- JS link at end of body tag -->
         <script src="js/main.js"></script>
 </body>
