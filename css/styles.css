@@ -13,6 +13,10 @@ hr {
     border: 1px solid #E7759B;
 }
 
+.skills li {
+    list-style-type: none;
+}
+
 .service-form {
     display: flex;
     position: relative;
