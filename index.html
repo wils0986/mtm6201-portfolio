@@ -10,15 +10,16 @@
     <title>MTM6201 Portfolio</title>
 </head>
 <body>
-    <!-- top link for skip links -->
-    <a id="top"></a>
-    <div class="container">
-      <ul class="skip-links">
-        <li><a href="#myLinks">Skip to main nav</a></li>
-        <li><a href="#main">Skip to main content</a></li>
-      </ul>
+  <a id="top"></a>
+  <div class="container">
+    <ul class="skip-links">
+      <li><a href="#myLinks">Skip to main nav</a></li>
+      <li><a href="#main">Skip to main content</a></li>
+    </ul>
+    <!-- links all pages together in navigation bar -->
     <div class="topnav">
-        <!-- links all pages together in navigation bar -->
+        <a href=#></a>
+        <!-- Navigation links (hidden by default) -->
         <nav role="navigation" id="myLinks" class="mainnav">
           <a href="index.html">Home</a>
           <a href="about.html">About</a>
@@ -27,7 +28,7 @@
         </nav>
         <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
         <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-          <i class="blobs" id="hamburger"></i>
+          <i class="blobs"></i>
         </a>
       </div>
       <div class="switch">
@@ -35,23 +36,24 @@
             <input type="checkbox" id="checkbox" />
             <div class="slider round"></div>
         </label>
-    </div>
+      </div>
       <!-- list of skills/services offered/displayed-->
+      <h1>
+        <a href="" class="typewrite" data-period="2000" data-type='[ "Hi, Im Jenny.", "I am Creative.", "I Love Design.", "I Love to Develop." ]' id="typewrite">
+          <span class="wrap"></span>
+        </a>
+        </h1>
       <div class="fade-in-image">
         <img src="images/jw-designs-logo-edited.png" alt="a circular logo with the iitials 'JW' on it" class="image">
       </div>
-      <h1>
-      <a href="" class="typewrite" data-period="2000" data-type='[ "Hi, Im Jenny.", "I am Creative.", "I Love Design.", "I Love to Develop." ]' id="typewrite">
-        <span class="wrap"></span>
-      </a>
-      </h1>
           <ul class="skills">
               <li><a href="portfolio.html#ux">UX/UI Design</a></li>
               <li id="dot1">·</li>
               <li><a href="portfolio.html#web">Web Develpoment</a></li>
               <li id="dot2">·</li>
               <li><a href="portfolio.html#graphic">Graphic Design</a></li>
-          </ul> 
+          </ul>
+         
           <footer class="copyright">
               <h4>&copy; 2022 Jenny Wilson Designs</h4>
           </footer>   

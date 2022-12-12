@@ -7,8 +7,8 @@
 } 
 
 html {
-    padding-top: 100px;
-    padding-bottom: 100px;
+    padding-top: 140px;
+    padding-bottom: 140px;
     height: 100%;
     overflow: hidden;
     width: 100vw;
@@ -23,14 +23,14 @@ html {
 
 :root {
 
-    --font-color: #0f0f0f;
+    --font-color: #4f4f4f;
     --bg-color: #f5f5f5;
 
 }
 
 [data-theme="dark"] {
 
-    --font-color: #fefefe;
+    --font-color: #4f4f4f;
     --bg-color: black;
 }
 
@@ -91,13 +91,19 @@ input:checked + .slider:before {
 }
 
 hr {
-    background-color: #E7759B;
     border: 1px solid #E7759B;
-    padding: 80px;
 }
 
 .skills li {
     list-style-type: none;
+}
+
+.contact {
+    color: #4f4f4f;
+}
+
+.owner {
+    top: 0px;
 }
 
 .service-form {
@@ -117,18 +123,19 @@ textarea {
 }
 
 #email-textarea {
-   margin-left: 40px;
+   margin-left: 55px;
 }
 
 textarea#message {
     padding-bottom: 10px;
-    margin-left: 15px;
+    margin-left: 20px;
 }
 
 label {
     display: inline;
     position: relative;
     top: -25px;
+    color: #4f4f4f;
 }
 
 input {
@@ -151,18 +158,23 @@ input {
     padding-right: 20px;
     border: 1px solid #E7759B;
     margin-top: 15px;
-    left: -210px;
+    left: -300px;
     top: 60px;
+    font-size: .75rem;
 }
 
 .radio-button {
     position: relative;
-    top: 22px;
+    top: 15px;
+    padding-left: 3px;
+    padding-right: 12px;
 }
 
 #adobe-link, #adobe-link-2, #adobe-link-3 {
     font-size: 1rem;
-    padding-bottom: 20px;
+    margin-bottom: 20px;
+    color: #E7759B;
+    opacity: .5;
 }
 
 #jenny {
@@ -171,18 +183,21 @@ input {
 }
 
 h1 {
-    padding-top: 30px;
+    position: relative;
+    color: #4F4F4F;
     margin-top: 0px;
+    top: -30px;
     font-weight: lighter;
 }
 
 h2 {
-    padding-top: 40px;
+    color: #4F4F4F;
     background-color: none;
     opacity: .75;
 }
 
 h3 {
+    color: #4F4F4F;
     text-align: center;
     margin-bottom: 5px;
 }
@@ -196,6 +211,7 @@ h4 {
     
 p {
     padding: 20px;
+    color: #4f4f4f;
 }
 
 /* styles skip links to be hidden and at the top of page */
@@ -223,16 +239,12 @@ p {
 /* styles navigation */
 nav {
     background-color: none;
-    color: white;
+    color: #4f4f4f;
     width: 100%;
     display: flex;
     flex-direction: column;
     align-items: flex-end;
     top: 100px;
-}
-
-#myLinks {
-    position: relative;
 }
 
 /* styles listed skills on home page */
@@ -250,25 +262,22 @@ nav {
     margin-bottom: 60px;
 }
 
-.skills a {
-    color: #4F4F4F;
-    padding-top: 10px;
-}
-
 #dot1, #dot2 {
     color: none;
+    display: none;
 }
 
 /* parameters for 'contact' box */
 .box {
     display: flex;
     position: relative;
-    width: 100%;
+    width: 96%;
     height: auto;
     margin: 0 auto;
     border: 5px solid #E7759B;
-    margin-bottom: 0px;
+    margin-bottom: 80px;
     margin-left: 10px;
+    justify-content: center;
 }
 
 #phone, #email{
@@ -276,14 +285,11 @@ nav {
     top: 30px;
     font-size: 2rem;
     padding: 10px;
-    color: #4f4f4f;
 }
 
 #phone-2, #email-2 {
    color: #4f4f4f;
 }
-
-
 
 #twitter, #instagram, #linked-in, #facebook {
     color: #4f4f4f;
@@ -295,19 +301,19 @@ nav {
 }
 
 #yoshi, #joker, #hybrid, #scrnsht-1, #scrnsht-2, #scrnsht-3, #scrnsht-4, #scrnsht-5, #scrnsht-6 {
-    width: 50%;
+    width: 70%;
     height: auto;
-    padding-top: 20px;
+    padding-top: 40px;
 }
 
 #p1 {
     text-align: right;
-    font-size: 1rem;
+    font-size: 1.2rem;
 }
 
 #p2 {
     text-align: left;
-    font-size: 1rem;
+    font-size: 1.2rem;
 }
 
 /* styles the wrapper around content */
@@ -322,19 +328,22 @@ nav {
     position: relative;
     border-top: 1px solid #E7759B;
     font-size: .5rem;
-    margin-top: 80px;
-    margin-bottom: 40px;
+    margin-top: 120px;
+    padding-bottom: 20px;
     padding-top: 20px;
-}
-
-img.image {
-    position: relative;
-    top: 180px;
+    opacity: .5;
 }
 
 li a{
     text-decoration: none;
-    color: #707070;
+    color: #4f4f4f;
+    position: relative;
+    top: -200px;
+    left: -35px;
+}
+
+li {
+    padding: 15px;
 }
 
 /* Style the navigation menu */
@@ -347,7 +356,7 @@ li a{
   
   /* Style navigation menu links */
   .topnav a {
-    color: white;
+    color: #4f4f4f;
     padding: 14px 16px;
     text-decoration: none;
     font-size: 17px;
@@ -377,6 +386,7 @@ li a{
   a:link{
     text-decoration: none;
     font-size: 1.5rem;
+    list-style-type: none;
 }
 
 a:visited{
@@ -384,203 +394,19 @@ a:visited{
 }
 
 a:hover{
-    text-decoration: underline #E7759B 1px;
+    color: #E7759B;
 }
 
 a:active{
-    text-decoration: underline #707070;
-    color: #707070;
+    color: #E7759B;
 }
 
 a:focus{
-    text-decoration: underline;
-}
-
-.skills a {
-    font-size: 1.75rem;
-    text-decoration: none;
+    color: #E7759B;
 }
 
 .typewrite {
-    color: #4F4F4F;
-}
-
-
-  /* progressive enhancement (mobile to tablet) */
-  @media screen and (min-width: 480px) {
-  
-      h1 {
-          padding-top: 30px;
-          margin-top: 0px;
-      }
-      
-      h2 {
-          padding-top: 10px;
-          margin-bottom: 0;
-      }
-      
-      
-      h3 {
-          text-align: center;
-          margin-top: 0px;
-      }
-      
-      h4 {
-        text-align: center;
-        margin-bottom: 5px;
-        font-size: 1rem;
-      }
-  
-      p {
-          font-size: 1.5rem;
-      }
-  
-      img.image {
-          display: inline-block;
-          position: relative;
-          top: 180px;
-      }
-    
-      .box {
-          width: 96%;
-          display: flex;
-          justify-content: center;
-      }
-      
-    }
-  
-  .mainnav a{
-    display: none;
-  }
-.mainnav.show a{
-    display: block;
-}
-/* progressive enhancement (tablet to desktop) */
-@media screen and (min-width: 960px) {
-.mainnav a{
-    display: inline-block;
-}
-
-img.image {
-    position: relative;
-    top: 80px;
-    z-index: 3;
-    width: 30%;
-}
-
-#p1, #p2 {
-    font-size: 1.5rem;
-}
-
-.skills li {
-    font-size: 2.5rem;
-    display: inline;
-    position: relative;
-    list-style-type: none;
-    top: -180px;
-}
-
-#dot1, #dot2 {
-    color: #4F4F4F;
-}
-
-/* Hides hamburger menu and displays full horizontal navigation */
-.blobs {
-    display: none;
-}
-
-nav#myLinks.mainnav {
-    background: none;
-}
-
-.topnav #myLinks a {
-    visibility: visible;
-    display: inline-flex;
-    color: #4F4F4F;
-    font-size: 1.5rem;
-    padding-left: 55px;
-    padding-right: 55px;
-    padding-bottom: 40px;
-    padding-top: 10px;
-  }
-
-  .topnav {
-    border-bottom: 1px solid #E7759B;
-    top: -80px;
-  }
-
-  .topnav a:hover {
-    text-decoration: underline 1px #E7759B;
-  }
-  
-/* LoVe HAte (link, vistited, hover, active) -  correct order for link states */
-    a:link{
-        text-decoration: none;
-    }
-
-    a:visited{
-        text-decoration: none;
-    }
-
-    a:hover{
-        text-decoration: none;
-    }
-
-    a:active{
-        text-decoration: underline #707070;
-        color: #707070;
-    }
-
-    a:focus{
-        text-decoration: underline;
-    }
-
-    nav {
-        display: inline-block;
-        top: 0px;
-    }
-
-    .skills a {
-        font-size: 2rem;
-    }
-
-    #typewrite {
-        font-size: 2rem;
-        color: #4F4F4F;
-        position: relative;
-        top: -550px;
-    }
-
-    .skills {
-        position: relative;
-        top: 200px;
-    }
-    
-nav {
-    background-color: black;
-}
-
-}
-  
-.container:link .overlay {
-    text-decoration: none;
-}
-
-.container:visited .overlay {
-    text-decoration: none;
-}
-
-.container:hover .overlay {
-    text-decoration: none;
-  }
-
-.container:active .overlay {
-    text-decoration: underline #707070;
-    color: #707070;
-}
-
-.container:focus .overlay{
-    text-decoration: underline;
+    color: #4f4f4f;
 }
 
 .text {
@@ -596,35 +422,20 @@ nav {
   }
 
 .image {
-     max-width: 50%;
-     display: inline;
+     max-width: 40%;
+     position: relative;
+     top: -50px;
      z-index: 3;
-    }
-
+}
 
 .fade-in-image {
-    animation: fadeIn 7s;
+    animation: fadeIn 5s ease-in;
 }
 
 @keyframes fadeIn {
     0% { opacity: 0; }
     100% { opacity: 1; }
   }
-
-.typewrite {
-    position: relative;
-    z-index: 1;
-}
-
-ul#main.skills {
-    padding: 0;
-    padding-top: 40px;
-}
-
-#typewrite {
-    text-decoration: none;
-    position: relative;
-}
 
 .blobs {
 	background: linear-gradient(#E7759B, white);
@@ -638,7 +449,7 @@ ul#main.skills {
 	content: '';
 	position: absolute;
 	background: inherit;
-	top: -.5em;
+	top: -4em;
 	right: 0;
 	height: 2.4em;
 	width: 2.4em;
@@ -647,9 +458,195 @@ ul#main.skills {
 }
 
 .blobs::after {
-	top: 2.5em;
+	top: -1em;
 	right: 0;
 	height: 1em;
 	width: 1em;
 	border-radius: 50%;
 }
+
+  /* progressive enhancement (mobile to tablet) */
+  @media screen and (min-width: 480px) {
+  
+      h1 {
+          padding-top: 30px;
+          margin: 0px;
+      }
+      
+      h2 {
+          padding-top: 50px;
+          margin: 0;
+      }
+      
+      
+      h3 {
+          text-align: center;
+          margin: 0px;
+      }
+      
+      h4 {
+        text-align: center;
+        margin-bottom: 5px;
+        font-size: 1rem;
+      }
+  
+      p {
+          font-size: 1.5rem;
+      }
+  
+      
+      
+    }
+  /* Opens up Mobile Nav */
+  .mainnav a{
+    display: none;
+  }
+.mainnav.show a{
+    display: block;
+}
+/* progressive enhancement (tablet to desktop) */
+@media screen and (min-width: 960px) {
+.mainnav a{
+    display: inline-block;
+}
+
+h1 {
+    position: relative;
+    top: -100px;
+    color: #4f4f4f;
+    font-size: 2rem;
+}
+
+h2 {
+    position: relative;
+    top: -50px;
+    color: #4f4f4f;
+    font-size: 1.75rem;
+}
+
+h3 {
+    color: #4f4f4f;
+    font-size: 1.5rem;
+}
+
+h4 {
+    color: #4f4f4f;
+    font-size: 1.3rem;
+}
+
+#p1, #p2 {
+    font-size: 1.5rem;
+}
+
+.skills li {
+    font-size: 2.5rem;
+    display: inline;
+    position: relative;
+    list-style-type: none;
+}
+
+form {
+    font-size: 1.5rem;
+}
+
+label {
+    margin-left: auto;
+   margin-right: auto;
+}
+
+#dot1, #dot2 {
+    color: #4F4F4F;
+    top: -200px;
+    left: -35px;
+}
+
+/* Hides hamburger menu and displays full horizontal navigation */
+.blobs {
+    display: none;
+}
+
+nav#myLinks.mainnav {
+    position: relative;
+    background: none;
+    padding-top: 0;
+    top: -10px;
+}
+
+.topnav #myLinks a {
+    visibility: visible;
+    display: inline-flex;
+    color: #4F4F4F;
+    font-size: 1.5rem;
+    padding-left: 55px;
+    padding-right: 55px;
+    padding-bottom: 40px;
+    padding-top: 0px;
+  }
+
+  .topnav {
+    border-bottom: 1px solid #E7759B;
+    top: -190px;
+  }
+  
+/* LoVe HAte (link, vistited, hover, active) -  correct order for link states */
+    a:link{
+        text-decoration: none;
+    }
+
+    a:visited{
+        text-decoration: none;
+    }
+
+    a:hover{
+        color: #E7759B;
+    }
+
+    a:active{
+        color: #E7759B;
+    }
+
+    a:focus{
+        color: #E7759B;
+    }
+
+    nav {
+        display: inline-block;
+        top: 0px;
+    }
+
+    .skills a {
+        font-size: 2rem;
+    }
+
+    #typewrite {
+        font-size: 2rem;
+        color: #4F4F4F;
+        position: relative;
+        top: -75px;
+    }
+
+    .skills {
+        position: relative;
+        top: 140px;
+    }
+    
+    img.image {
+        width: 27%;
+        position: relative;
+        top: -80px;
+    }
+
+    .submit-button {
+        display: flex;
+        position: relative;
+        padding: 10px;
+        padding-left: 20px;
+        padding-right: 20px;
+        border: 1px solid #E7759B;
+        margin-top: 15px;
+        left: -300px;
+        top: 60px;
+        font-size: 1rem;
+    }
+}
+
