@@ -424,7 +424,7 @@ a:focus{
 .image {
      max-width: 40%;
      position: relative;
-     top: -50px;
+     top: 0px;
      z-index: 3;
 }
 
@@ -633,7 +633,7 @@ nav#myLinks.mainnav {
     img.image {
         width: 27%;
         position: relative;
-        top: -80px;
+        top: -100px;
     }
 
     .submit-button {
