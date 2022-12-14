@@ -20,6 +20,17 @@ html {
     top: 150px;
 }
 
+div.video {
+    display: flex;
+    position: relative;
+    align-items: center;
+    flex-direction: column;
+}
+
+video {
+    padding: 10px;
+}
+
 .shapes {
     top: 50px;
     position: relative;
@@ -821,7 +832,7 @@ nav#myLinks.mainnav {
  }
 
  #hybrid {
-    width: 80%;
+    width: 70%;
  }
 
  /* adds cat animatioin to bottom of navigation */
@@ -856,8 +867,22 @@ div.shapes {
     display: block;
     height: 100px;
     position: fixed;
-    right: 50px;
+    right: 0px;
     top: 50px;
+}
+
+div.video {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    align-items: center;
+}
+
+.videoimg {
+    margin-top: 40px;
+    padding: 10px;
+    width: 50%;
+    height: 50%;
 }
 
 }

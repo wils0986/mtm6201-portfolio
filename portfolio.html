@@ -25,6 +25,12 @@
           <a href="about.html">About</a>
           <a href="portfolio.html">Portfolio</a>
           <a href="contact.html">Contact</a>
+          <a class="switch">
+            <label class="theme-switch" for="checkbox">
+                <input type="checkbox" id="checkbox" />
+                <div class="slider round"></div>
+            </label>
+          </a>
         </nav>
         <div class="cat">
           <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
@@ -35,19 +41,11 @@
           <i class="blobs"></i>
         </a>
       </div>
-      <div class="switch">
-        <label class="theme-switch" for="checkbox">
-            <input type="checkbox" id="checkbox" />
-            <div class="slider round"></div>
-        </label>
-      </div>
       <button onclick="topFunction()" id="myBtn" title="Go to top">^</button>
     <!-- page content wrapped in container for styling -->
     <main role="main" id="main">
     <div class="container">
         <h1 class="mainh1">Portfolio</h1>
-        <div class="portfolio">
-        </div>
         <div class="desk">
           <svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
           <g id="study">
@@ -97,11 +95,12 @@
           </svg>
         </div>
         <div>
+      <div class="portfolio">
           <h2 id="ux">UX Design</h2>
           <img src="images/mobile-app-design.jpg" alt="a screenshot of a mobile app" id="scrnsht-6">
           <h3>Movie Theatre Mobile App Design</h3>
           <a href="https://xd.adobe.com/view/f4daf868-3093-4cc4-bacb-7cc9af342962-a189/" id="adobe-link" target="_blank">Adobe XD Project Link</a>
-        </div>
+        
         <div>  
           <img src="images/amethyst-desktop.jpg" alt="a screenshot of a website redesign - desktop version" id="scrnsht-3">
           <h3>Website Redesign - Desktop</h3>
@@ -112,15 +111,14 @@
           <h3>Website Redesign - Mobile</h3>
           <a href="https://xd.adobe.com/view/52e586da-c5f0-4372-aee4-227882b753e9-07b6/" id="adobe-link-3" target="_blank">Adobe XD Project Link</a>
       </div>
-    </div>
     <br>
     <hr>
     <br>
         <div>
           <h2 id="web">Web Development</h2>
-            <img src="images/127.0.0.1_5500_index.html(2).jpg" alt="a screenshot of a website redesign" id="scrnsht-1">
+            <img src="images/127.0.0.1_5500_index.html(2).jpg" alt="a screenshot of a website redesign for Three Star Media" id="scrnsht-1">
             <h3>Website Mockup</h3>
-            <img src="images/127.0.0.1_5500_index.html(3).jpg" alt="a screenshot of a website redesign" id="scrnsht-2">
+            <img src="images/127.0.0.1_5500_index.html(3).jpg" alt="a screenshot of a website redesign for Lone Starfish" id="scrnsht-2">
             <h3>Website Mockup</h3>
         </div>  
         <div>
@@ -131,17 +129,36 @@
           <div class="click-zoom">
             <label>
               
-              <img src="images/astro-yosh-2.png" id="yoshi" alt="a science fiction poster of a space cat">
+              <img src="images/astro-yosh-2.png" id="yoshi" alt="a science fiction poster of my cat Yoshi">
               <h3>Sci-fi Poster</h3>
             </label>
           </div>
           <img src="images/Screenshot-2022-08-10-113550.jpg" 
-          id="joker" alt="a vector image of the joker from the batman series">
+          id="joker" alt="a recreated vector image of the joker from the batman series">
           <h3>Joaquin Joker Recreation</h3>
-          <img src="images/jag-fox.png" id="hybrid" alt="an image of two animals photoshopped together">
+          <img src="images/jag-fox.png" id="hybrid" alt="an image of an arctic fox and a jaguar photoshopped together">
           <h3>Hybrid Animal Project</h3>
       </div>
+          <br>
+          <hr>
+          <br>
+      <h2 id="video">Video Production</h2>  
+      <div class="video">
+        <a href="https://youtu.be/_aM7J8JZOEI" target="_blank"><img src="images/foley.jpg" alt="a foley sound assignment video thumbnail" class="videoimg">
+        <h3>Foley Sound Project</h3></a>
+        <a href="https://youtu.be/FKxG28Op_CI" target="_blank">
+        <img src="images/interview.jpg" alt="an interview assignment video video thumbnail" class="videoimg">
+          <h3>Interview Project</h3></a>
+          <a href="https://youtu.be/WRkV7a9_Zf0" target="blank">
+          <img src="images/vlog.jpg" type="video/mp4" alt="a vlog assignment video thumbnail" class="videoimg">
+            <h3>Vlog Project</h3></a>
+            <a href="https://youtu.be/WDjVk-QIok4" target="blank">
+          <img src="images/story.jpg" alt="a storytelling assignment video thumbnail" class="videoimg">
+          <h3>Storytelling Project</h3></a>
+      </div>
+      </div>
     </main>
+  </div>
             <footer class="copyright">
                 <h4>&copy; 2022 Jenny Wilson Designs</h4>
             </footer>
