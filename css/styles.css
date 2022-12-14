@@ -55,7 +55,7 @@ div.phone {
     display: none; /* Hidden by default */
     position: fixed; /* Fixed/sticky position */
     bottom: 20px; /* Place the button at the bottom of the page */
-    right: 5px; /* Place the button 5px from the right */
+    right: 15px; /* Place the button 5px from the right */
     z-index: 99; /* Make sure it does not overlap */
     border: none; /* Remove borders */
     outline: none; /* Remove outline */
@@ -875,10 +875,10 @@ div.shapes {
 
 .switch {
     display: block;
+    position: absolute;
     height: 100px;
-    position: fixed;
-    right: 0px;
-    top: 50px;
+    right: -45px;
+    top: 0px;
 }
 
 div.video {
@@ -895,9 +895,6 @@ div.video {
     height: 50%;
 }
 
-.switch {
-    top: 60px;
-}
 
 }
 
