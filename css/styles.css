@@ -573,7 +573,7 @@ svg {
 	position: absolute;
 	background: inherit;
 	top: -4em;
-	right: 0;
+	right: -20px;
 	height: 2.4em;
 	width: 2.4em;
 	border-radius: 50%;
@@ -582,7 +582,7 @@ svg {
 
 .blobs::after {
 	top: -1em;
-	right: 0;
+	right: -20;
 	height: 1em;
 	width: 1em;
 	border-radius: 50%;
