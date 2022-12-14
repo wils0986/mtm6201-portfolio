@@ -26,6 +26,10 @@
           <a href="portfolio.html">Portfolio</a>
           <a href="contact.html">Contact</a>
         </nav>
+        <div class="cat">
+          <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+        <lottie-player src="https://assets9.lottiefiles.com/packages/lf20_8y3kzptg.json" id="cat" mode="bounce" background="transparent"  speed=".5"  style="width: 300px; height: 300px;" loop  autoplay></lottie-player>
+        </div>
         <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
         <a href="javascript:void(0);" class="icon" onclick="myFunction()">
           <i class="blobs" id="hamburger"></i>
@@ -37,13 +41,19 @@
             <div class="slider round"></div>
         </label>
       </div>
+      <button onclick="topFunction()" id="myBtn" title="Go to top">^</button>
     <!-- page content wrapped in container for styling -->
     <div class="container">
       <main role="main" id="main">
-        <h1>Contact</h1>
+        <h1 class="mainh1">Contact</h1>
+        <div class="phone">
+          <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+          <lottie-player src="https://assets10.lottiefiles.com/packages/lf20_fJGcAn.json" id="ringing-phone"  background="transparent"  speed="1"  style="width: 400px; height: 400px;" hover autoplay></lottie-player>
+      </div>
             <div role="contentinfo" class="box">
                 <div class="contact" itemscope itemtype="https://schema.org/Person">
                   <h2 class="owner" itemprop="name">Jenny Wilson</h2>
+                  
                     <i class="fa-solid fa-phone" id="phone"></i><h3 id="phone-2" itemprop="telephone">(905) 392-7395</h3>
                     <i class="fa-solid fa-envelope" id="email"></i><h3 id="email-2" itemprop="email">jennywilson2@hotmail.com</h3>
                     <i class="fa-brands fa-twitter" id="twitter"></i>
@@ -52,8 +62,8 @@
                     <i class="fa-brands fa-facebook" id="facebook"></i>
                 </div>
             </div>
-            <div role="contentinfo" class="box-2">
-              <div class="form">
+          <div role="contentinfo" class="box-2">
+            <div class="form">
               <form action="mailto:jennywilson2@hotmail.com" class="send-message">
                 <h2 class="send-message">Send me a message!</h2>
                     <div>
@@ -68,29 +78,27 @@
                         <label for="message">Message</label>
                         <textarea id="message" name="message"></textarea>
                     </div>
-            </form>
-            <div>
-            <p>Choose your desired service:</p>
-            <form class="service-form">
-              <input type="radio" id="uxdesign" name="service" value="UXDesign">
-              <label class="radio-button" for="uxdesign">UX Design</label><br>
-              <input type="radio" id="webdevelopment" name="service" value="WebDevelopment">
-              <label class="radio-button" for="webdevelopment">Web Development</label><br>
-              <input type="radio" id="graphicdesign" name="service" value="GraphicDesign">
-              <label class="radio-button" for="graphicdesign">Graphic Design</label>
-              <div>
-                <button type="submit" class="submit-button">Send</button>
+               </form>
+                <div>
+                <p>Choose your desired service:</p>
+                <form class="service-form">
+                  <input type="radio" id="uxdesign" name="service" value="UXDesign">
+                  <label class="radio-button" for="uxdesign">UX Design</label><br>
+                  <input type="radio" id="webdevelopment" name="service" value="WebDevelopment">
+                  <label class="radio-button" for="webdevelopment">Web Development</label><br>
+                  <input type="radio" id="graphicdesign" name="service" value="GraphicDesign">
+                  <label class="radio-button" for="graphicdesign">Graphic Design</label>
+                  <button type="submit" class="submit-button">Send</button>
+                </form>
+              
+                </div>
             </div>
-            </form>
-          </div>
-        </div>
-      </div>
-      </main>
+           </main>
             <footer class="copyright">
                 <h4>&copy; 2022 Jenny Wilson Designs</h4>
-            </footer>
-      </div>
-    </div>
+                </footer>
+          </div>
+        </div>
       <!-- JS link at end of body tag -->
       <script src="js/main.js"></script>
 </body>

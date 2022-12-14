@@ -7,8 +7,7 @@
 } 
 
 html {
-    padding-top: 140px;
-    padding-bottom: 140px;
+    padding-top: 175px;
     height: 100%;
     overflow: hidden;
     width: 100vw;
@@ -20,6 +19,45 @@ html {
     background-color: var(--bg-color);
     top: 150px;
 }
+
+#ringing-phone {
+    filter: hue-rotate(110deg) saturate(120%) brightness(140%);
+    position: relative;
+}
+
+div.phone {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    left: 60px;
+}
+
+#myBtn {
+    display: none; /* Hidden by default */
+    position: fixed; /* Fixed/sticky position */
+    bottom: 20px; /* Place the button at the bottom of the page */
+    right: 65px; /* Place the button 30px from the right */
+    z-index: 99; /* Make sure it does not overlap */
+    border: none; /* Remove borders */
+    outline: none; /* Remove outline */
+    background-color:rgba(231,117,155,.5);; /* Set a background color */
+    color: #4f4f4f; /* Text color */
+    cursor: pointer; /* Add a mouse pointer on hover */
+    padding-top: 17px;
+    border-radius: 50px; /* Rounded */
+    font-size: 2rem; /* Increase font size */
+    z-index: 6;
+    width: 50px;
+    height: 50px;
+  }
+  
+  #myBtn:hover {
+    background-color: #707070; /* Add a grey background on hover */
+  }
+
+  div.cat{
+    display: none;
+  }
 
 :root {
 
@@ -158,9 +196,9 @@ input {
     padding-right: 20px;
     border: 1px solid #E7759B;
     margin-top: 15px;
-    left: -300px;
+    left: -260px;
     top: 60px;
-    font-size: .75rem;
+    font-size: 1rem;
 }
 
 .radio-button {
@@ -174,12 +212,16 @@ input {
     font-size: 1rem;
     margin-bottom: 20px;
     color: #E7759B;
-    opacity: .5;
 }
 
 #jenny {
     width: 50%;
     padding: 0;
+}
+
+.mainh1 {
+    position: relative;
+    top: -50px;
 }
 
 h1 {
@@ -210,7 +252,6 @@ h4 {
 }
     
 p {
-    padding: 20px;
     color: #4f4f4f;
 }
 
@@ -223,7 +264,7 @@ p {
 
   .skip-links a {
     position: absolute;
-    top: -5em;
+    top: -7em;
     background-color: black;
     color: white;
     padding: .25em .5em;
@@ -282,13 +323,17 @@ nav {
 
 #phone, #email{
     display: flex;
-    top: 30px;
+    position: relative;
+    top: 36px;
     font-size: 2rem;
     padding: 10px;
 }
 
 #phone-2, #email-2 {
+   position: relative;
+   left: 70px;
    color: #4f4f4f;
+   text-align: left;
 }
 
 #twitter, #instagram, #linked-in, #facebook {
@@ -318,20 +363,20 @@ nav {
 
 /* styles the wrapper around content */
 .container {
+    position: relative;
     max-width: 96%;
     margin: 0 auto;
-    margin-top: 40px;
+    top: -70px;
 }
 
 /* styles footer info */
 .copyright {
     position: relative;
-    border-top: 1px solid #E7759B;
+    border-top: 1.5px solid rgba(231,117,155,.5);
     font-size: .5rem;
-    margin-top: 120px;
+    margin-top: 20px;
     padding-bottom: 20px;
     padding-top: 20px;
-    opacity: .5;
 }
 
 li a{
@@ -428,8 +473,86 @@ a:focus{
      z-index: 3;
 }
 
+.image:hover {
+/* Start the vibrate animation with duration 0.5 seconds */
+   animation: vibrate 0.5s .25s; 
+/* When the animation is finished, start again */
+   animation-iteration-count: infinite;
+}
+
+
+.desk {
+    position: relative;
+    top: -75px;
+    display: flex;
+    justify-content: center;
+    
+}
+
+svg {
+    width: 600px;
+    height: 600px;
+  }
+  
+  /* SMOKE */
+  #smoke-1 {
+    stroke-dasharray: 0, 10;
+    animation: smoke 6s ease infinite;
+  }
+  
+  #smoke-2 {
+    stroke-dasharray: 0, 10;
+    animation: smoke 6s 0.5s ease infinite;
+  }
+  
+  @keyframes smoke {
+    0% { stroke-dasharray: 0, 10; }
+    50% { stroke-dasharray: 10, 0; }
+    100% { stroke-dasharray: 10, 0; opacity: 0; }
+  }
+  
+  /* WRITING */
+  #line-1 {
+    opacity: 0;
+    animation: writing 0.5s linear forwards;
+  }
+  
+  #line-2 {
+    opacity: 0;
+    animation: writing 0.5s 1s linear forwards;
+  }
+  
+  #line-3 {
+    opacity: 0;
+    animation: writing 0.5s 1.5s linear forwards;
+  }
+  
+  #line-4 {
+    opacity: 0;
+    animation: writing 0.5s 2s linear forwards;
+  }
+  
+  @keyframes writing {
+    0% { width: 0px; opacity: 1;}
+    100% { width: 14px; opacity: 1;}
+  }
+
+@keyframes vibrate {
+    0% { transform: rotate(0deg); }
+    10% { transform: rotate(-1deg); }
+    20% { transform: rotate(1deg); }
+    30% { transform: rotate(0deg); }
+    40% { transform: rotate(1deg); }
+    50% { transform: rotate(-1deg); }
+    60% { transform: rotate(0deg); }
+    70% { transform: rotate(-1deg); }
+    80% { transform: rotate(1deg); }
+    90% { transform: rotate(0deg); }
+    100% { transform: rotate(-1deg); }
+  }
+
 .fade-in-image {
-    animation: fadeIn 5s ease-in;
+    animation: fadeIn 5s ease-in; 
 }
 
 @keyframes fadeIn {
@@ -494,7 +617,10 @@ a:focus{
           font-size: 1.5rem;
       }
   
-      
+      div.cat {
+        display: none;
+    }
+    
       
     }
   /* Opens up Mobile Nav */
@@ -514,14 +640,14 @@ h1 {
     position: relative;
     top: -100px;
     color: #4f4f4f;
-    font-size: 2rem;
+    font-size: 2.5rem;
 }
 
 h2 {
     position: relative;
     top: -50px;
     color: #4f4f4f;
-    font-size: 1.75rem;
+    font-size: 2rem;
 }
 
 h3 {
@@ -570,6 +696,7 @@ nav#myLinks.mainnav {
     background: none;
     padding-top: 0;
     top: -10px;
+    z-index: 10;
 }
 
 .topnav #myLinks a {
@@ -584,8 +711,8 @@ nav#myLinks.mainnav {
   }
 
   .topnav {
-    border-bottom: 1px solid #E7759B;
-    top: -190px;
+    border-bottom: 1.5px solid rgba(231,117,155,.5);
+    top: -130px;
   }
   
 /* LoVe HAte (link, vistited, hover, active) -  correct order for link states */
@@ -619,22 +746,42 @@ nav#myLinks.mainnav {
     }
 
     #typewrite {
-        font-size: 2rem;
+        font-size: 2.25rem;
         color: #4F4F4F;
         position: relative;
-        top: -75px;
+        top: -20px;
     }
 
     .skills {
         position: relative;
-        top: 140px;
+        top: 200px;
     }
     
     img.image {
         width: 27%;
         position: relative;
-        top: -100px;
+        top: -50px;
     }
+
+
+    .click-zoom input[type=checkbox] {
+        display: none;
+        cursor: 2rem;
+      
+      }
+      
+      .click-zoom img {
+        transition: transform 0.25s ease;
+        cursor: zoom-in;
+        
+    
+      }
+      
+      .click-zoom input[type=checkbox]:checked~img {
+        transform: scale(2);
+        cursor: zoom-out;
+       
+      }
 
     .submit-button {
         display: flex;
@@ -644,9 +791,54 @@ nav#myLinks.mainnav {
         padding-right: 20px;
         border: 1px solid #E7759B;
         margin-top: 15px;
-        left: -300px;
+        margin-bottom: 50px;
+        left: -330px;
         top: 60px;
         font-size: 1rem;
     }
+
+ #yoshi {
+    width: 33%;
+ }
+
+ #joker {
+    width: 65%;
+ }
+
+ #hybrid {
+    width: 80%;
+ }
+
+ /* adds cat animatioin to bottom of navigation */
+ div.cat {
+    position: relative;
+    display: flex;
+    justify-content: center; 
+    height: 0px;
 }
+
+#cat {
+    filter: hue-rotate(160deg);
+    position: relative;
+    top: -299px;
+    left: -400px;
+}
+
+div.shapes {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    top: -80px;
+}
+
+.aboutinfo {
+    position: relative;
+    top: -100px;
+}
+
+}
+
+/* */
+
+
 
