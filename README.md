@@ -40,3 +40,5 @@ Creating code is *always* a learning process for me, which I was reminded of dur
 - Stackoverflow
 - IMDAC
 - Markdown Guide
+- Lottie
+- W3 Docs

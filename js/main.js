@@ -8,17 +8,6 @@ function myFunction() {
     }
   }
 
-
-  function myFunction() {
-    var x = document.getElementById("cat2");
-    if(x.classList.contains('show')){
-      x.classList.remove('show');
-    }else{
-      x.classList.add('show');
-    }
-  }
-
-
   /* Creates typewriter style text on Home page */
   var TxtType = function(el, toRotate, period) {
     this.toRotate = toRotate;
