@@ -8,6 +8,7 @@ function myFunction() {
     }
   }
 
+ 
   /* Creates typewriter style text on Home page */
   var TxtType = function(el, toRotate, period) {
     this.toRotate = toRotate;

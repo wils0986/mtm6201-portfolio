@@ -81,9 +81,8 @@ div.phone {
 
 .switch {
     height: 100px;
-    position: fixed;
-    right: 50px;
-    top: 50px;
+    position: relative;
+    top: 40px;
 }
     
 .theme-switch {
@@ -638,6 +637,14 @@ svg {
 .mainnav.show a{
     display: block;
 }
+
+.switch {
+    display: none;
+  }
+.switch.show {
+    display: block;
+}
+
 /* progressive enhancement (tablet to desktop) */
 @media screen and (min-width: 960px) {
 .mainnav a{
@@ -830,6 +837,7 @@ nav#myLinks.mainnav {
     position: relative;
     top: -299px;
     left: -400px;
+    
 }
 
 div.shapes {
@@ -842,6 +850,14 @@ div.shapes {
 .aboutinfo {
     position: relative;
     top: -100px;
+}
+
+.switch {
+    display: block;
+    height: 100px;
+    position: fixed;
+    right: 50px;
+    top: 50px;
 }
 
 }
