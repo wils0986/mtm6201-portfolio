@@ -2,7 +2,7 @@
 
 I created this portfolio using **HTML**, **CSS** and a little bit of **JS**. I started by creating the basic **HTML** structure for all pages, then proceeded to create all of the content before proceeding to **CSS**. I find the work flow more clean and consistent when I start with the "foundation". From there, I make sure my **HTML** is semantically correct, and I proceed to styling with **CSS**.
 
-I used **CSS** to give the website the colours, layout, fonts, and responsive design that you see. The website is optimized for mobile, tablet and desktop screens, with responsive fonts and images as well. 
+I used **CSS** to give the website the colours, layout, and responsive design that you see. The website is optimized for mobile, tablet and desktop screens with fully responsive fonts, images, links, icons, and more.
 
 I used **JS** to create the hamburger menu for the tablet/mobile navigation. I started off with this code: 
 
@@ -30,7 +30,9 @@ The issues I faced with this were that I could not get the hamburger menu items 
 
 I then added this code to it's own **JS** file and folder, rather than having it in the **HTML** and linked it accordingly.
 
-Creating code is *always* a learning process for me, which I was reminded of during this project. Whether that means slowing down or stepping away for a moment to see clearly, or spending an entire day trying to fix what I broke. It is **SO** important to be organized, consistent and focused with this work. Maintaining best practices such as correct folder/file names, using correct syntax, creating adaptive/responsive designs and layouts, meeting accessibility standards, and practicing often are key. I've learned that I am passionate about creating websites, and I can not wait to keep expanding my knowledge. 
+I also implimented **JS** to run the cat animation, dark/light mode toggle, back to top button, and the typewriter style text on the home page, all of which I found online (see ## Resources below)
+
+Creating and working with code is *always* a learning process for me, which I was reminded of during this project. Whether that means slowing down or stepping away for a moment to see clearly, or spending an entire day trying to fix what I broke. It is **SO** important to be organized, consistent and focused with this work. Maintaining best practices such as correct folder/file names, using correct syntax, creating adaptive/responsive designs and layouts, meeting accessibility standards, and practicing often are key. I've learned that I am very passionate about creating websites, and I can not wait to keep expanding my knowledge. 
 
 
 ## Resources
