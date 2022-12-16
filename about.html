@@ -12,7 +12,9 @@
 </head>
 <body>
   <a id="top"></a>
+   <!-- All content wrapped for layout -->
   <div class="container">
+     <!-- Skip links for accessibility purposes-->
     <ul class="skip-links">
       <li><a href="#myLinks">Skip to main nav</a></li>
       <li><a href="#main">Skip to main content</a></li>
@@ -27,6 +29,7 @@
           <a href="portfolio.html">Portfolio</a>
           <a href="contact.html">Contact</a>
           <a class="switch">
+          <!--- Dark/light mode toggle -->
             <div class="mytoggle">
               <label>
               <input class='toggle-checkbox' type='checkbox'></input>
@@ -43,23 +46,26 @@
             </div>
             </a>
         </nav>
+        <!-- Cat animation for Desktop version Nav from Lottie -->
         <div class="cat">
           <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
         <lottie-player src="https://assets9.lottiefiles.com/packages/lf20_8y3kzptg.json" id="cat" mode="bounce" background="transparent"  speed=".5"  style="width: 300px; height: 300px;" loop  autoplay></lottie-player>
         </div>
         <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
-        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-          <i class="blobs"></i>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()"><i class="blobs"></i>
         </a>
       </div>
+      <!--- Go to top button -->
       <button onclick="topFunction()" id="myBtn" title="Go to top">^</button>
-    <!-- page content wrapped in container for styling -->
+    <!-- Page content wrapped in second container for styling -->
     <div class="container2">
         <h1 class="mainh1">About</h1>
+        <!-- Shapes animation from Lottie -->
         <div class="shapes">
           <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
           <lottie-player src="https://assets5.lottiefiles.com/packages/lf20_M6jA5UNDHa.json"  background="transparent"  speed="1"  style="width: 300px; height: 300px;"  loop  autoplay></lottie-player>
           </div>
+        <!-- Main page content -->
         <main id="main">
           <div class="aboutinfo">
             <p id="p1">Hi! My name is Jenny - a Full-time Interactive Media Design student at Algonquin College with skills in UX design, front-end web development, graphic design, videography, and more.</p>

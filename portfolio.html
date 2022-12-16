@@ -12,7 +12,9 @@
 </head>
 <body>
   <a id="top"></a>
+   <!-- All content wrapped for layout -->
   <div class="container">
+     <!-- Skip links for accessibility purposes-->
     <ul class="skip-links">
       <li><a href="#myLinks">Skip to main nav</a></li>
       <li><a href="#main">Skip to main content</a></li>
@@ -27,6 +29,7 @@
           <a href="portfolio.html">Portfolio</a>
           <a href="contact.html">Contact</a>
           <a class="switch">
+          <!--- Dark/light mode toggle -->
             <div class="mytoggle">
               <label>
               <input class='toggle-checkbox' type='checkbox'></input>
@@ -43,20 +46,22 @@
             </div>
             </a>
         </nav>
+        <!-- Cat animation for Desktop version Nav from Lottie -->
         <div class="cat">
           <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
         <lottie-player src="https://assets9.lottiefiles.com/packages/lf20_8y3kzptg.json" id="cat" mode="bounce" background="transparent"  speed=".5"  style="width: 300px; height: 300px;" loop  autoplay></lottie-player>
         </div>
         <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
-        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-          <i class="blobs"></i>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()"><i class="blobs"></i>
         </a>
       </div>
+      <!--- Go to top button -->
       <button onclick="topFunction()" id="myBtn" title="Go to top">^</button>
-    <!-- page content wrapped in container for styling -->
+    <!-- Page content wrapped in second container for styling -->
     <main role="main" id="main">
     <div class="container2">
         <h1 class="mainh1">Portfolio</h1>
+        <!-- Desk animation from Lottie -->
         <div class="desk">
           <svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
           <g id="study">
@@ -106,38 +111,40 @@
           </svg>
         </div>
         <div>
+    <!-- Portfolio content -->
       <div class="portfolio">
         <div class="uxdesign">
           <h2 id="ux">UX Design</h2>
           <div class="holder">
             <div class="info">
-              <p>This project required the redesign of a mobile application for an existing movie theatre company. I chose "Rainbow Cinemas", and created the app from the ground up, as they only have a very basic desktop version website.</p>
+              <p>This project required the redesign of a mobile application for an existing movie theatre company. I chose "Rainbow Cinemas", and created the app from the ground up, as they only have a very basic desktop version website.</p> <a href="https://www.rainbowcinemas.ca/A/home.php>" target="blank" class="xdlink">Link to original site</a>
             </div>
-            <img src="images/mobile-app-design.jpg" alt="a screenshot of a mobile app" id="scrnsht-6">
-            <h3>Movie Theatre Mobile App Design</h3>
-          <a href="https://xd.adobe.com/view/f4daf868-3093-4cc4-bacb-7cc9af342962-a189/" id="adobe-link" target="_blank">Adobe XD Project Link</a>
+           
+            
+            
+          <a href="https://xd.adobe.com/view/f4daf868-3093-4cc4-bacb-7cc9af342962-a189/" target="_blank">
+           <img src="images/mobile-app-design.jpg" alt="a screenshot of a mobile app" class= "xdimage">
+           <h3 class="ux-h3">Movie Theatre Mobile App Design - Rainbow Cinemas</h3>
+           <h5>Adobe XD Link</h5></a>
           </div>
-          
           <div class="holder">
             <div class="info">
-              <p>This project required the redesign of a mobile application for an existing movie theatre company. I chose "Rainbow Cinemas", and created the app from the ground up, as they only have a very basic desktop version website.</p>
+              <p>This project required the redesign of a an existing retail company. I chose "Amethyst", and recreated the website making it easier to navigate by changing the user flow, especially of the e-commerce section.</p><a href="https://amethystonline.ca/" target=blank class="xdlink">Link to original site</a>
             </div>
-        <div>  
-          <img src="images/amethyst-desktop.jpg" alt="a screenshot of a website redesign - desktop version" id="scrnsht-3">
-          <h3>Website Redesign - Desktop</h3>
-          <a href="https://xd.adobe.com/view/fc10f89e-c925-4a0a-b60a-07f722f0bf82-a943/" id="adobe-link-2" target="_blank">Adobe XD Project Link</a>
-        </div>
+            <a href="https://xd.adobe.com/view/fc10f89e-c925-4a0a-b60a-07f722f0bf82-a943/" target="_blank">
+              <img src="images/amethyst-desktop.jpg" alt="a screenshot of a website redesign - desktop version" class="xdimage">
+              <h3 class="ux-h3">Website Redesign Desktop Version - Amethyst</h3>
+              <h5>Adobe XD Link</h5></a>
         </div>  
         <div class="holder">
           <div class="info">
-            <p>This project required the redesign of a mobile application for an existing movie theatre company. I chose "Rainbow Cinemas", and created the app from the ground up, as they only have a very basic desktop version website.</p>
+            <p>This project also required the redesign to be fully responsive between mobile, tablet, and desktop versions.</p><a href="https://amethystonline.ca/" target="blank" class="xdlink">Link to original site</a>
           </div>
-      <div> 
-          <img src="images/amethyst-mobile.jpg" alt="a screenshot of a website redesign - mobile version" id="scrnsht-5">
-          <h3>Website Redesign - Mobile</h3>
-          <a href="https://xd.adobe.com/view/52e586da-c5f0-4372-aee4-227882b753e9-07b6/" id="adobe-link-3" target="_blank">Adobe XD Project Link</a>
+          <a href="https://xd.adobe.com/view/52e586da-c5f0-4372-aee4-227882b753e9-07b6/" target="_blank">
+           <img src="images/amethyst-mobile.jpg" alt="a screenshot of a website redesign - mobile version" class="xdimage">
+          <h3 class="ux-h3">Website Redesign Mobile - Amethyst</h3>
+          <h5>Adobe XD Project Link</h5></a>
         </div>
-      </div>
     <br>
     <hr>
     <br>

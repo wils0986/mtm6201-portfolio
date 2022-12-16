@@ -21,6 +21,28 @@ html {
     top: 150px;
 }
 
+:root {
+
+    --font-color: #4f4f4f;
+    --bg-color: #f5f5f5;
+
+}
+
+[data-theme="dark"] {
+
+    --font-color: #4f4f4f;
+    --bg-color: black;
+}
+
+.info p {
+    position: relative;
+    
+    top: 150px;
+    left: 40px;
+    padding: 5px;
+    margin-top: 0px;
+}
+
 .photo {
     width: 70%;
     padding-top: 60px;
@@ -150,9 +172,9 @@ html {
   }
 
  .info p {
-    position: relative;
+    
     font-size: 1rem;
-    top: 180px;
+   
     left: 0px;
     padding: 5px;
 }
@@ -216,21 +238,6 @@ div.phone {
     display: none;
   }
 
-:root {
-
-    --font-color: #4f4f4f;
-    --bg-color: #f5f5f5;
-
-}
-
-[data-theme="dark"] {
-
-    --font-color: #4f4f4f;
-    --bg-color: black;
-}
-
-
-
 hr {
     border: 1px solid #E7759B;
 }
@@ -247,14 +254,9 @@ hr {
     top: 0px;
 }
 
-.service-form {
-    display: flex;
-    position: relative;
-    left: 40px;
-}
 
 textarea {
-    border: 1px solid #E7759B;
+    border: 2px solid #E7759B;
     margin: 10px;
 }
 
@@ -267,9 +269,10 @@ textarea {
    margin-left: 55px;
 }
 
-textarea#message {
+textarea {
     padding-bottom: 10px;
     margin-left: 20px;
+    width: 70%;
 }
 
 label {
@@ -291,30 +294,71 @@ input {
     padding: 20px;
 }
 
+.radio-services {
+    padding-top: 20px;
+}
+
+div.service-form {
+    font-size: 1.25rem;
+}
+
 .submit-button {
-    display: flex;
     position: relative;
+    top: 20px;
     padding: 10px;
     padding-left: 20px;
     padding-right: 20px;
     border: 1px solid #E7759B;
-    margin-top: 5px;
-    left: -230px;
-    top: 60px;
     font-size: 1rem;
+    cursor: pointer;
+}
+
+label.radio-button {
+    top: -15px;
+}
+
+label.radio-button:hover {
+    color: #E7759B;
 }
 
 .radio-button {
     position: relative;
-    top: 15px;
     padding-left: 3px;
     padding-right: 12px;
+    cursor: pointer;
+}
+
+input {
+    cursor: pointer;
 }
 
 #adobe-link, #adobe-link-2, #adobe-link-3, #adobe-link-4 {
     font-size: 1rem;
     margin-bottom: 20px;
     color: #E7759B;
+    position: relative;
+   
+}
+
+#xdlink1, #xdlink2, #xdlink3 {
+    position: relative;
+    top: 130px;
+    color: #4f4f4f;
+    z-index: 12;
+    font-size: 1rem;
+  }
+
+  a#xdlink1:hover, a#xdlink2:hover, a#xdlink3:hover {
+    color: #E7759B;
+  }
+
+.xdimage {
+    width: 80%;
+    position: relative;
+}
+
+a {
+    color: #4f4f4f;
 }
 
 #jenny {
@@ -347,7 +391,6 @@ h2 {
 h3 {
     color: #4F4F4F;
     text-align: center;
-    margin-bottom: 5px;
 }
 
 a h3 {
@@ -360,7 +403,13 @@ h4 {
     font-size: 1rem;
     color: #4F4F4F;
 }
-    
+
+h5 {
+    font-size: 1rem;
+    position: relative;
+    top: -20px;
+}
+
 p {
     color: #4f4f4f;
 }
@@ -479,6 +528,7 @@ nav {
     top: -70px;
 }
 
+
 /* styles footer info */
 .copyright {
     position: relative;
@@ -593,15 +643,15 @@ a:focus{
 
 .desk {
     position: relative;
-    top: -75px;
+    top: -35px;
     display: flex;
     justify-content: center;
     
 }
 
 svg {
-    width: 700px;
-    height: 700px;
+    width: 650px;
+    height: 650px;
   }
   
   /* SMOKE */
@@ -773,11 +823,19 @@ h2 {
 h3 {
     color: #4f4f4f;
     font-size: 1.5rem;
+    padding: 0;
+    top: 2px;
+    position: relative;
     
 }
 
+.ux-h3 {
+    margin-left: 80px;
+}
+
 a#adobe-link, a#adobe-link-2, a#adobe-link-3 {
-    margin-left: 60px;
+    margin-left: 80px;
+
 }
 
 a h3 {
@@ -787,6 +845,23 @@ a h3 {
 h4 {
     color: #4f4f4f;
     font-size: 1.3rem;
+}
+
+h5 {
+    color: #4f4f4f;
+    position: relative;
+    top: -20px;
+    margin-left: 80px;
+}
+
+h5:hover {
+    color: #E7759B;
+}
+
+a.xdlink {
+    font-size: 1.1rem;
+    position: relative;
+    top: 140px;
 }
 
 #p1, #p2 {
@@ -905,22 +980,36 @@ nav#myLinks.mainnav {
         transform: scale(1.5); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
       }
 
-
-      
-
-
-    .submit-button {
-        display: flex;
+      .submit-button {
         position: relative;
+        top: 120px;
         padding: 10px;
         padding-left: 20px;
         padding-right: 20px;
         border: 1px solid #E7759B;
-        margin-top: 15px;
-        margin-bottom: 50px;
-        left: -330px;
-        top: 60px;
         font-size: 1rem;
+        cursor: pointer;
+    }
+
+    div.service-form {
+        display: inline;
+        font-size: 1.5rem;
+    }
+
+    div.services {
+        position: relative;
+        top: 60px;
+    }
+
+    .radio-services {
+        display: flex;
+        position: relative;
+        top: 40px;
+    }
+
+    label.radio-button {
+        position: relative;
+        top: 5px;
     }
 
  #yoshi {
@@ -978,11 +1067,17 @@ div.video {
     align-items: center;
 }
 
+div.holder {
+    position: relative;
+    top: 60px;
+}
+
 .holder {
     position:relative;
     overflow:hidden;
     justify-content: center;
     max-width: 96%;
+    top: 0px;
   }
 
   .info {
@@ -993,9 +1088,7 @@ div.video {
     top: -140px;
     opacity:0;
     transition:left 0.3s, opacity 0.3s;
-    
     margin: 0 auto;
-    padding-top: 40px;
   }
 
   .holder:hover .info {
@@ -1006,9 +1099,10 @@ div.video {
  .info p {
     position: relative;
     font-size: 1.35rem;
-    top: 180px;
+    top: 150px;
     left: 40px;
     padding: 5px;
+    margin-top: 0px;
 }
 
 .uxdesign {
@@ -1025,13 +1119,10 @@ img#scrnsht-6, img#scrnsht-3, img#scrnsht-5 {
 #ux {
     position: relative;
     padding-bottom: 20px;
-    
+    top: 100px;
+    margin-left: 20px;
 }
 
-.desk {
-    padding-bottom: 20px;
-    padding-top: 40px;
-}
 
 #jenny {
     width: 30%;
@@ -1144,5 +1235,12 @@ img#scrnsht-6, img#scrnsht-3, img#scrnsht-5 {
     z-index: 12;
   }
  
+ a#xdlink1, a#xdlink2, a#xdlink3 {
+    position: relative;
+    color: #4f4f4f;
+    z-index: 12;
+    margin-left: 80px;
+  }
 
+ 
 }

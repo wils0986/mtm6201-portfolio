@@ -12,7 +12,9 @@
 </head>
 <body>
   <a id="top"></a>
+   <!-- All content wrapped for layout -->
   <div class="container">
+     <!-- Skip links for accessibility purposes-->
     <ul class="skip-links">
       <li><a href="#myLinks">Skip to main nav</a></li>
       <li><a href="#main">Skip to main content</a></li>
@@ -27,6 +29,7 @@
           <a href="portfolio.html">Portfolio</a>
           <a href="contact.html">Contact</a>
           <a class="switch">
+          <!--- Dark/light mode toggle -->
             <div class="mytoggle">
               <label>
               <input class='toggle-checkbox' type='checkbox'></input>
@@ -43,66 +46,76 @@
             </div>
             </a>
         </nav>
+        <!-- Cat animation for Desktop version Nav from Lottie -->
         <div class="cat">
           <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
         <lottie-player src="https://assets9.lottiefiles.com/packages/lf20_8y3kzptg.json" id="cat" mode="bounce" background="transparent"  speed=".5"  style="width: 300px; height: 300px;" loop  autoplay></lottie-player>
         </div>
         <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
-        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-          <i class="blobs" id="hamburger"></i>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()"><i class="blobs" id="hamburger"></i>
         </a>
       </div>
+      <!--- Go to top button -->
       <button onclick="topFunction()" id="myBtn" title="Go to top">^</button>
-    <!-- page content wrapped in container for styling -->
+    <!-- Page content wrapped in second container for styling -->
     <div class="container2">
       <main role="main" id="main">
         <h1 class="mainh1">Contact</h1>
+        <!-- Phone animation from Lottie -->
         <div class="phone">
           <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
           <lottie-player src="https://assets10.lottiefiles.com/packages/lf20_fJGcAn.json" id="ringing-phone"  background="transparent"  speed="1"  style="width: 400px; height: 400px;" hover autoplay></lottie-player>
-      </div>
-            <div role="contentinfo" class="box">
-                <div class="contact" itemscope itemtype="https://schema.org/Person">
-                  <h2 class="owner" itemprop="name">Jenny Wilson</h2>
-                  
-                    <i class="fa-solid fa-phone" id="phone"></i><h3 id="phone-2" itemprop="telephone">(905) 392-7395</h3>
-                    <i class="fa-solid fa-envelope" id="email"></i><h3 id="email-2" itemprop="email">jennywilson2@hotmail.com</h3>
-                    <i class="fa-brands fa-twitter" id="twitter"></i>
-                    <i class="fa-brands fa-instagram" id="instagram"></i>
-                    <i class="fa-brands fa-linkedin-in" id="linked-in"></i>
-                    <i class="fa-brands fa-facebook" id="facebook"></i>
-                </div>
+        </div>
+        <!-- Contact content and social icons -->
+        <div role="contentinfo" class="box">
+            <div class="contact" itemscope itemtype="https://schema.org/Person">
+              <h2 class="owner" itemprop="name">Jenny Wilson</h2>
+                <i class="fa-solid fa-phone" id="phone"></i><h3 id="phone-2" itemprop="telephone">(905) 392-7395</h3>
+                <i class="fa-solid fa-envelope" id="email"></i><h3 id="email-2" itemprop="email">jennywilson2@hotmail.com</h3>
+                <i class="fa-brands fa-twitter" id="twitter"></i>
+                <i class="fa-brands fa-instagram" id="instagram"></i>
+                <i class="fa-brands fa-linkedin-in" id="linked-in"></i>
+                <i class="fa-brands fa-facebook" id="facebook"></i>
             </div>
+        </div>
+        <!-- Form to send direct message to owner -->
           <div role="contentinfo" class="box-2">
             <div class="form">
-              <form action="mailto:jennywilson2@hotmail.com" class="send-message">
-                <h2 class="send-message">Send me a message!</h2>
-                    <div>
-                        <label for="fullname">Full Name</label>
-                        <textarea id="fullname" name="fullname"></textarea>
-                    </div>
-                    <div>
-                        <label for="email-textarea">Email</label>
-                        <textarea id="email-textarea" name="email"></textarea>
-                    </div>
-                    <div>
-                        <label for="message">Message</label>
-                        <textarea id="message" name="message"></textarea>
-                    </div>
-               </form>
+              <form action="mailto:jennywilson2@hotmaail.com" method="GET">
                 <div>
-                <p>Choose your desired service:</p>
-                <form class="service-form">
-                  <input type="radio" id="uxdesign" name="service" value="UXDesign">
-                  <label class="radio-button" for="uxdesign">UX Design</label><br>
-                  <input type="radio" id="webdevelopment" name="service" value="WebDevelopment">
-                  <label class="radio-button" for="webdevelopment">Web Development</label><br>
-                  <input type="radio" id="graphicdesign" name="service" value="GraphicDesign">
-                  <label class="radio-button" for="graphicdesign">Graphic Design</label>
-                  <button type="submit" class="submit-button">Send</button>
-                </form>
-              
+                  <textarea placeholder="Name" name="name" required></textarea>
+                  </div>
+                <div>
+                <textarea placeholder="Subject" name="subject" required></textarea>
                 </div>
+                <div>
+                  <textarea placeholder="Your message" name="body" required></textarea>
+                </div>
+                
+                    <div class="service-form">
+                      
+                      <div class="radio-services">
+                        <h3>Choose your desired service:</h3>
+                        <input type="radio" id="uxdesign" name="service" value="UXDesign">
+                        <label class="radio-button" for="uxdesign">UX Design</label><br>
+                        <input type="radio" id="webdevelopment" name="service" value="WebDevelopment">
+                        <label class="radio-button" for="webdevelopment">Web Development</label><br>
+                        <input type="radio" id="graphicdesign" name="service" value="GraphicDesign">
+                        <label class="radio-button" for="graphicdesign">Graphic Design</label>
+                        <input type="radio" id="videography" name="service" value="Videography">
+                        <label class="radio-button" for="videography">Videography</label>
+                        <input type="radio" id="photography" name="service" value="Photography">
+                        <label class="radio-button" for="photography">Photography</label>
+                        </div>
+                        <button type="submit" class="submit-button">Send</button>
+                    </div>
+                    
+                  
+              </form>
+                <!-- Option to choose which service you are contating about -->
+                
+                
+               
             </div>
            </main>
           </div>
