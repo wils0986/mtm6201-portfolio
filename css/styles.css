@@ -6,6 +6,7 @@
     font-weight: lighter;
 } 
 
+
 html {
     padding-top: 175px;
     height: 100%;
@@ -20,6 +21,139 @@ html {
     top: 150px;
 }
 
+
+.toggle-checkbox {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+  }
+  
+  .toggle-slot {
+    position: relative;
+    height: 3em;
+    width: 6em;
+    border: 2.5px solid #e4e7ec;
+    border-radius: 5em;
+    background-color: none;
+    box-shadow: 0px 2.5px 6.25px #e4e7ec;
+    transition: background-color 250ms;
+  }
+  
+  .toggle-checkbox:checked ~ .toggle-slot {
+    background-color: #374151;
+  }
+  
+  .toggle-button {
+    position: relative;
+    top: -10px;
+    right: 60px;
+    transform: translate(3em, .875em);
+    position: absolute;
+    height: 2.25em;
+    width: 2.25em;
+    border-radius: 50%;
+    background-color: #ffeccf;
+    box-shadow: inset 0px 0px 0px 0.275em #ffbb52;
+    transition: background-color 250ms, border-color 250ms, transform 500ms cubic-bezier(.26,2,.46,.71);
+  }
+  
+  .toggle-checkbox:checked ~ .toggle-slot .toggle-button {
+    background-color: #485367;
+    box-shadow: inset 0px 0px 0px 0.275em white;
+    transform: translate(.25em, .875em);
+  }
+  
+  .sun-icon {
+    position: absolute;
+    height: 2.5em;
+    width: 2.5em;
+    color: #ffbb52;
+    left: -17px;
+    top: -10px;
+    
+  }
+  
+  .sun-icon-wrapper {
+    position: absolute;
+    height: 3em;
+    width: 3em;
+    opacity: 1;
+    transform: translate(1em, 1em) rotate(15deg);
+    transform-origin: 50% 50%;
+    transition: opacity 150ms, transform 500ms cubic-bezier(.26,2,.46,.71);
+  }
+  
+  .toggle-checkbox:checked ~ .toggle-slot .sun-icon-wrapper {
+    opacity: 0;
+    transform: translate(.5em, 1em) rotate(0deg);
+  }
+  
+  .moon-icon {
+    position: absolute;
+    height: 2.5em;
+    width: 2.5em;
+    color: white;
+    left: 20px;
+    top: -3px;
+  }
+  
+  .moon-icon-wrapper {
+    position: absolute;
+    height: 3em;
+    width: 3em;
+    opacity: 0;
+    transform: translate(5.5em, 1em) rotate(0deg);
+    transform-origin: 50% 50%;
+    transition: opacity 150ms, transform 500ms cubic-bezier(.26,2.5,.46,.71);
+  }
+  
+  .toggle-checkbox:checked ~ .toggle-slot .moon-icon-wrapper {
+    opacity: 1;
+    transform: translate(2em, .5em) rotate(-15deg);
+  }
+
+  .mytoggle {
+    position: relative;
+    top: 32px;
+    right: -5px;
+    
+  }
+
+
+.holder {
+    position:relative;
+    overflow:hidden;
+    justify-content: center;
+    max-width: 96%;
+  }
+
+  .info {
+    position:relative;
+    width:70%;
+    height:100%;
+    background:none;
+    top: -140px;
+    opacity:0;
+    transition:left 0.3s, opacity 0.3s;
+    margin: 0 auto;
+    padding-top: 40px;
+  }
+
+  .holder:hover .info {
+    left:0;
+    opacity:1;
+  }
+
+ .info p {
+    position: relative;
+    font-size: 1rem;
+    top: 180px;
+    left: 0px;
+    padding: 5px;
+}
+
 div.video {
     display: flex;
     position: relative;
@@ -28,7 +162,7 @@ div.video {
 }
 
 .videoimg {
-    padding: 10px;
+    padding-top: 40px;
     max-width: 70%;
 }
 
@@ -42,6 +176,7 @@ div.video {
 #ringing-phone {
     filter: hue-rotate(110deg) saturate(120%) brightness(140%);
     position: relative;
+    padding-top: 60px;
 }
 
 div.phone {
@@ -91,60 +226,7 @@ div.phone {
     --bg-color: black;
 }
 
-.switch {
-    height: 100px;
-    position: relative;
-    margin-top: 20px;
-}
-    
-.theme-switch {
-  display: inline-block;
-  height: 34px;
-  position: relative;
-  width: 60px;
-}
 
-.theme-switch input {
-  display:none;
-}
-
-.slider {
-  background-color: #2b2b2b;
-  bottom: 0;
-  cursor: pointer;
-  left: 0;
-  position: absolute;
-  right: 0;
-  top: 0;
-  transition: .4s;
-}
-
-.slider:before {
-  background-color: #fff;
-  bottom: 4px;
-  content: "";
-  height: 26px;
-  left: 4px;
-  position: absolute;
-  transition: .4s;
-  width: 26px;
-}
-
-input:checked + .slider {
-  background-color: #ccc;
-}
-
-input:checked + .slider:before {
-  transform: translateX(26px);
-}
-
-.slider.round {
-  border-radius: 34px;
-}
-
-.slider.round:before {
-  border-radius: 50%;
-}
 
 hr {
     border: 1px solid #E7759B;
@@ -226,15 +308,16 @@ input {
     padding-right: 12px;
 }
 
-#adobe-link, #adobe-link-2, #adobe-link-3 {
+#adobe-link, #adobe-link-2, #adobe-link-3, #adobe-link-4 {
     font-size: 1rem;
     margin-bottom: 20px;
     color: #E7759B;
 }
 
 #jenny {
-    width: 50%;
+    width: 60%;
     padding: 0;
+    border-radius: 50%;
 }
 
 .mainh1 {
@@ -254,6 +337,7 @@ h2 {
     color: #4F4F4F;
     background-color: none;
     opacity: .75;
+    font-size: 1.75rem;
     
 }
 
@@ -513,8 +597,8 @@ a:focus{
 }
 
 svg {
-    width: 600px;
-    height: 600px;
+    width: 700px;
+    height: 700px;
   }
   
   /* SMOKE */
@@ -645,7 +729,8 @@ svg {
     }
     
     
-      
+
+
     }
   /* Opens up Mobile Nav */
   .mainnav a{
@@ -677,7 +762,7 @@ h1 {
 
 h2 {
     position: relative;
-    top: -50px;
+    top: 0px;
     color: #4f4f4f;
     font-size: 2rem;
 }
@@ -685,6 +770,11 @@ h2 {
 h3 {
     color: #4f4f4f;
     font-size: 1.5rem;
+    
+}
+
+a#adobe-link, a#adobe-link-2, a#adobe-link-3 {
+    margin-left: 60px;
 }
 
 a h3 {
@@ -799,25 +889,22 @@ nav#myLinks.mainnav {
         top: -50px;
     }
 
+    .zoom {
+        background-color: none;
+        transition: transform .2s; /* Animation */
+        width: 200px;
+        height: 200px;
+        margin: 0 auto;
+      }
+      
+      .zoom:hover {
+        margin: 230px;
+        transform: scale(1.5); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+      }
 
-    .click-zoom input[type=checkbox] {
-        display: none;
-        cursor: 2rem;
+
       
-      }
-      
-      .click-zoom img {
-        transition: transform 0.25s ease;
-        cursor: zoom-in;
-        
-    
-      }
-      
-      .click-zoom input[type=checkbox]:checked~img {
-        transform: scale(2);
-        cursor: zoom-out;
-       
-      }
+
 
     .submit-button {
         display: flex;
@@ -865,7 +952,7 @@ div.shapes {
     position: relative;
     display: flex;
     justify-content: center;
-    top: -80px;
+    top: 0px;
 }
 
 .aboutinfo {
@@ -888,17 +975,171 @@ div.video {
     align-items: center;
 }
 
-.videoimg {
-    margin-top: 40px;
-    padding: 10px;
-    width: 70%;
-    height: 50%;
+.holder {
+    position:relative;
+    overflow:hidden;
+    justify-content: center;
+    max-width: 96%;
+  }
+
+  .info {
+    position:relative;
+    width:50%;
+    height:100%;
+    background:none;
+    top: -140px;
+    opacity:0;
+    transition:left 0.3s, opacity 0.3s;
+    
+    margin: 0 auto;
+    padding-top: 40px;
+  }
+
+  .holder:hover .info {
+    left:0;
+    opacity:1;
+  }
+
+ .info p {
+    position: relative;
+    font-size: 1.35rem;
+    top: 180px;
+    left: 40px;
+    padding: 5px;
+}
+
+.uxdesign {
+    position: relative;
+    top: -100px;
+}
+
+img#scrnsht-6, img#scrnsht-3, img#scrnsht-5 {
+    width: calc(70% + 40px);
+    position: relative;
+    margin-left: 60px;
+}
+
+#ux {
+    position: relative;
+    padding-bottom: 20px;
+    
+}
+
+.desk {
+    padding-bottom: 20px;
+    padding-top: 40px;
+}
+
+#jenny {
+    width: 30%;
+}
+
+.container2 {
+    position: relative;
+    max-width: 96%;
+    margin: 0 auto;
+    top: -170px;
 }
 
 
+.toggle-checkbox {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+  }
+  
+  .toggle-slot {
+    position: relative;
+    height: 2.01em;
+    width: 4.02em;
+    border: 2.5px solid #e4e7ec;
+    border-radius: 5em;
+    background-color: none;
+    box-shadow: 0px 2.5px 6.25px #e4e7ec;
+    transition: background-color 250ms;
+  }
+  
+  .toggle-checkbox:checked ~ .toggle-slot {
+    background-color: black;
+  }
+  
+  .toggle-button {
+    position: relative;
+    top: -15px;
+    right: 80px;
+    transform: translate(3em, .875em);
+    position: absolute;
+    height: 1.5em;
+    width: 1.5em;
+    border-radius: 50%;
+    background-color: #ffeccf;
+    box-shadow: inset 0px 0px 0px 0.175em #ffbb52;
+    transition: background-color 250ms, border-color 250ms, transform 500ms cubic-bezier(.26,2,.46,.71);
+  }
+  
+  .toggle-checkbox:checked ~ .toggle-slot .toggle-button {
+    background-color: #485367;
+    box-shadow: inset 0px 0px 0px 0.175em white;
+    transform: translate(.25em, .875em);
+    left: 3px;
+  }
+  
+  .sun-icon {
+    position: absolute;
+    height: 1.675em;
+    width: 1.675em;
+    color: #ffbb52;
+    left: -27px;
+    top: -10px;
+    
+  }
+  
+  .sun-icon-wrapper {
+    position: absolute;
+    height: 3em;
+    width: 3em;
+    opacity: 1;
+    transform: translate(1em, 1em) rotate(15deg);
+    transform-origin: 50% 50%;
+    transition: opacity 150ms, transform 500ms cubic-bezier(.26,2,.46,.71);
+  }
+  
+  .toggle-checkbox:checked ~ .toggle-slot .sun-icon-wrapper {
+    opacity: 0;
+    transform: translate(.5em, 1em) rotate(0deg);
+  }
+  
+  .moon-icon {
+    position: absolute;
+    height: 1.675em;
+    width: 1.675em;
+    color: white;
+    left: 10px;
+    top: -10px;
+  }
+  
+  .moon-icon-wrapper {
+    position: absolute;
+    height: 3em;
+    width: 3em;
+    opacity: 0;
+    transform: translate(5.5em, 1em) rotate(0deg);
+    transform-origin: 50% 50%;
+    transition: opacity 150ms, transform 500ms cubic-bezier(.26,2.5,.46,.71);
+  }
+  
+  .toggle-checkbox:checked ~ .toggle-slot .moon-icon-wrapper {
+    opacity: 1;
+    transform: translate(2em, .5em) rotate(-15deg);
+  }
+
+  .mytoggle {
+    position: relative;
+    top: 10px;
+    z-index: 12;
+  }
+ 
+
 }
-
-
-
-
-
