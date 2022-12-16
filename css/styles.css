@@ -21,6 +21,10 @@ html {
     top: 150px;
 }
 
+.photo {
+    width: 70%;
+    padding-top: 60px;
+}
 
 .toggle-checkbox {
     position: absolute;
@@ -944,8 +948,8 @@ nav#myLinks.mainnav {
     position: relative;
     top: -299px;
     left: -400px;
-    
 }
+
 
 div.shapes {
     position: relative;

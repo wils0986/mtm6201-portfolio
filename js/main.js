@@ -67,6 +67,8 @@ window.onload = function() {
     document.body.appendChild(css);
 };
 
+
+
 /* Dark/light mode */
 
 const toggleSwitch = document.querySelector('.mytoggle input[type="checkbox"]');
@@ -92,6 +94,7 @@ function switchTheme(e) {
 
 toggleSwitch.addEventListener('change', switchTheme, false);
 
+
 /* Back to top button */
 // Get the button:
 let mybutton = document.getElementById("myBtn");
@@ -112,7 +115,5 @@ function topFunction() {
   document.body.scrollTop = 0; // For Safari
   document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
 }
-
-
 
 
