@@ -682,7 +682,7 @@ nav {
 
 #phone-2, #email-2 {
    position: relative;
-   left: 70px;
+   left: 75px;
    color: #4f4f4f;
    text-align: left;
 }
@@ -1032,6 +1032,10 @@ a#adobe-link, a#adobe-link-2, a#adobe-link-3 {
 
 a h3 {
     font-size: 1.5rem;
+}
+
+a h3:hover {
+    color: #E7759B;;
 }
 
 h4 {
@@ -1432,4 +1436,5 @@ div.box {
     position: relative;
     width: calc(96% + 20px )
 }
+
 }
