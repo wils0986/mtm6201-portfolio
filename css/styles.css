@@ -8,7 +8,7 @@
 
 
 html {
-    padding-top: 175px;
+    padding-top: 150px;
     height: 100%;
     overflow: hidden;
     width: 100vw;
@@ -23,10 +23,271 @@ html {
 
 :root {
 
+    --grey: #4f4f4f;
+    --white: #f5f5f5;
+    --red: #E7759B;
+    --borderFormEls: (0, 0%, 10%);
+    --bgFormEls: (0, 0%, 14%);
+    --bgFormElsFocus: (0, 7%, 20%);
+
     --font-color: #4f4f4f;
     --bg-color: #f5f5f5;
 
 }
+
+#heart {
+    color: #E7759B;
+    position: relative;
+    font-size: 1rem;
+    left: 5px;
+}
+
+#conditions{
+    top: 0;
+    left: 0;
+    font-size: 18px;
+}
+
+input,
+select,
+textarea,
+button {
+  font-family: inherit;
+  font-size: 100%;
+}
+
+button,
+label {
+  cursor: pointer;
+}
+
+select {
+  appearance: none;
+  position: relative;
+}
+
+/* Remove native arrow on IE */
+select::-ms-expand {
+  display: none;
+}
+
+/*Remove dotted outline from selected option on Firefox*/
+/*https://stackoverflow.com/questions/3773430/remove-outline-from-select-box-in-ff/18853002#18853002*/
+/*We use !important to override the color set for the select on line 99*/
+select:-moz-focusring {
+  color: transparent !important;
+  text-shadow: 0 0 0 var(--white);
+}
+
+textarea {
+  resize: none;
+}
+
+ul {
+  list-style: none;
+}
+
+body {
+  font: 18px/1.5 "Open Sans", sans-serif;
+  color: var(--grey);
+  margin: 1.5rem 0;
+}
+
+.container3 {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+div.container3 ul {
+    padding-left: 0;
+}
+
+div.container3 li {
+    padding-left: 0;
+}
+
+
+.container3 h2 {
+    padding: 0;
+}
+
+/* FORM ELEMENTS
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.my-form h1 {
+  margin-bottom: 1.5rem;
+}
+
+.my-form li,
+.my-form .grid > *:not(:last-child) {
+  margin-bottom: 1.5rem;
+}
+
+.my-form select,
+.my-form input,
+.my-form textarea,
+.my-form button {
+  width: 100%;
+  line-height: 1.5;
+  padding: 15px 0px;
+  border: 2px solid #E7759B;
+  color: var(--grey);
+  background: var(--bgFormEls);
+  transition: background-color 0.3s cubic-bezier(0.57, 0.21, 0.69, 1.25),
+    transform 0.3s cubic-bezier(0.57, 0.21, 0.69, 1.25);
+}
+
+.my-form textarea {
+  height: 170px;
+}
+
+.my-form ::placeholder {
+  color: inherit;
+  /*Fix opacity issue on Firefox*/
+  opacity: 1;
+}
+
+.my-form select:focus,
+.my-form input:focus,
+.my-form textarea:focus,
+.my-form button:enabled:hover,
+.my-form button:focus,
+.my-form input[type="checkbox"]:focus + label {
+  background: var(--bgFormElsFocus);
+}
+
+.my-form select:focus,
+.my-form input:focus,
+.my-form textarea:focus {
+  transform: scale(1.02);
+}
+
+.my-form *:required,
+.my-form select {
+  background-repeat: no-repeat;
+  background-position: center right 12px;
+  background-size: 15px 15px;
+}
+
+.my-form *:required {
+  background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/162656/asterisk.svg);  
+}
+
+.my-form select {
+  background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/162656/down.svg);
+}
+
+.my-form *:disabled {
+  cursor: default;
+  filter: blur(2px);
+}
+
+
+/* FORM BTNS
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.my-form .required-msg {
+  display: none;
+  background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/162656/asterisk.svg)
+    no-repeat center left / 15px 15px;
+  padding-left: 20px;
+}
+
+.my-form .btn-grid {
+  position: relative;
+  overflow: hidden;
+  transition: filter 0.2s;
+}
+
+.my-form button {
+  font-weight: bold;
+}
+
+.my-form button > * {
+  display: inline-block;
+  width: 100%;
+  transition: transform 0.4s ease-in-out;
+}
+
+.my-form button .back {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-110%, -50%);
+}
+
+.my-form button:enabled:hover .back,
+.my-form button:focus .back {
+  transform: translate(-50%, -50%);
+}
+
+.my-form button:enabled:hover .front,
+.my-form button:focus .front {
+  transform: translateX(110%);
+}
+
+
+/* CUSTOM CHECKBOX
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.my-form input[type="checkbox"] {
+  position: absolute;
+  left: -9999px;
+}
+
+.my-form input[type="checkbox"] + label {
+  position: relative;
+  display: inline-block;
+  padding-left: 2rem;
+  transition: 0.3s cubic-bezier(0.57, 0.21, 0.69, 1.25);
+}
+
+.my-form input[type="checkbox"] + label::before,
+.my-form input[type="checkbox"] + label::after {
+  content: '';
+  position: absolute;
+}
+
+.my-form input[type="checkbox"] + label::before {
+  left: 0;
+  top: 0px;
+  width: 18px;
+  height: 18px;
+  border: 2px solid var(--red);
+}
+
+.my-form input[type="checkbox"]:checked + label::before {
+  background: var(--red);
+}
+
+.my-form input[type="checkbox"]:checked + label::after {
+  left: 7px;
+  top: 0px;
+  width: 6px;
+  height: 14px;
+  border-bottom: 2px solid var(--white);
+  border-right: 2px solid var(--white);
+  transform: rotate(45deg);
+}
+
+
+/* FOOTER
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+footer {
+  font-size: 1rem;
+  text-align: right;
+  backface-visibility: hidden;
+}
+
+footer a {
+  text-decoration: none;
+}
+
+footer span {
+  color: var(--red);
+}
+
+
+
+
 
 [data-theme="dark"] {
 
@@ -254,82 +515,11 @@ hr {
     top: 0px;
 }
 
-
-textarea {
-    border: 2px solid #E7759B;
-    margin: 10px;
-}
-
-.send-message {
-    padding-bottom: 20px;
-    width: 100%;
-}
-
-#email-textarea {
-   margin-left: 55px;
-}
-
-textarea {
-    padding-bottom: 10px;
-    margin-left: 20px;
-    width: 70%;
-}
-
-label {
-    display: inline;
-    position: relative;
-    top: -25px;
-    color: #4f4f4f;
-}
-
-input {
-   display: block;
-   position: relative;
-}
-
 .box-2 {
     display: flex;
     justify-content: center;
     width: 96%;
     padding: 20px;
-}
-
-.radio-services {
-    padding-top: 20px;
-}
-
-div.service-form {
-    font-size: 1.25rem;
-}
-
-.submit-button {
-    position: relative;
-    top: 20px;
-    padding: 10px;
-    padding-left: 20px;
-    padding-right: 20px;
-    border: 1px solid #E7759B;
-    font-size: 1rem;
-    cursor: pointer;
-}
-
-label.radio-button {
-    top: -15px;
-}
-
-label.radio-button:hover {
-    color: #E7759B;
-}
-
-.radio-button {
-    position: relative;
-    padding-left: 3px;
-    padding-right: 12px;
-    cursor: pointer;
-}
-
-input {
-    cursor: pointer;
 }
 
 #adobe-link, #adobe-link-2, #adobe-link-3, #adobe-link-4 {
@@ -462,9 +652,13 @@ nav {
     margin-bottom: 60px;
 }
 
-#dot1, #dot2 {
+#dot1, #dot2, #dot3, #dot4 {
     color: none;
     display: none;
+}
+
+.box-wrapper {
+    width: 96%;
 }
 
 /* parameters for 'contact' box */
@@ -474,16 +668,15 @@ nav {
     width: 96%;
     height: auto;
     margin: 0 auto;
-    border: 5px solid #E7759B;
+    border: 3px solid #E7759B;
     margin-bottom: 80px;
-    margin-left: 10px;
     justify-content: center;
 }
 
 #phone, #email{
     display: flex;
     position: relative;
-    top: 36px;
+    top: 42px;
     font-size: 2rem;
     padding: 10px;
 }
@@ -875,21 +1068,6 @@ a.xdlink {
     list-style-type: none;
 }
 
-form {
-    font-size: 1.5rem;
-}
-
-label {
-    margin-left: auto;
-   margin-right: auto;
-}
-
-#dot1, #dot2 {
-    color: #4F4F4F;
-    top: -200px;
-    left: -35px;
-}
-
 /* Hides hamburger menu and displays full horizontal navigation */
 .blobs {
     display: none;
@@ -913,6 +1091,11 @@ nav#myLinks.mainnav {
     padding-bottom: 40px;
     padding-top: 0px;
   }
+
+  .topnav #myLinks a:hover {
+    color: #E7759B;
+  }
+
 
   .topnav {
     border-bottom: 1.5px solid rgba(231,117,155,.5);
@@ -980,37 +1163,7 @@ nav#myLinks.mainnav {
         transform: scale(1.5); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
       }
 
-      .submit-button {
-        position: relative;
-        top: 120px;
-        padding: 10px;
-        padding-left: 20px;
-        padding-right: 20px;
-        border: 1px solid #E7759B;
-        font-size: 1rem;
-        cursor: pointer;
-    }
-
-    div.service-form {
-        display: inline;
-        font-size: 1.5rem;
-    }
-
-    div.services {
-        position: relative;
-        top: 60px;
-    }
-
-    .radio-services {
-        display: flex;
-        position: relative;
-        top: 40px;
-    }
-
-    label.radio-button {
-        position: relative;
-        top: 5px;
-    }
+    
 
  #yoshi {
     width: 33%;
@@ -1144,6 +1297,11 @@ img#scrnsht-6, img#scrnsht-3, img#scrnsht-5 {
     width: 0;
   }
   
+div.toggle-slot {
+    position: relative;
+    top: -25px;
+}
+
   .toggle-slot {
     position: relative;
     height: 2.01em;
@@ -1242,5 +1400,37 @@ img#scrnsht-6, img#scrnsht-3, img#scrnsht-5 {
     margin-left: 80px;
   }
 
- 
+  .my-form .grid {
+    display: grid;
+    grid-gap: 1.5rem;
+  }
+
+  .my-form .grid-2 {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .my-form .grid-3 {
+    grid-template-columns: auto auto auto;
+    align-items: center;
+  }
+
+  .my-form .grid > *:not(:last-child) {
+    margin-bottom: 0;
+  }
+
+  .my-form .required-msg {
+    display: block;
+  }
+
+    #dot1, #dot2, #dot3, #dot4 {
+        display: inline;
+        color: #4F4F4F;
+        top: -200px;
+        left: -35px;
+    }
+
+div.box {
+    position: relative;
+    width: calc(96% + 20px )
+}
 }

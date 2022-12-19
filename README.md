@@ -45,3 +45,5 @@ Creating and working with code is *always* a learning process for me, which I wa
 - Lottie
 - W3 Docs
 - CodePen
+- Font Awesome
+- Terms feed
