@@ -35,6 +35,38 @@ html {
 
 }
 
+.xdimage {
+    max-width: 90%;;
+}
+
+
+.swap img:last-child{
+    display:none
+}
+.swap:hover img:first-child{
+    display:none
+}
+.swap:hover img:last-child{
+    display:inline-block
+}
+
+#joker2 {
+    padding-top: 40px;
+    max-width: 70%;
+    position: relative;
+}
+
+#joker {
+  position: relative;
+  padding-top: 40px;
+  max-width: 70%;
+}
+
+a.swap {
+    position: relative;
+   
+}
+
 #heart {
     color: #E7759B;
     position: relative;
@@ -294,9 +326,10 @@ footer span {
 
 .info p {
     position: relative;
-    
+     font-size: 1rem;
+    padding: 5px;
     top: 150px;
-    left: 40px;
+    left: 0px;
     padding: 5px;
     margin-top: 0px;
 }
@@ -406,6 +439,7 @@ footer span {
 
 
 .holder {
+    display: inline;
     position:relative;
     overflow:hidden;
     justify-content: center;
@@ -429,13 +463,6 @@ footer span {
     opacity:1;
   }
 
- .info p {
-    
-    font-size: 1rem;
-   
-    left: 0px;
-    padding: 5px;
-}
 
 div.video {
     display: flex;
@@ -499,7 +526,9 @@ div.phone {
   }
 
 hr {
+    position: relative;
     border: 1px solid #E7759B;
+    top: 60px;
 }
 
 .skills li {
@@ -541,10 +570,7 @@ hr {
     color: #E7759B;
   }
 
-.xdimage {
-    width: 80%;
-    position: relative;
-}
+
 
 a {
     color: #4f4f4f;
@@ -696,10 +722,19 @@ nav {
     font-size: 2.5rem;
 }
 
-#yoshi, #joker, #hybrid, #scrnsht-1, #scrnsht-2, #scrnsht-3, #scrnsht-4, #scrnsht-5, #scrnsht-6 {
+#yoshi, #hybrid, #scrnsht-2 {
     width: 70%;
     height: auto;
     padding-top: 40px;
+    position: relative;
+}
+
+  #scrnsht-1, #scrnsht-3, #scrnsht-4, #scrnsht-5, #scrnsht-6 {
+    width: 70%;
+    height: auto;
+    padding-top: 40px;
+  
+    position: relative;
 }
 
 #p1 {
@@ -1023,9 +1058,6 @@ h3 {
     
 }
 
-.ux-h3 {
-    margin-left: 80px;
-}
 
 a#adobe-link, a#adobe-link-2, a#adobe-link-3 {
     margin-left: 80px;
@@ -1049,7 +1081,6 @@ h5 {
     color: #4f4f4f;
     position: relative;
     top: -20px;
-    margin-left: 80px;
 }
 
 h5:hover {
@@ -1174,9 +1205,6 @@ nav#myLinks.mainnav {
     width: 33%;
  }
 
- #joker {
-    width: 65%;
- }
 
  #hybrid {
     width: 70%;
@@ -1234,7 +1262,6 @@ div.holder {
     position:relative;
     overflow:hidden;
     justify-content: center;
-    max-width: 96%;
     top: 0px;
   }
 
@@ -1258,15 +1285,15 @@ div.holder {
     position: relative;
     font-size: 1.35rem;
     top: 150px;
-    left: 40px;
     padding: 5px;
     margin-top: 0px;
 }
 
-.uxdesign {
+.uxdesign, .webdev {
     position: relative;
     top: -100px;
 }
+
 
 img#scrnsht-6, img#scrnsht-3, img#scrnsht-5 {
     width: calc(70% + 40px);
@@ -1437,6 +1464,22 @@ div.toggle-slot {
 div.box {
     position: relative;
     width: calc(96% + 20px )
+}
+
+.xdimage {
+    width: 1200px;
+}
+
+#joker2 {
+    padding-top: 40px;
+    width: 1100px;
+    position: relative;
+}
+
+#joker {
+  position: relative;
+  padding-top: 40px;
+  width: 1100px;
 }
 
 }
