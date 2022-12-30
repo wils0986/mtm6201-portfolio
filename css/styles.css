@@ -8,17 +8,9 @@
 
 
 html {
-    padding-top: 150px;
-    height: 100%;
-    overflow: hidden;
-    width: 100vw;
-    height: 100vh;
-    overflow-y: scroll;
-    overflow-x: hidden;
-    -webkit-overflow-scrolling: touch;
-    background: none;
+    padding-top: 90px;
     background-color: var(--bg-color);
-    top: 150px;
+   
 }
 
 :root {
@@ -646,7 +638,7 @@ p {
 
   .skip-links a {
     position: absolute;
-    top: -7em;
+    top: -12em;
     background-color: black;
     color: white;
     padding: .25em .5em;
@@ -761,7 +753,7 @@ nav {
     position: relative;
     max-width: 96%;
     margin: 0 auto;
-    top: -70px;
+    
 }
 
 
@@ -769,10 +761,8 @@ nav {
 .copyright {
     position: relative;
     border-top: 1.5px solid rgba(231,117,155,.5);
-    font-size: .5rem;
-    margin-top: 20px;
-    padding-bottom: 20px;
-    padding-top: 20px;
+    
+   top: 160px;
 }
 
 li a{
@@ -1062,6 +1052,7 @@ h3 {
     padding: 0;
     top: 2px;
     position: relative;
+    z-index: 12;
 }
 
 a#adobe-link, a#adobe-link-2, a#adobe-link-3 {
@@ -1490,5 +1481,6 @@ div.box {
   position: relative;
   top: 150px;
 }
+
 
 }
