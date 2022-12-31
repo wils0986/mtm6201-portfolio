@@ -470,7 +470,6 @@ div.video {
 }
 
 .shapes {
-    top: 50px;
     position: relative;
     display: flex;
     justify-content: center;
@@ -596,6 +595,8 @@ h2 {
 h3 {
     color: #4F4F4F;
     text-align: center;
+    position: relative;
+    top: 150px;
 }
 
 
@@ -711,6 +712,7 @@ nav {
    left: 75px;
    color: #4f4f4f;
    text-align: left;
+   top: 0px;
 }
 
 #twitter, #instagram, #linked-in, #facebook {
@@ -753,7 +755,7 @@ nav {
     position: relative;
     max-width: 96%;
     margin: 0 auto;
-    
+   
 }
 
 
@@ -761,8 +763,6 @@ nav {
 .copyright {
     position: relative;
     border-top: 1.5px solid rgba(231,117,155,.5);
-    
-   top: 160px;
 }
 
 li a{
@@ -1224,12 +1224,12 @@ div.shapes {
     position: relative;
     display: flex;
     justify-content: center;
-    top: 0px;
+    top: -100px;
 }
 
 .aboutinfo {
     position: relative;
-    top: -100px;
+    top: -200px;
 }
 
 .switch {
@@ -1481,6 +1481,5 @@ div.box {
   position: relative;
   top: 150px;
 }
-
 
 }
