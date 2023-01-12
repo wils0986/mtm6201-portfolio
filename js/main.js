@@ -9,7 +9,7 @@ function myFunction() {
   }
 
  
-  /* Creates typewriter style text on Home page - from Codepen https://codepen.io/hi-im-si/pen/ALgzqo*/
+  /* Creates typewriter style text on Home page from Codepen - https://codepen.io/hi-im-si/pen/ALgzqo*/
   var TxtType = function(el, toRotate, period) {
     this.toRotate = toRotate;
     this.el = el;
@@ -69,7 +69,7 @@ window.onload = function() {
 
 
 
-/* Dark/light mode - from Codepen - https://codepen.io/bheberer/pen/BaNZKmq */
+/* Dark/light mode from Codepen - https://codepen.io/bheberer/pen/BaNZKmq */
 
 const toggleSwitch = document.querySelector('.mytoggle input[type="checkbox"]');
 const currentTheme = localStorage.getItem('theme');
@@ -95,7 +95,7 @@ function switchTheme(e) {
 toggleSwitch.addEventListener('change', switchTheme, false);
 
 
-/* Back to top button - from W3 Schools https://www.w3schools.com/howto/howto_js_scroll_to_top.asp */
+/* Back to top button from W3 Schools - https://www.w3schools.com/howto/howto_js_scroll_to_top.asp */
 // Get the button:
 let mybutton = document.getElementById("myBtn");
 
@@ -116,11 +116,7 @@ function topFunction() {
   document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
 }
 
-
-
-
-
-// Form to send direct message to owner - from Codepen https://codepen.io/tutsplus/pen/ZNWQje //
+// Form to send direct message to owner from Codepen - https://codepen.io/tutsplus/pen/ZNWQje //
 const checkbox = document.querySelector('.my-form input[type="checkbox"]');
 const btns = document.querySelectorAll(".my-form button");
 
