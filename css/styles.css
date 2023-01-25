@@ -492,7 +492,6 @@ div.phone {
     border: none; /* Remove borders */
     outline: none; /* Remove outline */
     background-color:rgba(231, 117, 155, 0.5);; /* Set a background color */
-    color: black; /* Text color */
     cursor: pointer; /* Add a mouse pointer on hover */
     padding-top: 10px;
     border-radius: 50px; /* Rounded */
