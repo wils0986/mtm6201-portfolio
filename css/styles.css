@@ -1211,7 +1211,7 @@ nav#myLinks.mainnav {
 #cat {
     filter: hue-rotate(160deg);
     position: relative;
-    top: -299px;
+    top: -300px;
     left: -400px;
 }
 
@@ -1470,7 +1470,11 @@ div.box {
 }
 
 #yoshi, #loki {
-  width: 33%;
+  width: 28%;
+}
+
+#yoshi:hover, #loki:hover {
+  width: 50%;
 }
 
 .info h3 {
