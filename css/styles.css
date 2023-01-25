@@ -24,7 +24,6 @@ html {
     --bg-color: #f5f5f5;
 }
 
-
 .xdimage {
     max-width: 90%;;
 }
@@ -308,7 +307,7 @@ footer span {
 
 [data-theme="dark"] {
 
-    --font-color: #4f4f4f;
+    --font-color: #f5f5f5;
     --bg-color: black;
 }
 
@@ -492,8 +491,8 @@ div.phone {
     z-index: 99; /* Make sure it does not overlap */
     border: none; /* Remove borders */
     outline: none; /* Remove outline */
-    background-color:rgba(231,117,155,.5);; /* Set a background color */
-    color: #4f4f4f; /* Text color */
+    background-color:rgba(231, 117, 155, 0.5);; /* Set a background color */
+    color: #0000; /* Text color */
     cursor: pointer; /* Add a mouse pointer on hover */
     padding-top: 10px;
     border-radius: 50px; /* Rounded */
