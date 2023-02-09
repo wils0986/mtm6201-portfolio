@@ -179,13 +179,14 @@ div.container3 li {
   padding: 15px 0px;
   border: 2px solid #E7759B;
   color: var(--font-color);
-  background: var(--bgFormEls);
+  background: var(--bg-color);
   transition: background-color 0.3s cubic-bezier(0.57, 0.21, 0.69, 1.25),
     transform 0.3s cubic-bezier(0.57, 0.21, 0.69, 1.25);
 }
 
 .my-form textarea {
   height: 170px;
+  background-color: var(--bg-color);
 }
 
 .my-form ::placeholder {
@@ -200,7 +201,7 @@ div.container3 li {
 .my-form button:enabled:hover,
 .my-form button:focus,
 .my-form input[type="checkbox"]:focus + label {
-  background: var(--bgFormElsFocus);
+  background: var(--bg-color);
 }
 
 .my-form select:focus,
@@ -1535,5 +1536,4 @@ div.box {
 #myBtn {
  right: 60px;
 }
-
 }
