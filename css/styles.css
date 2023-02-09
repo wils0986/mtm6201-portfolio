@@ -390,15 +390,14 @@ footer span {
     height: 1.5em;
     width: 1.5em;
     color: #ffbb52;
-    left: -20px;
-    top: -6px;
-    
+    left: -17px;
+    top: -9px;
   }
   
   .sun-icon-wrapper {
     position: absolute;
-    height: 3em;
-    width: 3em;
+    height: 1.5em;
+    width: 1.5em;
     opacity: 1;
     transform: translate(1em, 1em) rotate(15deg);
     transform-origin: 50% 50%;
@@ -415,14 +414,14 @@ footer span {
     height: 1.5em;
     width: 1.5em;
     color: white;
-    left: 3px;
-    top: -7px;
+    left: 0px;
+    top: -4px;
   }
   
   .moon-icon-wrapper {
     position: absolute;
-    height: 3em;
-    width: 3em;
+    height: 1.5em;
+    width: 1.5em;
     opacity: 0;
     transform: translate(5.5em, 1em) rotate(0deg);
     transform-origin: 50% 50%;
@@ -1210,12 +1209,11 @@ nav#myLinks.mainnav {
     }
 
     .skills a {
-        font-size: 2rem;
+        font-size: 1.75rem;
     }
 
     #typewrite {
         font-size: 2.25rem;
-       
         position: relative;
         top: -20px;
     }
@@ -1496,6 +1494,8 @@ div.toggle-slot {
         display: inline;
         top: -200px;
         left: -35px;
+        font-size: 1.25rem;
+  
     }
 
 div.box {
