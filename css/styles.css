@@ -514,6 +514,7 @@ div.phone {
     width: 50px;
     height: 50px;
     opacity: 50%;
+    color: var(--font-color);
   }
   
   #myBtn:hover {
