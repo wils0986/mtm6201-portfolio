@@ -50,6 +50,11 @@ li a {
   color: var(--font-color);
 }
 
+.grey-h3:hover {
+  color: var(--font-color);
+  cursor: default;
+}
+
 .xdimage {
     max-width: 90%;;
 }
@@ -587,7 +592,7 @@ hr {
 /* Contact H1 */
 .mainh1 {
     position: relative;
-    top: 50px;
+    top: -30px;
 }
 
 h1 {
@@ -726,6 +731,10 @@ h5 {
     position: relative;
     top: -20px;
     color: var(--font-color);
+}
+
+h5:hover {
+  color: #E7759B;
 }
 
 h6 {
@@ -1162,9 +1171,7 @@ h5 {
     font-size: 1.25rem;
 }
 
-h5:hover {
-    color: #E7759B;
-}
+
 
 a.xdlink {
     font-size: 1.1rem;
@@ -1600,6 +1607,13 @@ div.box {
   display: flex;
   justify-content: center;
 }
+
+/* Contact H1 */
+.mainh1 {
+  position: relative;
+  top: 50px;
+}
+
 
 
 }
