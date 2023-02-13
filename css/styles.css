@@ -772,6 +772,7 @@ div.photography h3:hover {
 div.photography h5 {
   font-size: 1rem;
   opacity: 50%;
+ 
 }
 
 #ctv-h3 {
@@ -786,12 +787,12 @@ div.photography h5 {
   position: relative;
   top: -5px;
   padding-bottom: 80px;
+  margin-top: 10px;
 }
 
 #ctv-h5 {
   top: 270px;
   opacity: 50%;
-  padding-bottom: 0px;
   font-size: 16px;
 }
 
@@ -839,6 +840,7 @@ h6 {
 #projects {
   position: relative;
   top: -40px;
+  font-size: 1.25rem;
 }
 
 /* styles skip links to be hidden and at the top of page */
@@ -1712,6 +1714,11 @@ div.box {
 #ctv-h5 {
   top: 310px;
  
+}
+
+#projects {
+  position: relative;
+  top: -120px;
 }
 
 }
