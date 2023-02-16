@@ -833,6 +833,10 @@ h6 {
   opacity: 50%;
 }
 
+h6.zoom-img {
+  display: none;
+}
+
 #ctv-h5 {
   top: 300px;
 }
@@ -1267,8 +1271,6 @@ h5 {
     z-index: 12;
     font-size: 1.25rem;
 }
-
-
 
 a.xdlink {
     font-size: 1.1rem;
@@ -1720,6 +1722,10 @@ div.box {
   position: relative;
   top: -120px;
   font-size: 1.5rem;
+}
+
+h6.zoom-img {
+  display: block;
 }
 
 }
