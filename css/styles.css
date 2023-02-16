@@ -327,24 +327,6 @@ div.container3 li {
 }
 
 
-/* FOOTER
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
-footer {
-  font-size: 1rem;
-  text-align: right;
-  backface-visibility: hidden;
-}
-
-footer a {
-  text-decoration: none;
-}
-
-footer span {
-  color: var(--red);
-}
-
-
-
 .photo {
     width: 70%;
     padding-top: 60px;
@@ -1197,8 +1179,6 @@ svg {
         display: none;
     }
     
-    
-
 
     }
   /* Opens up Mobile Nav */
@@ -1214,6 +1194,16 @@ svg {
   }
 .switch.show {
     display: block;
+}
+
+.skills li a {
+  position: relative;
+  top: 200px;
+}
+
+ul.skills {
+position: relative;
+top: -180px;
 }
 
 /* progressive enhancement (tablet to desktop) */
@@ -1354,19 +1344,25 @@ nav#myLinks.mainnav {
         top: 0px;
     }
 
-    .skills a {
-        font-size: 1.75rem;
-    }
-
+ 
     #typewrite {
         font-size: 2rem;
         position: relative;
         top: -20px;
     }
 
-    .skills {
+    .skills a {
+      font-size: 1.75rem;
+  }
+
+    .skills li a, li#dot1, li#dot2, li#dot3, li#dot4 {
         position: relative;
         top: 200px;
+    }
+
+     ul.skills {
+      position: relative;
+      top: -200px;
     }
     
     img.image {
