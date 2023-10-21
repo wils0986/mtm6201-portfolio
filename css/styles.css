@@ -1726,7 +1726,7 @@ h6.zoom-img {
 .Jenny {
   position: relative;
   right: 550px;
-  bottom: -80px;
+  bottom: -60px;
   scale: 100%;
   box-shadow: #242525 10px 10px 15px;
 }
@@ -1745,7 +1745,7 @@ position: relative;
 }
 
 #p1, #p2 {
-font-size: 2rem;
+font-size: 1.65rem;
 }
 
 .about-info {
