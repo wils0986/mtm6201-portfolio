@@ -18,7 +18,7 @@ body {
 }
 
 #about-footer {
-  top: -50px;
+  top: 0px;
   position: relative;
 }
 
@@ -904,19 +904,23 @@ nav {
     position: relative;
 }
 
-#p1 {
-    text-align: left;
-    padding-bottom: 20px;
-    padding-left: 40px;
-    padding-right: 40px;
-    margin: 0;
-}
 
-#p2 {
-    text-align: left;
-    font-size: 1.2rem;
-    padding: 20px;
-}
+
+#p1, #p2 {
+  text-align: left;
+  font-size: 1.3rem;
+  position: relative;
+  top: -550px;
+  padding-left: 40px;
+  }
+
+  .abouth1 {
+    top: -600px;
+  }
+
+  .shapes {
+    top: -550px;
+  }
 
 /* styles the wrapper around content */
 .container {
@@ -1151,6 +1155,14 @@ svg {
 #typewrite-2 {
   position: relative;
   top: -240px;
+}
+
+.Jenny {
+  position: relative;
+  top: 650px;
+  scale: 70%;
+  box-shadow: #242525 10px 10px 15px;
+  opacity: 100%;
 }
 
   /* progressive enhancement (mobile to tablet) */
@@ -1415,7 +1427,7 @@ div.shapes {
     position: relative;
     display: flex;
     justify-content: center;
-    top: 0px;
+    top: -550px;
     right: -430px;
 }
 
@@ -1726,30 +1738,38 @@ h6.zoom-img {
 .Jenny {
   position: relative;
   right: 550px;
-  bottom: -60px;
+  top: 100px;
   scale: 100%;
   box-shadow: #242525 10px 10px 15px;
+  opacity: 100%;
 }
 
 #p1 {
-  text-align: left;
   padding-bottom: 20px;
   padding-left: 900px;
 }
 
 #p2 {
-text-align: left;
 padding-left: 900px;
 margin: 0;
-position: relative;
 }
 
 #p1, #p2 {
+text-align: left;
 font-size: 1.65rem;
+position: relative;
+top: -550px;
 }
 
-.about-info {
-  position: relative;
-  top: -570px;
+#abouth1 {
+position: relative;
+top: -650px;
 }
+
+#about-footer {
+  top: -450px;
+  position: relative;
+}
+
+
 }
