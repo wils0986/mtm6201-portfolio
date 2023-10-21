@@ -913,22 +913,9 @@ nav {
 }
 
 #p2 {
-  text-align: left;
-  padding-left: 40px;
-  padding-right: 40px;
-  padding-bottom: 80px;
-  position: relative;
-  margin: 0;
-}
-
-#p1, #p2 {
-  font-size: 1.5rem;
-}
-
-.Jenny {
-  position: relative;
-  scale: 70%;
-  box-shadow: #242525 10px 10px 15px;
+    text-align: left;
+    font-size: 1.2rem;
+    padding: 20px;
 }
 
 /* styles the wrapper around content */
@@ -1736,33 +1723,4 @@ h6.zoom-img {
   display: block;
 }
 
-.Jenny {
-  position: relative;
-  right: 550px;
-  bottom: -80px;
-  scale: 100%;
-  box-shadow: #242525 10px 10px 15px;
-}
-
-#p1 {
-  text-align: left;
-  padding-bottom: 20px;
-  padding-left: 900px;
-}
-
-#p2 {
-text-align: left;
-padding-left: 900px;
-margin: 0;
-position: relative;
-}
-
-#p1, #p2 {
-font-size: 2rem;
-}
-
-.about-info {
-  position: relative;
-  top: -570px;
-}
 }
