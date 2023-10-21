@@ -12,8 +12,6 @@
 </head>
 <body>
   <a id="top"></a>
-   <!-- All content wrapped for layout -->
-  <div class="container">
      <!-- Skip links for accessibility purposes-->
     <ul class="skip-links">
       <li><a href="#myLinks">Skip to main nav</a></li>
@@ -55,24 +53,23 @@
         <a href="javascript:void(0);" class="icon" onclick="myFunction()"><i class="blobs"></i>
         </a>
       </div>
+      <img src="images/jenny-about.png" alt="a headshot photograph of Jenny Wilson" class="Jenny">
       <!--- Back to top button from W3 Schools https://www.w3schools.com/howto/howto_js_scroll_to_top.asp -->
       <button onclick="topFunction()" id="myBtn" title="Go to top">^</button>
-        <h1>About</h1>
-        <!-- Shapes animation from Lottie - https://lottiefiles.com/123283-shape-animation-->
-        <div class="shapes">
-          <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
-          <lottie-player src="https://assets5.lottiefiles.com/packages/lf20_M6jA5UNDHa.json"  background="transparent"  speed="1"  style="width: 300px; height: 300px;"  loop  autoplay></lottie-player>
-          </div>
         <!-- Main page content -->
-          <div class="aboutinfo">
-            <p id="p1">Hi! My name is Jenny - a Full-time Interactive Media Design student at Algonquin College with skills in UX design, front-end web development, graphic design, videography, and more.</p>
-            <img src="images/jenny-about.png" alt="a photo of Jenny Wilson" id="jenny">
-            <p id="p2">In a world that is ever changing; I believe interactive content is where we are heading and I am so excited to learn and grow with the industry to see what the future has in store for us all.</p>
+        <div class="about-info">
+          <h1>About</h1>
+            <p id="p1">A Full-time Interactive Media Design student at Algonquin College with a broad set of creative skills. My main focus is in UX and web design, videography, and graphic design.</p>
+              <!-- Shapes animation from Lottie - https://lottiefiles.com/123283-shape-animation-->
+            <div class="shapes">
+              <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+              <lottie-player src="https://assets5.lottiefiles.com/packages/lf20_M6jA5UNDHa.json"  background="transparent"  speed="1"  style="width: 300px; height: 300px;"  loop  autoplay></lottie-player>
+              </div>
+            <p id="p2">In a world that is evolving quickly, I believe creating intuitive digital content that is truly curated to users is the goal as a designer. I am excited to learn and grow with the industry to see what the future has in store for us all.</p>
           </div>
-        <footer class="copyright copyright-pink">
+        <footer class="copyright copyright-pink" id="about-footer">
           <h4>&copy; 2023 Jenny Wilson Designs <span id="heart">❤</span>
         </footer>
-    </div>
       <!-- JS link at end of body tag to prevent broken rendering-->
       <script src="js/main.js"></script>
 </body>
