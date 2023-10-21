@@ -1,6 +1,6 @@
 /* applies styles to every element on page, unless over-ridden */
 * {
-    font-family: 'Lato', sans-serif;
+    font-family: 'open-sans', sans-serif;
     text-align: center;
     letter-spacing: 0px;
     font-weight: lighter;
@@ -15,6 +15,11 @@ body {
   color: var(--font-color);
   margin: 1.5rem 0;
   overflow-x: hidden;
+}
+
+#about-footer {
+  top: -50px;
+  position: relative;
 }
 
 :root {
@@ -900,24 +905,37 @@ nav {
 }
 
 #p1 {
-    text-align: right;
-    font-size: 1.2rem;
-    padding: 40px;
+    text-align: left;
+    padding-bottom: 20px;
+    padding-left: 40px;
+    padding-right: 40px;
+    margin: 0;
 }
 
 #p2 {
-    text-align: left;
-    font-size: 1.2rem;
-    padding: 20px;
+  text-align: left;
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-bottom: 80px;
+  position: relative;
+  margin: 0;
+}
+
+#p1, #p2 {
+  font-size: 1.5rem;
+}
+
+.Jenny {
+  position: relative;
+  scale: 70%;
 }
 
 /* styles the wrapper around content */
 .container {
     position: relative;
-    max-width: 96%;
+    max-width: 100%;
     margin: 0 auto;
 }
-
 
 /* styles footer info */
   .copyright {
@@ -1119,6 +1137,7 @@ svg {
 	width: 2em;
 	border-radius: .5em;
 	position: relative;
+  right: 40px;
 }
 
 .blobs::before, .blobs::after {
@@ -1126,7 +1145,7 @@ svg {
 	position: absolute;
 	background: inherit;
 	top: -4em;
-	right: -20px;
+	right: -25px;
 	height: 2.4em;
 	width: 2.4em;
 	border-radius: 50%;
@@ -1269,9 +1288,6 @@ a.xdlink {
     top: 140px;
 }
 
-#p1, #p2 {
-    font-size: 1.5rem;
-}
 
 .skills li {
     font-size: 2.5rem;
@@ -1346,7 +1362,7 @@ nav#myLinks.mainnav {
 
  
     #typewrite {
-        font-size: 2rem;
+        font-size: 1.5rem;
         position: relative;
         top: -20px;
     }
@@ -1407,17 +1423,12 @@ nav#myLinks.mainnav {
     left: -400px;
 }
 
-
 div.shapes {
     position: relative;
     display: flex;
     justify-content: center;
-    top: -100px;
-}
-
-.aboutinfo {
-    position: relative;
-    top: -200px;
+    top: 0px;
+    right: -430px;
 }
 
 .switch {
@@ -1458,7 +1469,6 @@ div.holder {
     padding-bottom: 40px;
   }
 
-
  .info p {
     position: relative;
     font-size: 1.35rem;
@@ -1472,7 +1482,6 @@ div.holder {
     position: relative;
     top: -100px;
 }
-
 
 img#scrnsht-6, img#scrnsht-3, img#scrnsht-5 {
     width: calc(70% + 40px);
@@ -1498,7 +1507,6 @@ img#scrnsht-6, img#scrnsht-3, img#scrnsht-5 {
     margin: 0 auto;
     top: -170px;
 }
-
 
 .toggle-checkbox {
     position: absolute;
@@ -1600,6 +1608,7 @@ div.toggle-slot {
     position: relative;
     top: 10px;
     z-index: 12;
+    right: 20px;
   }
  
  a#xdlink1, a#xdlink2, a#xdlink3 {
@@ -1674,6 +1683,7 @@ div.box {
 
 #myBtn {
  right: 60px;
+ bottom: 20px;
 }
 
 .info .web-p {
@@ -1725,4 +1735,32 @@ h6.zoom-img {
   display: block;
 }
 
+.Jenny {
+  position: relative;
+  right: 550px;
+  bottom: -80px;
+  scale: 100%;
+}
+
+#p1 {
+  text-align: left;
+  padding-bottom: 20px;
+  padding-left: 900px;
+}
+
+#p2 {
+text-align: left;
+padding-left: 900px;
+margin: 0;
+position: relative;
+}
+
+#p1, #p2 {
+font-size: 2rem;
+}
+
+.about-info {
+  position: relative;
+  top: -570px;
+}
 }
