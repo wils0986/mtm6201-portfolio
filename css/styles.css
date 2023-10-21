@@ -928,6 +928,7 @@ nav {
 .Jenny {
   position: relative;
   scale: 70%;
+  box-shadow: #242525 10px 10px 15px;
 }
 
 /* styles the wrapper around content */
@@ -1740,6 +1741,7 @@ h6.zoom-img {
   right: 550px;
   bottom: -80px;
   scale: 100%;
+  box-shadow: #242525 10px 10px 15px;
 }
 
 #p1 {
