@@ -15,6 +15,8 @@ body {
   color: var(--font-color);
   margin: 1.5rem 0;
   overflow-x: hidden;
+  height: 100%;
+  width: 96%;
 }
 
 #about-footer {
@@ -914,14 +916,17 @@ nav {
   padding-left: 40px;
   }
 
-  .abouth1 {
-    top: -600px;
-  }
 
   .shapes {
     top: -550px;
   }
 
+  .about-info{
+    width:96%;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  
 /* styles the wrapper around content */
 .container {
     position: relative;
@@ -1159,8 +1164,8 @@ svg {
 
 .Jenny {
   position: relative;
-  top: 650px;
-  scale: 70%;
+  top: 570px;
+  scale: 60%;
   box-shadow: #242525 10px 10px 15px;
   opacity: 100%;
 }
@@ -1226,7 +1231,7 @@ top: -180px;
 }
 
 /* progressive enhancement (tablet to desktop) */
-@media screen and (min-width: 960px) {
+@media screen and (min-width: 1000px) {
 .mainnav a{
     display: inline-block;
 }
@@ -1369,16 +1374,20 @@ nav#myLinks.mainnav {
 
     .skills a {
       font-size: 1.75rem;
+      
   }
 
     .skills li a, li#dot1, li#dot2, li#dot3, li#dot4 {
         position: relative;
         top: 200px;
+        padding: 0px;
     }
 
      ul.skills {
       position: relative;
       top: -200px;
+      padding-left: 60px;
+      padding-right: 20px;
     }
     
     img.image {
@@ -1428,7 +1437,6 @@ div.shapes {
     display: flex;
     justify-content: center;
     top: -550px;
-    right: -430px;
 }
 
 .switch {
@@ -1737,38 +1745,29 @@ h6.zoom-img {
 
 .Jenny {
   position: relative;
-  right: 550px;
-  top: 100px;
+  top: 20px;
   scale: 100%;
   box-shadow: #242525 10px 10px 15px;
   opacity: 100%;
+  left: 450px;
+ 
 }
 
-#p1 {
-  padding-bottom: 20px;
-  padding-left: 900px;
+.about-text{
+  width: 45%;
+  padding-left: 50px;
 }
 
-#p2 {
-padding-left: 900px;
-margin: 0;
+div.about-text{
+  height: 180px;
 }
 
-#p1, #p2 {
-text-align: left;
-font-size: 1.65rem;
-position: relative;
-top: -550px;
+.about-info{
+  width:96%;
 }
 
-#abouth1 {
-position: relative;
-top: -650px;
-}
-
-#about-footer {
-  top: -450px;
-  position: relative;
+#p1, #p2{
+  font-size: 1.45rem;
 }
 
 }
