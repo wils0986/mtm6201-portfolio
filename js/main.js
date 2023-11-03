@@ -128,6 +128,3 @@ checkbox.addEventListener("change", function() {
 });
 
 
-
-
-

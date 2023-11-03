@@ -19,6 +19,10 @@ body {
   width: 96%;
 }
 
+.truly {
+  font-style: italic;
+}
+
 #about-footer {
   top: 0px;
   position: relative;
@@ -52,6 +56,14 @@ body {
 
 .mainnav a {
   color: var(--font-color);
+}
+
+
+.homeLogo {
+  width: 50px;
+  position: relative;
+  right: 0px;
+  top: 0px;
 }
 
 li a {
@@ -367,12 +379,12 @@ div.container3 li {
   
   .toggle-button {
     position: relative;
-    top: -11px;
-    right: 54px;
+    top: -9px;
+    right: 56px;
     transform: translate(3em, .875em);
     position: absolute;
-    height: 1.5em;
-    width: 1.5em;
+    height: 1.3em;
+    width: 1.3em;
     border-radius: 50%;
     background-color: #ffeccf;
     box-shadow: inset 0px 0px 0px 0.175em #ffbb52;
@@ -383,9 +395,10 @@ div.container3 li {
     background-color: #485367;
     box-shadow: inset 0px 0px 0px 0.175em #f5f5f5;
     transform: translate(.25em, .875em);
-    left: 0px;
-    height: 1.5em;
-    width: 1.5em;
+    left: 2px;
+    top: -9px;
+    height: 1.3em;
+    width: 1.3em;
   }
   
   .sun-icon {
@@ -393,7 +406,7 @@ div.container3 li {
     height: 1.5em;
     width: 1.5em;
     color: #ffbb52;
-    left: -17px;
+    left: -16px;
     top: -9px;
   }
   
@@ -417,8 +430,8 @@ div.container3 li {
     height: 1.5em;
     width: 1.5em;
     color: white;
-    left: 0px;
-    top: -4px;
+    left: -1px;
+    top: -5px;
   }
   
   .moon-icon-wrapper {
@@ -488,12 +501,15 @@ div.video {
     position: relative;
     display: flex;
     justify-content: center;
+    filter: hue-rotate(300deg) saturate(120%) brightness(110%);
 }
 
 #ringing-phone {
     filter: hue-rotate(110deg) saturate(120%) brightness(140%);
     position: relative;
-    padding-top: 60px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    right: 30px;
 }
 
 div.phone {
@@ -1310,21 +1326,39 @@ nav#myLinks.mainnav {
     position: relative;
     background: none;
     padding-top: 0;
-    top: -10px;
+    top: 0px;
     z-index: 10;
+}
+
+nav#myLinks.mainnav a {
+  margin-left: 40px;
+  margin-right: 40px;
+  padding-bottom: 40px;
 }
 
 .topnav #myLinks a {
     visibility: visible;
     display: inline-flex;
-  
     font-size: 1.5rem;
-    padding-left: 55px;
-    padding-right: 55px;
-    padding-bottom: 40px;
-    padding-top: 0px;
   }
 
+  .home {
+    width: 20%;
+    position: absolute;
+  }
+
+  .homeLogo {
+    width: 100px;
+    position: relative;
+    right: -20px;
+    top: -40px;
+  }
+
+  a.homeLink {
+    padding: 0px;
+    margin: 0px;
+  }
+  
   .topnav #myLinks a:hover {
     color: #E7759B;
   }
@@ -1334,6 +1368,7 @@ nav#myLinks.mainnav {
     border-image-slice: 1;
     border-width: 1px;
     top: -130px;
+    left: 35px;
   }
   .topnav-pink {
     border-image-source: linear-gradient(to right, #E7759B, #ee5186, #ec286a);
@@ -1428,9 +1463,24 @@ nav#myLinks.mainnav {
 #cat {
     filter: hue-rotate(160deg);
     position: relative;
-    top: -300px;
+    top: -200px;
     left: -400px;
 }
+
+#ringing-phone {
+  filter: hue-rotate(110deg) saturate(120%) brightness(140%);
+  position: relative;
+  padding-top: 100px;
+  right: 30px;
+}
+
+div.phone {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  left: 60px;
+}
+
 
 div.shapes {
     position: relative;
@@ -1444,7 +1494,7 @@ div.shapes {
     position: absolute;
     height: 100px;
     right: -45px;
-    top: 0px;
+    top: -10px;
 }
 
 div.video {
@@ -1531,13 +1581,13 @@ div.toggle-slot {
 
   .toggle-slot {
     position: relative;
-    height: 2.01em;
-    width: 4.02em;
+    height: 1.5em;
+    width: 2.7em;
     border-radius: 5em;
     background-color: none;
-    box-shadow: 0px 2.5px 6.25px #e4e7ec8f;
+    box-shadow: 2px 1.4px 6.25px #e4e7ec85;
     transition: background-color 250ms;
-  }
+    }
   
   .toggle-checkbox:checked ~ .toggle-slot {
     background-color: #110707;
@@ -1546,11 +1596,11 @@ div.toggle-slot {
   .toggle-button {
     position: relative;
     top: -15px;
-    right: 80px;
+    right: 77px;
     transform: translate(3em, .875em);
     position: absolute;
-    height: 1.5em;
-    width: 1.5em;
+    height: 1em;
+    width: 1em;
     border-radius: 50%;
     background-color: #ffeccf;
     box-shadow: inset 0px 0px 0px 0.105em #ffbb52;
@@ -1561,16 +1611,19 @@ div.toggle-slot {
     background-color: #485367;
     box-shadow: inset 0px 0px 0px 0.105em white;
     transform: translate(.25em, .875em);
-    left: 3px;
+    left: 0px;
+    top: -15px;
+    height: 1em;
+    width: 1em;
   }
   
   .sun-icon {
     position: absolute;
-    height: 1.675em;
-    width: 1.675em;
+    height: 1.2em;
+    width: 1.2em;
     color: #ffbb52;
-    left: -27px;
-    top: -10px;
+    left: -30px;
+    top: -8px;
   }
   
   .sun-icon-wrapper {
@@ -1590,11 +1643,11 @@ div.toggle-slot {
   
   .moon-icon {
     position: absolute;
-    height: 1.675em;
-    width: 1.675em;
+    height: 1.2em;
+    width: 1.2em;
     color: white;
-    left: 10px;
-    top: -10px;
+    left: -5px;
+    top: -17px;
   }
   
   .moon-icon-wrapper {
