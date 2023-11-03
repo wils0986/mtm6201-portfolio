@@ -1471,7 +1471,7 @@ nav#myLinks.mainnav a {
   filter: hue-rotate(110deg) saturate(120%) brightness(140%);
   position: relative;
   padding-top: 100px;
-  right: 30px;
+  right: 25px;
 }
 
 div.phone {
