@@ -1325,7 +1325,7 @@ nav#myLinks.mainnav {
     position: relative;
     background: none;
     padding-top: 0;
-    top: 0px;
+    top: -20px;
     z-index: 10;
 }
 
@@ -1350,7 +1350,7 @@ nav#myLinks.mainnav a {
     width: 100px;
     position: relative;
     right: -20px;
-    top: -40px;
+    top: -20px;
   }
 
   a.homeLink {
@@ -1492,8 +1492,8 @@ div.shapes {
     display: block;
     position: absolute;
     height: 100px;
-    right: -45px;
-    top: -10px;
+    right: 70px;
+    top: 0px;
 }
 
 div.video {
