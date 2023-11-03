@@ -509,14 +509,13 @@ div.video {
     position: relative;
     padding-top: 30px;
     padding-bottom: 30px;
-    right: 30px;
 }
 
 div.phone {
     position: relative;
     display: flex;
     justify-content: center;
-    left: 60px;
+    left: 40px;
 }
 
 #myBtn {
@@ -1181,7 +1180,7 @@ svg {
 .Jenny {
   position: relative;
   top: 570px;
-  scale: 60%;
+  scale: 40%;
   box-shadow: #242525 10px 10px 15px;
   opacity: 100%;
 }
@@ -1471,14 +1470,14 @@ nav#myLinks.mainnav a {
   filter: hue-rotate(110deg) saturate(120%) brightness(140%);
   position: relative;
   padding-top: 100px;
-  right: 25px;
+  padding-bottom: 0px;
 }
 
 div.phone {
   position: relative;
   display: flex;
   justify-content: center;
-  left: 60px;
+  left: 40px;
 }
 
 
@@ -1799,7 +1798,7 @@ h6.zoom-img {
 .Jenny {
   position: relative;
   top: 20px;
-  scale: 100%;
+  scale: 80%;
   box-shadow: #242525 10px 10px 15px;
   opacity: 100%;
   left: 450px;
