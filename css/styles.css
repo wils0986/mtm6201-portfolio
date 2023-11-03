@@ -29,7 +29,6 @@ body {
 }
 
 :root {
-
     --lightgrey: #b3b3b3;
     --grey: #4f4f4f;
     --white: #FAF9F6;
@@ -37,21 +36,16 @@ body {
     --borderFormEls: (0, 0%, 10%);
     --bgFormEls: (0, 0%, 14%);
     --bgFormElsFocus: (0, 7%, 20%);
-  
 }
 
 [data-theme="dark"] {
-
   --font-color: #FAF9F6;
   --bg-color: #110707;
-  
 }
 
 [data-theme="light"] {
-
   --font-color: #110707;
   --bg-color: #FAF9F6;
-  
 }
 
 .mainnav a {
