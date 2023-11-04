@@ -953,6 +953,10 @@ nav {
   }
   .copyright-pink {
     border-image-source: linear-gradient(to right, #E7759B, #ee5186, #ec286a);
+    position: relative;
+    left: 40px;
+    top: 10px;
+    padding-bottom: 10px;
   }
   
 
@@ -1027,6 +1031,8 @@ a:focus{
 
 .typewrite {
    color: var(--font-color);
+   position: relative;
+   top: 40px;
 }
 
 .typewrite:hover {
