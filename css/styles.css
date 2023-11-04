@@ -1351,10 +1351,10 @@ nav#myLinks.mainnav a {
     width: 100px;
     position: relative;
     right: -20px;
-    top: -20px;
+    top: -50px;
   }
 
-  a.homeLink {
+  a.image {
     padding: 0px;
     margin: 0px;
   }
