@@ -14,10 +14,8 @@ body {
   background-color: var(--bg-color);
   color: var(--font-color);
   margin: 1.5rem 0;
-  overflow-x: hidden;
   height: 100%;
-  width: 96%;
-  overflow-x: hidden;
+  width: 92%;
 }
 
 .truly {
