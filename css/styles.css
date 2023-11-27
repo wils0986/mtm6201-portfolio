@@ -15,7 +15,7 @@ body {
   color: var(--font-color);
   margin: 1.5rem 0;
   height: 100%;
-  width: 92%;
+  width: 100%;
 }
 
 .truly {
@@ -1274,8 +1274,8 @@ svg {
 
 .Jenny {
   position: relative;
-  top: 650px;
-  left: -60px;
+  top: 750px;
+  left: -100px;
   scale: 40%;
   box-shadow: #242525 10px 10px 15px;
   opacity: 100%;
@@ -2030,7 +2030,7 @@ h7 {
 
 #about-footer {
   position: relative;
-  top: 600px;
+  top: 700px;
 }
 
 #aboutHR {
