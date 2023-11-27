@@ -51,7 +51,12 @@ body {
   width: 70px;
   position: relative;
   right: 0px;
-  top: -30px;
+  top: 0px;
+}
+
+a.image {
+  position: relative;
+  top: -10px;
 }
 
 #aboutHR {
@@ -1454,7 +1459,7 @@ nav#myLinks.mainnav a {
     width: 100px;
     position: relative;
     right: -20px;
-    top: -40px;
+    top: -10px;
   }
 
   a.image {
