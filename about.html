@@ -8,7 +8,8 @@
     <script src="https://code.iconify.design/1/1.0.4/iconify.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/styles.css">
-    <title>Jenny's Portfolio Website</title>
+    <title>jennywilsondesigns.com</title>
+    <link rel="icon" type="image/x-icon" href="/images/jw-designs-logo-edited.png">
 </head>
 <body>
   <a id="top"></a>
@@ -24,7 +25,14 @@
         <nav role="navigation" id="myLinks" class="mainnav">
           <div class="home"><a class="image" href="index.html"><img src="images/jw-designs-logo-edited.png" alt="a circular logo with the initials 'JW' on it" class="homeLogo"></a></div>
           <a href="about.html">About</a>
-          <a href="portfolio.html">Portfolio</a>
+          <div class="dropdown">
+            <a href="portfolio.html"><button class="dropbtn">Portfolio</button></a>
+            <div class="dropdown-content">
+              <a href="portfolio.html#ux">UX Design</a>
+              <a href="portfolio.html#video">Videography</a>
+              <a href="portfolio.html#graphic">Graphic Design</a>
+            </div>
+          </div>
           <a href="contact.html">Contact</a>
           <a class="switch">
           <!--- Dark/light mode toggle from Codepen - https://codepen.io/bheberer/pen/BaNZKmq --> 
@@ -44,11 +52,7 @@
             </div>
             </a>
         </nav>
-       <!-- Cat animation for Desktop version Nav from Lottie - https://lottiefiles.com/78625-le-petit-chat-cat-noir -->
-        <div class="cat">
-          <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
-        <lottie-player src="https://assets9.lottiefiles.com/packages/lf20_8y3kzptg.json" id="cat" mode="bounce" background="transparent"  speed=".5"  style="width: 200px; height: 200px;" loop  autoplay></lottie-player>
-        </div>
+        
         <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
         <a href="javascript:void(0);" class="icon" onclick="myFunction()"><i class="blobs"></i>
         </a>
@@ -59,18 +63,44 @@
         <div class="about-info">
           <h1>About</h1>
           <img src="images/jenny-about.png" alt="a headshot photograph of Jenny Wilson" class="Jenny">
+          <hr>
           <div class="about-text">
-            <p id="p1">A full-time Interactive Media Design student at Algonquin College and a part-time Project Officer at NRCan with a broad set of creative skills, focused on UX and web design, videography, graphic design, and continuous learning.</p>
+            <p id="p1">A full-time Interactive Media Design student at Algonquin College and a part-time Project Officer at Natural Resources Canada with a broad set of creative skills, focused on UX design, graphic design, videography, and continuous learning.</p>
               <!-- Shapes animation from Lottie - https://lottiefiles.com/123283-shape-animation-->
             <div class="shapes">
               <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
               <lottie-player src="https://assets5.lottiefiles.com/packages/lf20_M6jA5UNDHa.json"  background="transparent"  speed="1"  style="width: 300px; height: 300px;"  loop  autoplay></lottie-player>
               </div>
             <p id="p2">In a world that is evolving quickly, I believe in designing intuitive digital content that is <span class="truly">truly</span> curated for users. I am excited to learn and grow with the industry to see what the future has in store for us all.</p>
+            <div class="process">
+              <div class="container">
+              <h2>My Process</h2>
+              <img src="images/uxdd.png" alt="the double diamond design process model" id="process">
+              <h7>UX Double Diamond Design Process Model.</h7>
+              <ul class="uxDesign">
+                <li>Discover</li>
+                <li>·</li>
+                <li>Define</li>
+                <li>·</li>
+                <li>Design</li>
+                <li>·</li>
+                <li>Prototype</li>
+                <li>·</li>
+                <li>Test</li>
+                <li>·</li>
+                <li>Develop</li>
+              </ul>
+            </div>
+            </div>
         </div>
       </div>
         <footer class="copyright copyright-pink" id="about-footer">
-          <h4>&copy; 2023 Jenny Wilson Designs <span id="heart">❤</span>
+          <h4>&copy; Copyright jennywilsondesigns.com. All Rights Reserved <span id="heart">❤</span>
+            <a href="https://www.linkedin.com/in/jenny-wilson-sewell/" target="blank"><i class="fa-brands fa-linkedin"></a></i></a>
+            <a href="/images/jennyCV.pdf" download id="CV"><i class="fa-solid fa-file-arrow-down"></i>
+              <h8>Download my CV</h8>
+              <img src="/images/jennyCV.pdf" alt="">
+            </a>
         </footer>
       <!-- JS link at end of body tag to prevent broken rendering-->
       <script src="js/main.js"></script>

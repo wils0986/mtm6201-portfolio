@@ -8,7 +8,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://code.iconify.design/1/1.0.4/iconify.min.js"></script>
     <link rel="stylesheet" href="css/styles.css">
-    <title>Jenny's Portfolio Website</title>
+    <title>jennywilsondesigns.com</title>
+    <link rel="icon" type="image/x-icon" href="/images/jw-designs-logo-edited.png">
 </head>
 <body>
   <a id="top"></a>
@@ -26,7 +27,14 @@
         <nav role="navigation" id="myLinks" class="mainnav">
           <div class="home"><a class="image" href="index.html"><img src="images/jw-designs-logo-edited.png" alt="a circular logo with the initials 'JW' on it" class="homeLogo"></a></div>
           <a href="about.html">About</a>
-          <a href="portfolio.html">Portfolio</a>
+          <div class="dropdown">
+            <a href="portfolio.html"><button class="dropbtn">Portfolio</button></a>
+            <div class="dropdown-content">
+              <a href="portfolio.html#ux">UX Design</a>
+              <a href="portfolio.html#video">Videography</a>
+              <a href="portfolio.html#graphic">Graphic Design</a>
+            </div>
+          </div>
           <a href="contact.html">Contact</a>
           <a class="switch">
           <!--- Dark/light mode toggle from Codepen - https://codepen.io/bheberer/pen/BaNZKmq --> 
@@ -46,11 +54,7 @@
             </div>
             </a>
         </nav>
-       <!-- Cat animation for Desktop version Nav from Lottie - https://lottiefiles.com/78625-le-petit-chat-cat-noir -->
-        <div class="cat">
-          <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
-        <lottie-player src="https://assets9.lottiefiles.com/packages/lf20_8y3kzptg.json" id="cat" mode="bounce" background="transparent"  speed=".5"  style="width: 200px; height: 200px;" loop  autoplay></lottie-player>
-        </div>
+      
         <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
         <a href="javascript:void(0);" class="icon" onclick="myFunction()"><i class="blobs" id="hamburger"></i>
         </a>
@@ -84,7 +88,7 @@
                     </li> 
                     <li>
                       <input type="checkbox" id="terms">
-                      <label for="terms">I have read and agreed with <a href="https://www.termsfeed.com/live/ea3ea464-7e69-4a59-b13c-49ccd2a0b791" target="blank" id="conditions">the terms and conditions.</a></label>
+                      <label for="terms">I have read and agreed with <a href="https://www.termsfeed.com/live/4f6e69e9-abf6-49ec-b70c-6417614a7d36" target="blank" id="conditions">the terms and conditions.</a></label>
                     </li>    
                     <li>
                       <div class="grid grid-3">
@@ -109,7 +113,12 @@
            </main>
           </div>
             <footer class="copyright copyright-pink">
-              <h4>&copy; 2023 Jenny Wilson Designs <span id="heart">❤</span>
+              <h4>&copy; Copyright jennywilsondesigns.com. All Rights Reserved <span id="heart">❤</span>
+                <a href="https://www.linkedin.com/in/jenny-wilson-sewell/" target="blank"><i class="fa-brands fa-linkedin"></a></i></a>
+                <a href="/images/jennyCV.pdf" download id="CV"><i class="fa-solid fa-file-arrow-down"></i>
+                  <h8>Download my CV</h8>
+                  <img src="/images/jennyCV.pdf" alt="">
+                </a>
             </footer>
         </div>
       <!-- JS link at end of body tag to prevent broken rendering-->

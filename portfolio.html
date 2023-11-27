@@ -8,7 +8,8 @@
     <script src="https://code.iconify.design/1/1.0.4/iconify.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/styles.css">
-    <title>Jenny's Portfolio Website</title>
+    <title>jennywilsondesigns.com</title>
+    <link rel="icon" type="image/x-icon" href="/images/jw-designs-logo-edited.png">
 </head>
 <body>
   <a id="top"></a>
@@ -26,7 +27,14 @@
         <nav role="navigation" id="myLinks" class="mainnav">
           <div class="home"><a class="image" href="index.html"><img src="images/jw-designs-logo-edited.png" alt="a circular logo with the initials 'JW' on it" class="homeLogo"></a></div>
           <a href="about.html">About</a>
-          <a href="portfolio.html">Portfolio</a>
+          <div class="dropdown">
+            <a href="portfolio.html"><button class="dropbtn">Portfolio</button></a>
+            <div class="dropdown-content">
+              <a href="portfolio.html#ux">UX Design</a>
+              <a href="portfolio.html#video">Videography</a>
+              <a href="portfolio.html#graphic">Graphic Design</a>
+            </div>
+          </div>
           <a href="contact.html">Contact</a>
           <a class="switch">
           <!--- Dark/light mode toggle from Codepen - https://codepen.io/bheberer/pen/BaNZKmq --> 
@@ -46,19 +54,12 @@
             </div>
             </a>
         </nav>
-        <!-- Cat animation for Desktop version Nav from Lottie - https://lottiefiles.com/78625-le-petit-chat-cat-noir -->
-        <div class="cat">
-          <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
-        <lottie-player src="https://assets9.lottiefiles.com/packages/lf20_8y3kzptg.json" id="cat" mode="bounce" background="transparent"  speed=".5"  style="width: 200px; height: 200px;" loop  autoplay></lottie-player>
-        </div>
         <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
         <a href="javascript:void(0);" class="icon" onclick="myFunction()"><i class="blobs"></i>
         </a>
       </div>
       <!--- Back to top button from W3 Schools - https://www.w3schools.com/howto/howto_js_scroll_to_top.asp -->
       <button onclick="topFunction()" id="myBtn" title="Go to top">^</button>
-
-
         <h1>Portfolio</h1>
     <!-- Desk animation from Codepen - https://codepen.io/luishodesign/pen/VwaawWd -->
         <div class="desk">
@@ -111,79 +112,105 @@
         </div>
         <h3 id="projects">Check out some of my favorite projects below!</h3>
     <!--------- Portfolio content --------->
-        <!-- UX Design -->
-        <div class="uxdesign">
-          <h2 id="ux">UX Design</h2>
-          <div class="holder">
-            <div class="info">
-              <h3 id="rainbow">Movie Theatre Mobile App Design - Rainbow Cinemas</h3>
-              <p>This project required the redesign of a mobile application for an existing movie theatre company. I chose "Rainbow Cinemas", and I created the app from the ground up, as they only have a very basic desktop version website.</p> <a href="https://www.rainbowcinemas.ca/A/?theatre=Cobourg&" target="blank" id="xdlink1">Link to original site &UpperRightArrow;</a>
-            </div>
-          <a href="https://xd.adobe.com/view/f4daf868-3093-4cc4-bacb-7cc9af342962-a189/" target="_blank">
-           <img src="images/mobile-app-design.jpg" alt="a screenshot of a mobile app" class= "xdimage">
-           <h5>Adobe XD Project Link</h5></a>
-          </div>
-          <div class="holder">
-            <div class="info">
-              <h3 id="amethyst">Website Redesign Desktop Version - Amethyst</h3>
-              <p>This project required the redesign of a an existing retail company. I chose "Amethyst", and I recreated the website making it easier to navigate by changing the user flow, mainly the e-commerce section.</p><a href="https://amethystonline.ca/" target=blank id="xdlink2">Link to original site &UpperRightArrow;</a>
-            </div>
-            <a href="https://xd.adobe.com/view/60326748-3133-408d-b69f-7433d9f8d9ff-3561/" target="_blank">
-             <img src="images/amethyst-desktop.jpg" alt="a screenshot of a website redesign - desktop version" class="xdimage">
-            <h5>Adobe XD Project Link</h5></a>
-        </div>  
-        <div class="holder">
-          <div class="info">
-            <h3 id="amethyst-2">Website Redesign Mobile Version - Amethyst</h3>
-            <p>This project also required the redesign to be fully responsive between mobile, tablet, and desktop versions. I also changed the colour palette to improve the contrast of the typography and the background.</p><a href="https://amethystonline.ca/" target="blank" id="xdlink3">Link to original site &UpperRightArrow;</a>
-          </div>
-          <a href="https://xd.adobe.com/view/52e586da-c5f0-4372-aee4-227882b753e9-07b6/" target="_blank">
-           <img src="images/amethyst-mobile.jpg" alt="a screenshot of a website redesign - mobile version" class="xdimage">
-          <h5>Adobe XD Project Link</h5></a>
-        </div>
-      </div>
     <br>
     <hr>
     <br>
-    <!-- Web Design -->
-          <h2 id="web">Web Design</h2>
-          <div class="holder">
-            <div class="info">
-              <h3 id="threestar">Website Mockup - Three Star Media</h3>
-              <p class="web-p">This project required a responsive HTML/CSS based website, exactly replicating the mockup image I was given. To achieve this, I used CSS grid to create a seamless layout for all versions. </p>
-            </div>
-            <div class="imgwrapper">
-             <a href="https://wils0986.github.io/final-project/" target="blank">
-             <img src="images/127.0.0.1_5500_index.html(2).jpg" alt="a screenshot of a website redesign for Three Star Media" id="scrnsht-1">
-             <h5>Link to Website &UpperRightArrow;</h5></a> 
-          </div>
-        </div>
-      <br>
-      <br>
+    <!-- UX Design -->
+    <div class="uxdesign">
+      <h2 id="ux">UX Design</h2>
       <div class="holder">
         <div class="info">
-          <h3 id="lonestar">Website Mockup - Lone Starfish</h3>
-          <p class="web-p">This project required a responsive HTML/CSS based website, exactly replicating the mockup image I was given. To achieve this layout, I used a 'wrapper' to contain the content vertically on the page.</p>
+          <h3 id="atlas">Atlas of Canada Home Page</h3>
+          <p>This project required the redesign of the Home page for the Atlas of Canada. Holding focus groups and workshops has allowed for a clear vision of the way forward, keeping our target audience centered. By adding visual elements to the website, users are guided to the content they are looking for. I designed this mockup to increase engagement and improve SEO, while adhering to both the Federal Identity Program design standards and WCAG guidelines. </p> <a href="https://natural-resources.canada.ca/maps-tools-and-publications/maps/atlas-canada/10784?_gl=1*1wm1hw1*_ga*MjAwMjA4Njk1NC4xNzAxMDEyNDkw*_ga_C2N57Y7DX5*MTcwMTAxMjQ4OS4xLjAuMTcwMTAxMjQ4OS4wLjAuMA.." target="blank" id="xdlink1">Link to website &UpperRightArrow;</a>
         </div>
-        <div class="imgwrapper">
-         <a href="https://wils0986.github.io/midterm/" target="blank">
-         <img src="images/127.0.0.1_5500_index.html(3).jpg" alt="a screenshot of a website redesign for Lone Starfish" id="scrnsht-2">
-         <h5>Link to Website &UpperRightArrow;</h5></a> 
+        <h4 id="atlasOld">Current page</h4>
+      <img src="images/atlasOld.png" alt="a screenshot of the old version of GEO.ca In the News page" id= "oldPage">
+      <h6 class="zoom-img">Mouse over to zoom in</h6>
+      <h4 id="atlasNew">Proposed page Mock-up</h4>
+       <img src="images/Atlas Home EN.png" alt="a screenshot of a mockup for the new GEO.ca News page" id= "newPage">  
+       <h6 class="zoom-img">Mouse over to zoom in</h6>
       </div>
     </div>
-  <br>
-  <hr>
-  <br> 
+  </div>
+<br>
+<hr>
+<br>
+     <!-- Videography -->
+<h2 id="video">Videography</h2>  
+<div class="video">
+      <div class="holder">
+       <div class="info">
+        <h3 id="foley">GEO.ca Product Demo Video</h3>
+         <p>This project required that I create a short video demonstrating the journey of a user navigating the website to find data and add it to a map. I was responsible for creating the storyboard and user journey for the video, featuring the HRDEM Mosiac & 2020 Land Cover datasets. I used Adobe Premiere Pro to achieve this result.</p>
+       </div>
+       <div class="imgwrapper">
+        <a class="swap">
+           <a class="swap">
+            <a href="https://youtu.be/rslSAwO29rM" target="_blank"><img src="images/geo.caMarketingVideoEN.png" alt="GEO.ca Marketing video thumbnail" class="videoimg">
+               <h5>Link to Video</h5>
+               </a>
+             </div>
+          </div>
+          <div class="holder">
+            <div class="info">
+              <h3 id="story">Geo Week 2023 Promotional Video</h3>
+             <p>This project required that I create a short marketing video to highlight GEO.ca for Geo Week 2023. I was responsible for creating the storyboard, and I used Adobe Premiere Pro to achieve this result.</p>
+           </div>
+           <div class="imgwrapper">
+             <a class="swap">
+               <a class="swap">
+                  <a href="https://youtu.be/On8mGx8Puwc" target="blank">
+                   <img src="images/geoWeek.png" alt="a Geo Week 2023 video thumbnail" class="videoimg">
+                   <h5>Link to Video</h5>
+                   </a>
+                  </div>
+          <div class="holder">
+            <div class="info">
+               <h3 id="interview">Algonquin College Interview Project</h3>
+               <p>This project required that I create a two minute or less interview style film. I created the script, storyboard, and shotlist. I shot the footage and recorded the audio, using Adobe Premiere Pro and Adobe Audition for post-production.</p>
+             </div>
+            <div class="imgwrapper">
+              <a class="swap">
+                <a class="swap">
+                   <a href="https://youtu.be/FKxG28Op_CI" target="_blank">
+                     <img src="images/interview.jpg" alt="an interview assignment video thumbnail" class="videoimg">
+                     <h5>Link to Video</h5>
+                     </a>
+                    </div>
+                 </div>
+              </div>
+            </div>  
+            <br>
+            <hr>
+            <br>  
   <!-- Graphic Design -->
   <h2 id="graphic">Graphic Design</h2> 
   <div class="holder">
     <div class="info">
+      <h3 id="geoPoster">GEO.ca Poster</h3>
+      <p>This project required an infographic poster to highlight GEO.ca's data themes. Using separate English and French QR codes allows to track and analyze user engagement and interactions separately based on language preferences.</p>
+    </div>
+    <div class="imgwrapper">
+     <img src="images/geoPosterEN-FR.png" alt="an infographic featuring GEO.ca's data themes and QR codes in both English and French" id="geoPosterImg">
+     <h6 class="zoom-img">Mouse over to zoom in</h6>
+  </div>
+  <div class="holder">
+    <div class="info">
+      <h3 id="ccmeoPlacemat">CCMEO Placemat</h3>
+      <p>This project required an infographic placemat to demonstrate the key priorities, workflow, divisions, mission, and vision of the CCMEO. I used Adobe Illustrator to achieve this result.</p>
+    </div>
+    <div class="imgwrapper">
+     <img src="images/ccmeoPlacematV2.png" alt="an placemat with an infographic featuring CCMEO's divisions, key priorities, mission, vision, and workflow" id="ccmeoPlacematImg">
+     <h6 class="zoom-img">Mouse over to zoom in</h6>
+  </div>
+  </div>
+  <div class="info">
      <h3 id="astro">Sci-fi Poster</h3>
       <p>This project required a science fiction themed poster with bleed, inspired by movie posters from the 1960s. To achieve this, I used Adobe Photoshop.</p>
     </div>
-    <h6 class="zoom-img">Mouse over to zoom in</h6>
     <div class="imgwrapper">
      <img src="images/astro-yosh-2.png" alt="a science fiction poster of my cat Yoshi" id="yoshi">
+     <h6 class="zoom-img">Mouse over to zoom in</h6>
   </div>
 </div>
 <div class="holder">
@@ -198,8 +225,8 @@
 </div>
 <div class="holder">
   <div class="info">
-    <h3 id="joaquin">Joaquin Joker Recreation</h3>
-    <p>This project required manually Vectorizing a Raster image to replicate it exctly. To achieve this, I used Adobe Illustrator and miticulously created each shape needed to create the image.</p>
+    <h3 id="joaquin">Joaquin Joker Raster to Vector</h3>
+    <p>This project required manually vectorizing a raster image to replicate it exctly. To achieve this, I used Adobe Illustrator and miticulously drew each shape needed to recreate the image.</p>
   </div>
   <h6>Mouse over to see original image</h6>
   <div class="imgwrapper">
@@ -207,7 +234,7 @@
       <img src="images/joker-vector_adobe_express.svg" 
        id="joker" alt="a recreated vector image of the joker from the batman series">
      <img src="images/joker-raster.jpg" 
-        id="joker2" alt="original 'vector' image of the joker from the batman series">
+        id="joker2" alt="original raster image of the joker from the batman series">
       </a>  
 </div>
 </div>
@@ -230,91 +257,16 @@
 <br>
 <br> 
 <br>
-<hr>
 <br>
- <!-- Video Production -->
-<h2 id="video">Video Production</h2>  
-<div class="video">
-      <div class="holder">
-       <div class="info">
-        <h3 id="foley">Foley Sound Project</h3>
-         <p>This project required that I create a one minute film using all foley sound for the audio component. I did all of the post-production for this film using Adobe Premiere Pro and Adobe Audition.</p>
-       </div>
-       <div class="imgwrapper">
-        <a class="swap">
-           <a class="swap">
-            <a href="https://youtu.be/_aM7J8JZOEI" target="_blank"><img src="images/foley.jpg" alt="a foley sound assignment video thumbnail" class="videoimg">
-               <h5>Link to Video</h5>
-               </a>
-             </div>
-          </div>
-          <div class="holder">
-            <div class="info">
-               <h3 id="interview">Interview Project</h3>
-               <p>This project required that I create a two minute or less interview style film. I did all of the post-production for this film using Adobe Premiere Pro and Adobe Audition.</p>
-             </div>
-            <div class="imgwrapper">
-              <a class="swap">
-                <a class="swap">
-                   <a href="https://youtu.be/FKxG28Op_CI" target="_blank">
-                     <img src="images/interview.jpg" alt="an interview assignment video video thumbnail" class="videoimg">
-                     <h5>Link to Video</h5>
-                     </a>
-                    </div>
-                 </div>
-          <div class="holder">
-            <div class="info">
-              <h3 id="story">Storytelling Project</h3>
-             <p>This project required that I create a three minute or less film that tells a fun story with music, credits, and quality audio/video. I did all of the post-production for this film using Adobe Premiere Pro and Adobe Audition.</p>
-           </div>
-           <div class="imgwrapper">
-             <a class="swap">
-               <a class="swap">
-                  <a href="https://youtu.be/WDjVk-QIok4" target="blank">
-                   <img src="images/story.jpg" alt="a storytelling assignment video thumbnail" class="videoimg">
-                   <h5>Link to Video</h5>
-                   </a>
-                  </div>
-                </div>
-               <div class="holder">
-               <div class="info">
-                 <h3 id="vlog">Vlog Project</h3>
-                 <p>This project required that I create a three minute or less vlog style film. I did all of the post-production for this film using Adobe Premiere Pro and Adobe Audition.</p>
-               </div>
-               <div class="imgwrapper">
-                 <a class="swap">
-                  <a class="swap">
-                     <a href="https://youtu.be/3ep5YlE9V94" target="blank">
-                       <img src="images/vlog.jpg" type="video/mp4" alt="a vlog assignment video thumbnail" class="videoimg">
-                       <h5>Link to Video</h5>
-                      </a>
-                    </div>
-                 </div>
     </div>
-      <!-- Photography -->
-      <h5 id="ctv-h5">Link to CTV News &UpperRightArrow;</h5>
-      <h2 id="photography">Photography</h2>
-      <div class="photography">
-        <h3 id="ctv-h3">CTV News Photos of the Day <br> October 2022</h3>
-        <a href="https://ottawa.ctvnews.ca/photo-galleries/photos-of-the-day/photos-of-the-day-october-2022-1.6094159" target="blank"> <img src="images/leaves.JPG" alt="a photo of colourful fall leaves" class="photo" id="leaves"></a>
-        <h3 id="strawberry">Strawberry - Close Focus</h3>
-        <img src="images/Wilson-Sewell_J_1.JPG" alt="a macro photo of a strawberry" class="photo">
-        <h3 id="raspberry">Raspberry - Close Focus</h3>
-        <img src="images/Wilson-Sewell_J_2.JPG" alt="a macro photo of a raspberry" class="photo">
-        <h3 id="grape">Grape - Close Focus</h3>
-        <img src="images/Wilson-Sewell_J_3.JPG" alt="a macro photo of a grape" class="photo">
-        <h3 id="blueberry">Blueberry - Close Focus</h3>
-        <img src="images/Wilson-Sewell_J_4.JPG" alt="a macro photo of a blueberry" class="photo">
-        <h3 id="yosh">Yoshi - Storytelling</h3>
-        <img src="images/Wilson-Sewell_J_5.JPG" alt="a photo of my cat Yoshi's face and paw on a back-lit keyboard" class="photo">
-        <h3 id="azalea">Baby Azalea - Portrait</h3>
-        <img src="images/Wilson-Sewell_J_Portrait.JPG" alt="a portrait of a smiling baby girl" class="photo">
-        <br>
-        <br>
-        <br>
     </div>
     <footer class="copyright copyright-pink">
-      <h4>&copy; 2023 Jenny Wilson Designs <span id="heart">❤</span>
+      <h4>&copy; Copyright jennywilsondesigns.com. All Rights Reserved <span id="heart">❤</span>
+        <a href="https://www.linkedin.com/in/jenny-wilson-sewell/" target="blank"><i class="fa-brands fa-linkedin"></a></i></a>
+        <a href="/images/jennyCV.pdf" download id="CV"><i class="fa-solid fa-file-arrow-down"></i>
+          <h8>Download my CV</h8>
+          <img src="/images/jennyCV.pdf" alt="">
+        </a>
     </footer>
     <!-- JS link at end of body tag to prevent broken rendering-->
     <script src="js/main.js"></script>

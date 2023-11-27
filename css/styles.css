@@ -23,14 +23,14 @@ body {
 }
 
 #about-footer {
-  top: 0px;
+  top: 750px;
   position: relative;
 }
 
 :root {
     --lightgrey: #b3b3b3;
     --grey: #4f4f4f;
-    --white: #FAF9F6;
+    --white: #FFFFFF;
     --red: #E7759B;
     --borderFormEls: (0, 0%, 10%);
     --bgFormEls: (0, 0%, 14%);
@@ -38,13 +38,13 @@ body {
 }
 
 [data-theme="dark"] {
-  --font-color: #FAF9F6;
+  --font-color: #FFFFFF;
   --bg-color: #110707;
 }
 
 [data-theme="light"] {
   --font-color: #110707;
-  --bg-color: #FAF9F6;
+  --bg-color: #FFFFFF;
 }
 
 .mainnav a {
@@ -53,10 +53,71 @@ body {
 
 
 .homeLogo {
-  width: 50px;
+  width: 70px;
   position: relative;
   right: 0px;
-  top: 0px;
+  top: -30px;
+}
+
+
+/* Dropdown Button */
+.dropbtn {
+  background-color: var(--bg-color);
+  color: var(--font-color);
+  padding: 16px;
+  font-size: 1.5rem;
+  border: none;
+  z-index: 111;
+  position: relative;
+  left: 15px;
+}
+
+.dropbtn:hover {
+  color: #E7759B;
+}
+
+/* Container to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: var(--bg-color);
+  border-radius: 180px;
+  min-width: 160px;
+  z-index: 111;
+  left: 0px;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: var(--font-color);
+  text-decoration: none;
+  display: block;
+  position: relative;
+  justify-content: center;
+  padding: 0px;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+  background-color: var(--bg-color);
+  border-radius: 85px;
+
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {
+  background-color: var(--bg-color);
 }
 
 li a {
@@ -71,6 +132,29 @@ li a {
 .xdimage {
     max-width: 90%;;
 }
+
+#newPage, #oldPage, #geoPosterImg, #ccmeoPlacematImg {
+  width: 60%;
+}
+
+.process {
+  width: 97%;
+}
+
+  h7 {
+    font-style: italic;
+    font-size: .90rem;
+    position: relative;
+    left: -225px;
+    opacity: 60%;
+  }
+
+.uxDesign li {
+  display: inline;
+}
+
+
+
 
 .swap img:last-child{
     display:none
@@ -95,7 +179,7 @@ li a {
 
 #fox-jag {
  padding-top: 40px;
- width: 70%;
+ width: 50%;
 }
 
 a.swap {
@@ -114,6 +198,7 @@ a.swap {
     top: 0;
     left: 0;
     font-size: 18px;
+    font-family: 'bahnschrift', 'open sans', sans-serif;
 }
 
 input,
@@ -207,6 +292,7 @@ div.container3 li {
   background: var(--bg-color);
   transition: background-color 0.3s cubic-bezier(0.57, 0.21, 0.69, 1.25),
     transform 0.3s cubic-bezier(0.57, 0.21, 0.69, 1.25);
+    font-family: 'bahnschrift', 'open sans', sans-serif;
 }
 
 .my-form textarea {
@@ -279,6 +365,7 @@ div.container3 li {
   display: inline-block;
   width: 100%;
   transition: transform 0.4s ease-in-out;
+  font-family: 'bahnschrift', 'open sans', sans-serif;
 }
 
 .my-form button .back {
@@ -311,6 +398,7 @@ div.container3 li {
   display: inline-block;
   padding-left: 2rem;
   transition: 0.3s cubic-bezier(0.57, 0.21, 0.69, 1.25);
+  font-family: 'bahnschrift', 'open sans', sans-serif;
 }
 
 .my-form input[type="checkbox"] + label::before,
@@ -367,7 +455,6 @@ div.container3 li {
   
   .toggle-checkbox:checked ~ .toggle-slot {
     background-color: #242526;
-    top: -25px;
   }
   
   .toggle-button {
@@ -490,6 +577,14 @@ div.video {
  
 }
 
+#newPage, #oldPage, #geoPosterImg, #ccmeoPlacematImg, #yoshi, #loki, #joker, #joker2, #hybrid {
+  box-shadow: 0px 2.5px 6.25px #4f4f4f;
+}
+
+#fox-jag {
+  box-shadow: 0px 2.5px 0px #838383;
+}
+
 .shapes {
     position: relative;
     display: flex;
@@ -519,14 +614,14 @@ div.phone {
     z-index: 99; /* Make sure it does not overlap */
     border: none; /* Remove borders */
     outline: none; /* Remove outline */
-    background-color: transparent; /* Set a background color */
+    background-color: #e7759b81; /* Set a background color */
     cursor: pointer; /* Add a mouse pointer on hover */
     padding-top: 10px;
     border-radius: 50px; /* Rounded */
     font-size: 2rem; /* Increase font size */
     width: 50px;
     height: 50px;
-    color: var(--font-color)
+    color: var(--font-color);
   }
   
   #myBtn:hover {
@@ -540,8 +635,9 @@ div.phone {
 
 hr {
     position: relative;
-    border: 1px solid #E7759B;
+    border: .5px solid #E7759B;
     top: 60px;
+    left: 60px;
 }
 
 .skills li {
@@ -600,7 +696,7 @@ h1 {
     position: relative;
     margin-top: 0px;
     top: -30px;
-    font-weight: lighter;
+    font-family: 'lato', 'open sans', sans-serif;
 }
 
 h2 {
@@ -621,40 +717,44 @@ h3#astro, h3#lok, h3#joaquin, h3#foxy {
   top: 180px;
 }
 
-#rainbow {
-  background: -webkit-linear-gradient(left, red, orange, green, mediumpurple);
+#atlas {
+  background: -webkit-linear-gradient(left, red, red, rgb(33, 99, 175), rgb(42, 130, 245));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-weight: bold;
- 
+  padding: 0px;
+  font-family: 'bahnschrift', 'open sans', sans-serif;font-size: 1.75rem;
 }
 
-#amethyst, #amethyst-2 {
-  background: -webkit-linear-gradient(left, mediumpurple, violet);
+#geoPoster {
+  background: -webkit-linear-gradient(left, red, mediumpurple, rgb(0, 102, 255));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-weight: bold;
+  padding: 0px;
+  font-family: 'bahnschrift', 'open sans', sans-serif;
+  font-size: 1.75rem;
 }
 
-#threestar {
-  background: -webkit-linear-gradient(left, #88640a, #C68D00, #C58711);
+#ccmeoPlacemat {
+  background: -webkit-linear-gradient(left, rgb(238, 90, 218), rgb(188, 88, 247), rgb(50, 108, 126), mediumpurple);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-weight: bold;
-}
-
-#lonestar {
-  background: -webkit-linear-gradient(left, #707070, #538682, #AAD4D0);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  font-weight: bold;
+  padding: 0px;
+  font-family: 'bahnschrift', 'open sans', sans-serif;
+  font-size: 1.75rem;
 }
 
 #astro {
-  background: -webkit-linear-gradient(left, #F31C2B, #C58711);
+  background: -webkit-linear-gradient(left, red, #f3ae2f);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-weight: bold;
+  padding-bottom: 0px;
+  padding-top: 60px;
+  font-family: 'bahnschrift', 'open sans', sans-serif;
+  font-size: 1.75rem;
 }
 
 #lok {
@@ -662,6 +762,8 @@ h3#astro, h3#lok, h3#joaquin, h3#foxy {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-weight: bold;
+  font-family: 'bahnschrift', 'open sans', sans-serif;
+  font-size: 1.75rem;
 }
 
 #joaquin {
@@ -669,6 +771,8 @@ h3#astro, h3#lok, h3#joaquin, h3#foxy {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-weight: bold;
+  font-family: 'bahnschrift', 'open sans', sans-serif;
+  font-size: 1.75rem;
 }
 
 #foxy {
@@ -676,20 +780,28 @@ h3#astro, h3#lok, h3#joaquin, h3#foxy {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-weight: bold;
+  font-family: 'bahnschrift', 'open sans', sans-serif;
+  font-size: 1.75rem;
 }
 
 #story {
-  background: -webkit-linear-gradient(left, #2f6f70, #58657e, #707070);
+  background: -webkit-linear-gradient(left, #3f9294, #7486a7, #4c73f5);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-weight: bold;
+  padding: 0px;
+  font-family: 'bahnschrift', 'open sans', sans-serif;
+  font-size: 1.75rem;
 }
 
 #foley {
-  background: -webkit-linear-gradient(left, #FE0063, #C68D00, #2CFFC8, #00E3EA);
+  background: -webkit-linear-gradient(left, #189ef7, #03703a, green);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-weight: bold;
+  padding: 0px;
+  font-family: 'bahnschrift', 'open sans', sans-serif;
+  font-size: 1.75rem;
 }
 
 #interview {
@@ -697,88 +809,9 @@ h3#astro, h3#lok, h3#joaquin, h3#foxy {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-weight: bold;
-}
-
-#vlog {
-  background: -webkit-linear-gradient(left, #81a4e6, #538682);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  font-weight: bold;
-}
-
-#ctv-h3 {
-  background: -webkit-linear-gradient(left, #e45716, #C68D00, #C2985D);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  font-weight: bold;
-}
-
-#strawberry {
-  background: -webkit-linear-gradient(left, #b40202, #fe0000, #3ca433, #90b340);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  font-weight: bold;
-}
-
-#raspberry {
-  background: -webkit-linear-gradient(left, #960404, #da5c5c, #f59e9e);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  font-weight: bold;
-}
-
-#grape {
-  background: -webkit-linear-gradient(left, #7c4d67, #a3565c, #d3a72f, #dfb646);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  font-weight: bold;
-}
-
-#blueberry {
-  background: -webkit-linear-gradient(left, #635D67, #89858E, #9B98A1);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  font-weight: bold;
-}
-
-#yosh {
-  background: -webkit-linear-gradient(left, #308828, #397434, #50c246, #75d36c);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  font-weight: bold;
-}
-
-#azalea {
-  background: -webkit-linear-gradient(left, #723d4d, #9A6781, #a484ad, #b689a1);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  font-weight: bold;
-}
-
-
-div.photography h3 {
-  top: 50px;
-}
-
-
-div.photography h3:hover {
-  color: var(--font-color);
-  cursor: default;
-}
-
-
-div.photography h5 {
-  font-size: 1rem;
-  opacity: 50%;
- 
-}
-
-#ctv-h3 {
-  top: 30px;
-}
-
-#photography {
-  padding-bottom: 80px;
+  padding: 0px;
+  font-family: 'bahnschrift', 'open sans', sans-serif;
+  font-size: 1.75rem;
 }
 
 .photo {
@@ -786,12 +819,6 @@ div.photography h5 {
   top: -5px;
   padding-bottom: 80px;
   margin-top: 10px;
-}
-
-#ctv-h5 {
-  top: 270px;
-  opacity: 50%;
-  font-size: 16px;
 }
 
 a h3 {
@@ -809,6 +836,7 @@ h4 {
     margin-bottom: 5px;
     font-size: 1rem;
     opacity: 70%;
+    font-family: 'bahnschrift', 'open sans', sans-serif;
    
 }
 
@@ -818,6 +846,7 @@ h5 {
     top: -20px;
     color: var(--font-color);
     opacity: 50%;
+    font-family: 'bahnschrift', 'open sans', sans-serif;
 }
 
 h5:hover {
@@ -870,7 +899,6 @@ h6.zoom-img {
 /* styles navigation */
 nav {
     background-color: none;
-   
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -914,7 +942,49 @@ nav {
     position: relative;
 }
 
+#CV {
+  color: var(--font-color);
+  position: relative;
+  top: -40px;
+  font-family: 'bahnschrift'
+  }
+  
+  #CV:hover {
+    color: #E7759B;
+    }
+    
 
+  .fa-file-arrow-down{
+    font-size: 1.5rem;
+    position: relative;
+    top: 38px;
+    left: 20px;
+    color: var(--font-color);
+  }
+  
+  .fa-file-arrow-down:hover {
+   color: #E7759B;
+  }
+
+  h8 {
+    position: relative;
+    top: 40px;
+    left: 20px;
+    font-size: .75rem;
+  }
+
+  .fa-linkedin {
+    font-size: 1.5rem;
+    position: relative;
+    padding: 10px;
+    left: 20px;
+    top: 0px;
+    color: var(--font-color);
+  }
+  
+  .fa-linkedin:hover {
+   color: #E7759B;
+  }
 
 #p1, #p2 {
   text-align: left;
@@ -952,9 +1022,13 @@ nav {
   .copyright-pink {
     border-image-source: linear-gradient(to right, #E7759B, #ee5186, #ec286a);
     position: relative;
-    left: 40px;
+    left: 30px;
     top: 10px;
     padding-bottom: 10px;
+  }
+
+  footer h4 {
+    font-size: .85rem;
   }
   
 
@@ -981,8 +1055,8 @@ li {
   .topnav a {
     padding: 14px 16px;
     text-decoration: none;
-    font-size: 17px;
     display: block;
+    font-family: 'lato', 'open sans', sans-serif;
   }
   
   /* Style the hamburger menu */
@@ -1054,7 +1128,6 @@ a:focus{
      max-width: 40%;
      position: relative;
      top: 30px;
-     z-index: 3;
 }
 
 .image:hover {
@@ -1253,15 +1326,14 @@ top: -180px;
 h1 {
     position: relative;
     top: -100px;
-    
     font-size: 2.5rem;
 }
 
 h2 {
     position: relative;
     top: 0px;
-    
-    font-size: 2.25rem;
+    font-size: 2rem;
+    font-family: 'lato', 'open sans', sans-serif;
 }
 
 h3 {
@@ -1272,7 +1344,7 @@ h3 {
     z-index: 12;
 }
 
-h3#astro, h3#lok, h3#joaquin, h3#foxy {
+h3#astro, h3#lok, h3#joaquin, h3#foxy, h3#geoPoster {
   font-size: 1.75rem;
   top: 150px;
 }
@@ -1315,6 +1387,22 @@ a.xdlink {
     list-style-type: none;
 }
 
+.uxDesign li {
+  font-size: 1.5rem;
+  display: inline;
+  position: relative;
+  list-style-type: none;
+  font-family: 'bahnschrift', 'open sans', sans-serif;
+}
+
+.uxDesign {
+  width: 2000px;
+  position: relative;
+  left: -430px;
+  top: 20px;
+}
+
+
 /* Hides hamburger menu and displays full horizontal navigation */
 .blobs {
     display: none;
@@ -1329,15 +1417,15 @@ nav#myLinks.mainnav {
 }
 
 nav#myLinks.mainnav a {
-  margin-left: 40px;
-  margin-right: 40px;
+  margin-left: 60px;
+  margin-right: 60px;
   padding-bottom: 40px;
 }
 
 .topnav #myLinks a {
     visibility: visible;
     display: inline-flex;
-    font-size: 1.5rem;
+    font-size: 1.25rem;
   }
 
   .home {
@@ -1349,7 +1437,7 @@ nav#myLinks.mainnav a {
     width: 100px;
     position: relative;
     right: -20px;
-    top: -50px;
+    top: -40px;
   }
 
   a.image {
@@ -1414,6 +1502,7 @@ nav#myLinks.mainnav a {
         position: relative;
         top: 200px;
         padding: 0px;
+        font-family: 'bahnschrift', 'open sans', sans-serif;
     }
 
      ul.skills {
@@ -1447,7 +1536,7 @@ nav#myLinks.mainnav a {
  }
 
  #hybrid {
-    width: 70%;
+    width: 50%;
  }
 
  /* adds cat animatioin to bottom of navigation */
@@ -1536,7 +1625,7 @@ div.holder {
 
 .uxdesign, .webdev {
     position: relative;
-    top: -100px;
+    top: -80px;
 }
 
 img#scrnsht-6, img#scrnsht-3, img#scrnsht-5 {
@@ -1548,8 +1637,8 @@ img#scrnsht-6, img#scrnsht-3, img#scrnsht-5 {
 #ux {
     position: relative;
     padding-bottom: 20px;
-    top: 100px;
     margin-left: 20px;
+    top: 100px;
 }
 
 
@@ -1574,7 +1663,7 @@ img#scrnsht-6, img#scrnsht-3, img#scrnsht-5 {
   
 div.toggle-slot {
     position: relative;
-    top: -25px;
+    top: 0px;
 }
 
   .toggle-slot {
@@ -1593,8 +1682,8 @@ div.toggle-slot {
   
   .toggle-button {
     position: relative;
-    top: -15px;
-    right: 77px;
+    top: -13px;
+    right: 65px;
     transform: translate(3em, .875em);
     position: absolute;
     height: 1em;
@@ -1610,7 +1699,7 @@ div.toggle-slot {
     box-shadow: inset 0px 0px 0px 0.105em white;
     transform: translate(.25em, .875em);
     left: 0px;
-    top: -15px;
+    top: -13px;
     height: 1em;
     width: 1em;
   }
@@ -1620,8 +1709,8 @@ div.toggle-slot {
     height: 1.2em;
     width: 1.2em;
     color: #ffbb52;
-    left: -30px;
-    top: -8px;
+    left: -25px;
+    top: -7px;
   }
   
   .sun-icon-wrapper {
@@ -1645,7 +1734,7 @@ div.toggle-slot {
     width: 1.2em;
     color: white;
     left: -5px;
-    top: -17px;
+    top: -15px;
   }
   
   .moon-icon-wrapper {
@@ -1675,7 +1764,8 @@ div.toggle-slot {
     z-index: 12;
     color: var(--font-color);
     opacity: 70%;
-    top: 135px;
+    top: 155px;
+    font-family: 'lato', 'open sans', sans-serif;
   }
 
   .my-form .grid {
@@ -1694,6 +1784,7 @@ div.toggle-slot {
 
   .my-form .grid > *:not(:last-child) {
     margin-bottom: 0;
+    font-family: 'bahnschrift', 'open sans', sans-serif;
   }
 
   .my-form .required-msg {
@@ -1718,21 +1809,29 @@ div.box {
 }
 
 #joker2 {
-    width: 1100px;
+    width: 800px;
     position: relative;
 }
 
 #joker {
   position: relative;
-  width: 1100px;
+  width: 800px;
 }
 
 #yoshi, #loki {
-  width: 28%;
+  width: 40%;
 }
 
-#yoshi:hover, #loki:hover {
+#newPage, #oldPage, #geoPosterImg, #ccmeoPlacematImg {
+  width: 40%;
+}
+
+#yoshi:hover, #loki:hover, #newPage:hover, #oldPage:hover, #geoPosterImg:hover {
   width: 50%;
+}
+
+#ccmeoPlacematImg:hover {
+  width: 70%;
 }
 
 .info h3 {
@@ -1764,6 +1863,7 @@ div.box {
 
 .container3 p, .container3 p a{
   font-size: 1.5rem;
+  font-family: 'bahnschrift', 'open sans', sans-serif;
 }
 
 .desk {
@@ -1788,10 +1888,12 @@ div.box {
   position: relative;
   top: -120px;
   font-size: 1.5rem;
+  font-family: 'bahnschrift', 'open sans', sans-serif;
 }
 
 h6.zoom-img {
   display: block;
+  font-family: 'lato', 'open sans', sans-serif;
 }
 
 .Jenny {
@@ -1819,6 +1921,89 @@ div.about-text{
 
 #p1, #p2{
   font-size: 1.45rem;
+  margin-bottom: 0px;
+  margin-top: 0px;
 }
 
+.process {
+position: relative;
+top: -400px;
+left: 250px;
 }
+
+.process h2 {
+  position: relative;
+  left: -270px;
+  top: -20px;
+}
+
+h7 {
+  font-style: italic;
+  font-size: .90rem;
+  position: relative;
+  left: -225px;
+  opacity: 60%;
+}
+
+/* Dropdown Button */
+.dropbtn {
+  background-color: var(--bg-color);
+  color: var(--font-color);
+  padding: 16px;
+  font-size: 1.25rem;
+  border: none;
+  z-index: 111;
+}
+
+.dropbtn:hover {
+  color: #E7759B;
+}
+
+/* Container to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: var(--bg-color);
+  border-radius: 180px;
+  min-width: 160px;
+  z-index: 111;
+  left: 30px;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: var(--font-color);
+  text-decoration: none;
+  display: block;
+  position: relative;
+  justify-content: center;
+  padding: 0px;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+  background-color: var(--bg-color);
+  border-radius: 85px;
+
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {
+  background-color: var(--bg-color);
+}
+
+
+
+}
+

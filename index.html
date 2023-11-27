@@ -8,7 +8,8 @@
     <script src="https://code.iconify.design/1/1.0.4/iconify.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/styles.css">
-    <title>Jenny's Portfolio Website</title>
+    <title>jennywilsondesigns.com</title>
+    <link rel="icon" type="image/x-icon" href="/images/jw-designs-logo-edited.png">
 </head>
 <body>
   <a id="top"></a>
@@ -26,7 +27,14 @@
         <nav role="navigation" id="myLinks" class="mainnav">
           <div class="home"><a class="image" href="index.html"><img src="images/jw-designs-logo-edited.png" alt="a circular logo with the initials 'JW' on it" class="homeLogo"></a></div>
           <a href="about.html">About</a>
-          <a href="portfolio.html">Portfolio</a>
+          <div class="dropdown">
+            <a href="portfolio.html"><button class="dropbtn">Portfolio</button></a>
+            <div class="dropdown-content">
+              <a href="portfolio.html#ux">UX Design</a>
+              <a href="portfolio.html#video">Videography</a>
+              <a href="portfolio.html#graphic">Graphic Design</a>
+            </div>
+          </div>
           <a href="contact.html">Contact</a>
           <a class="switch">
           <!--- Dark/light mode toggle from Codepen - https://codepen.io/bheberer/pen/BaNZKmq --> 
@@ -57,12 +65,6 @@
       </div>
       <!--- Back to top button from W3 Schools - https://www.w3schools.com/howto/howto_js_scroll_to_top.asp -->
       <button onclick="topFunction()" id="myBtn" title="Go to top">^</button>
-      <!--- Typewriter animation on Home page from Codepen - https://codepen.io/hi-im-si/pen/ALgzqo -->
-      <h1>
-        <a href="" class="typewrite" data-period="2000" data-type='[ "I"m Jenny.", "I am passionate about user-centred design.", "I love telling stories through design.", "I also love cats."]' sid="typewrite">
-          <span class="wrap"></span>
-        </a>
-        </h1>
       <!--- Logo on Home page fading in -->
       <div class="fade-in-image">
         <img src="images/jw-designs-logo-edited.png" alt="a circular logo with the initials 'JW' on it" class="image">
@@ -71,16 +73,16 @@
           <ul class="skills">
               <li><a href="portfolio.html#ux">UX Design</a></li>
               <li id="dot1">·</li>
-              <li><a href="portfolio.html#web">Web Design</a></li>
-              <li id="dot2">·</li>
-              <li><a href="portfolio.html#graphic">Graphic Design</a></li>
+              <li><a href="portfolio.html#video">Videography</a></li>
               <li id="dot3">·</li>
-              <li><a href="portfolio.html#video">Video Production</a></li>
-              <li id="dot4">·</li>
-              <li><a href="portfolio.html#photography">Photography</a></li>
+              <li><a href="portfolio.html#graphic">Graphic Design</a></li>
           </ul>
           <footer class="copyright copyright-pink">
-            <h4>&copy; 2023 Jenny Wilson Designs <span id="heart">❤</span>
+            <h4>&copy; Copyright jennywilsondesigns.com. All Rights Reserved <span id="heart">❤</span>
+              <a href="https://www.linkedin.com/in/jenny-wilson-sewell/" target="blank"><i class="fa-brands fa-linkedin"></a></i></a>
+              <a href="/images/jennyCV.pdf" download id="CV"><i class="fa-solid fa-file-arrow-down"></i> <h8>Download my CV</h8>
+                <img src="/images/jennyCV.pdf" alt="">
+              </a>
           </footer>   
       </div>
           <!-- JS link at end of body tag to prevent broken rendering-->
