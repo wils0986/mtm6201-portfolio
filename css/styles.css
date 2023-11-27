@@ -1274,7 +1274,8 @@ svg {
 
 .Jenny {
   position: relative;
-  top: 570px;
+  top: 650px;
+  left: -60px;
   scale: 40%;
   box-shadow: #242525 10px 10px 15px;
   opacity: 100%;
