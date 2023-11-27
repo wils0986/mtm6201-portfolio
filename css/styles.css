@@ -54,6 +54,12 @@ body {
   top: -30px;
 }
 
+#aboutHR {
+  position: relative;
+  top: -100px;
+  border: .5px solid #E7759B;
+  left: px;
+}
 
 /* Dropdown Button */
 .dropbtn {
@@ -160,9 +166,9 @@ li a {
 .process h2 {
   font-family: 'lato', 'open sans', sans-serif;
   text-align: left;
+  position: relative;
+  top: -20px;
 }
-
-
 
 .container3 {
   width: 90%;
@@ -1035,7 +1041,7 @@ nav {
   .copyright-pink {
     border-image-source: linear-gradient(to right, #E7759B, #ee5186, #ec286a);
     position: relative;
-    left: 30px;
+    left: 20px;
     top: 10px;
     padding-bottom: 10px;
   }
