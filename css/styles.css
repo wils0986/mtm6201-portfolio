@@ -1276,9 +1276,9 @@ svg {
 
 .Jenny {
   position: relative;
-  top: 750px;
-  left: -100px;
-  scale: 40%;
+  top: 650px;
+  left: 0px;
+  scale: 50%;
   box-shadow: #242525 10px 10px 15px;
   opacity: 100%;
 }
@@ -1316,6 +1316,7 @@ svg {
         display: none;
     }
     
+  
 
     }
   /* Opens up Mobile Nav */
@@ -1425,12 +1426,18 @@ a.xdlink {
   width: 800px;
   position: relative;
   top: 200px;
+  left: 150px;
 }
 
 
 /* Hides hamburger menu and displays full horizontal navigation */
 .blobs {
     display: none;
+}
+
+.mainnav {
+  position: relative;
+  left: -10px;
 }
 
 nav#myLinks.mainnav {
@@ -1442,8 +1449,8 @@ nav#myLinks.mainnav {
 }
 
 nav#myLinks.mainnav a {
-  margin-left: 60px;
-  margin-right: 60px;
+  margin-left: 80px;
+  margin-right: 80px;
   padding-bottom: 40px;
 }
 
@@ -1461,8 +1468,8 @@ nav#myLinks.mainnav a {
   .homeLogo {
     width: 100px;
     position: relative;
-    right: -20px;
-    top: -10px;
+    right: 0px;
+    top: 0px;
   }
 
   a.image {
@@ -1481,9 +1488,7 @@ nav#myLinks.mainnav a {
     top: -130px;
     left: 35px;
   }
-  .topnav-pink {
-    border-image-source: linear-gradient(to right, #E7759B, #ee5186, #ec286a);
-  }
+ 
   
 /* LoVe HAte (link, vistited, hover, active) -  correct order for link states */
     a:link{
@@ -1570,6 +1575,7 @@ nav#myLinks.mainnav a {
     display: flex;
     justify-content: center; 
     height: 0px;
+    left: -150px;
 }
 
 #cat {
@@ -1683,6 +1689,7 @@ img#scrnsht-6, img#scrnsht-3, img#scrnsht-5 {
 div.toggle-slot {
     position: relative;
     top: 0px;
+    left: 95px;
 }
 
   .toggle-slot {
@@ -1935,7 +1942,7 @@ div.about-text{
 }
 
 .about-info{
-  width:96%;
+  width: 97%;
 }
 
 #p1, #p2{
@@ -2032,7 +2039,7 @@ h7 {
 
 #about-footer {
   position: relative;
-  top: 700px;
+  top: 750px;
 }
 
 #aboutHR {
@@ -2047,4 +2054,18 @@ hr {
   left: 80px;
   top: 60px;
 }
+
+.copyright-pink {
+  border-image-source: linear-gradient(to right, #E7759B, #ee5186, #ec286a);
+  position: relative;
+  left: 0px;
+  top: 10px;
+  padding-bottom: 10px;
+}
+
+.topnav-pink {
+  border-image-source: linear-gradient(to right, #E7759B, #ee5186, #ec286a);
+  left: 0px;
+}
+
 }
