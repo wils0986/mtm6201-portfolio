@@ -22,11 +22,6 @@ body {
   font-style: italic;
 }
 
-#about-footer {
-  top: 750px;
-  position: relative;
-}
-
 :root {
     --lightgrey: #b3b3b3;
     --grey: #4f4f4f;
@@ -145,7 +140,6 @@ li a {
     font-style: italic;
     font-size: .90rem;
     position: relative;
-    left: -225px;
     opacity: 60%;
   }
 
@@ -153,8 +147,26 @@ li a {
   display: inline;
 }
 
+#process {
+  width: 100%;
+  height: auto;
+}
+
+.process {
+  position: relative;
+  top: 0px;
+}
+
+.process h2 {
+  font-family: 'lato', 'open sans', sans-serif;
+  text-align: left;
+}
 
 
+
+.container3 {
+  width: 90%;
+}
 
 .swap img:last-child{
     display:none
@@ -636,8 +648,7 @@ div.phone {
 hr {
     position: relative;
     border: .5px solid #E7759B;
-    top: 60px;
-    left: 60px;
+    top: -50px;
 }
 
 .skills li {
@@ -1396,10 +1407,9 @@ a.xdlink {
 }
 
 .uxDesign {
-  width: 2000px;
+  width: 800px;
   position: relative;
-  left: -430px;
-  top: 20px;
+  top: 200px;
 }
 
 
@@ -1623,11 +1633,6 @@ div.holder {
     margin-bottom: 10px;
 }
 
-.uxdesign, .webdev {
-    position: relative;
-    top: -80px;
-}
-
 img#scrnsht-6, img#scrnsht-3, img#scrnsht-5 {
     width: calc(70% + 40px);
     position: relative;
@@ -1640,7 +1645,6 @@ img#scrnsht-6, img#scrnsht-3, img#scrnsht-5 {
     margin-left: 20px;
     top: 100px;
 }
-
 
 #jenny {
     width: 30%;
@@ -1903,7 +1907,7 @@ h6.zoom-img {
   box-shadow: #242525 10px 10px 15px;
   opacity: 100%;
   left: 450px;
- 
+
 }
 
 .about-text{
@@ -1925,24 +1929,15 @@ div.about-text{
   margin-top: 0px;
 }
 
-.process {
-position: relative;
-top: -400px;
-left: 250px;
-}
 
-.process h2 {
-  position: relative;
-  left: -270px;
-  top: -20px;
-}
 
 h7 {
   font-style: italic;
   font-size: .90rem;
   position: relative;
-  left: -225px;
   opacity: 60%;
+  top: 160px;
+  
 }
 
 /* Dropdown Button */
@@ -2003,7 +1998,43 @@ h7 {
   background-color: var(--bg-color);
 }
 
+#process {
+  width: 150%;
+  height: auto;
+  position: relative;
+  top: 150px;
+}
+
+.process {
+  position: relative;
+  top: -480px;
+}
+
+.process h2 {
+  position: relative;
+  top: 100px;
+}
+
+#about-footer {
+  position: relative;
+  top: 600px;
+}
+
+#aboutHR {
+  position: relative;
+  top: -520px;
+  border: .5px solid #E7759B;
+  left: 35px;
+}
+
+hr {
+  position: relative;
+  left: 80px;
+  top: 60px;
+}
 
 
 }
+
+
 
