@@ -587,6 +587,7 @@ div.container3 li {
     margin-bottom: 10px;
     width: 100%;
     height: auto;
+  
 }
 
 div.video {
@@ -1016,7 +1017,7 @@ nav {
   font-size: 1.3rem;
   position: relative;
   top: -550px;
-  padding-left: 40px;
+  padding: 20px;
   }
 
   .shapes {
