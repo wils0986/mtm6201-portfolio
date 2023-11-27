@@ -573,6 +573,8 @@ div.container3 li {
     padding: 5px;
     margin-top: 0px;
     margin-bottom: 10px;
+    width: 100%;
+    height: auto;
 }
 
 div.video {
@@ -648,7 +650,7 @@ div.phone {
 hr {
     position: relative;
     border: .5px solid #E7759B;
-    top: -50px;
+    top: 50px;
 }
 
 .skills li {
