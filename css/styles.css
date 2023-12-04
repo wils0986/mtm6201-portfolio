@@ -1821,7 +1821,6 @@ top: -155px;
   margin: 0 auto;
   padding: 0 1.5rem;
   position: relative;
-  left: -40px;
 }
 
 .container3 p, .container3 p a{
@@ -1972,6 +1971,7 @@ h7 {
 .process {
   position: relative;
   top: -480px;
+  padding-left: 100px;
 }
 
 .process h2 {
