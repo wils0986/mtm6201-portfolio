@@ -59,18 +59,12 @@
       <!--- Back to top button from W3 Schools https://www.w3schools.com/howto/howto_js_scroll_to_top.asp -->
       <button onclick="topFunction()" id="myBtn" title="Go to top">^</button>
         <!-- Main page content -->
+        <div class="container">
         <div class="about-info">
           <h1>About</h1>
-          <img src="images/jenny-about.png" alt="a headshot photograph of Jenny Wilson" class="Jenny">
           <div class="about-text">
-            <p id="p1">A full-time Interactive Media Design student at Algonquin College and a part-time Project Officer at Natural Resources Canada with a broad set of creative skills focused on UX design, graphic design, videography, and continuous learning.</p>
-              <!-- Shapes animation from Lottie - https://lottiefiles.com/123283-shape-animation-->
-            <div class="shapes">
-              <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
-              <lottie-player src="https://assets5.lottiefiles.com/packages/lf20_M6jA5UNDHa.json"  background="transparent"  speed="1"  style="width: 300px; height: 300px;"  loop  autoplay></lottie-player>
-              </div>
-            <p id="p2">In a world that is evolving quickly, I believe in designing intuitive digital content that is <span class="truly">truly</span> curated for users. Walking the fine line between art and function, I'm excited to continue growing with the industry to see what the future has in store for us all.</p>
-            <hr id="aboutHR">
+            <p id="p1">A full-time Interactive Media Design student at Algonquin College and a part-time Project Officer at Natural Resources Canada with a broad set of creative skills. Focused on user-centric design and advocating for the end-user, I championin their needs throughout the design process.<br><br>By embracing empathy, creativity, and a commitment to continuous improvement, my goal is to shape products and services that not only meet business objectives but, more importantly, enrich the lives of the individuals who interact with them. Walking the fine line between art and function, I'm excited to continue growing with the industry to see what the future has in store for us all.</p>
+            <img src="images/jenny-about.png" alt="a headshot photograph of Jenny Wilson" class="Jenny">
             <div class="process">
               <div class="container3">
               <h2>My Process</h2>
@@ -93,7 +87,7 @@
             </div>
         </div>
       </div>
-        <footer class="copyright copyright-pink" id="about-footer">
+        <footer id="about-footer" class="copyright copyright-pink">
           <h4>&copy; Copyright jennywilsondesigns.com. All Rights Reserved <span id="heart">❤</span>
             <a href="https://www.linkedin.com/in/jenny-wilson-sewell/" target="blank"><i class="fa-brands fa-linkedin"></a></i></a>
             <a href="/images/jennyCV.pdf" download id="CV"><i class="fa-solid fa-file-arrow-down"></i>
@@ -101,6 +95,7 @@
               <img src="/images/jennyCV.pdf" alt="">
             </a>
         </footer>
+      </div>
       <!-- JS link at end of body tag to prevent broken rendering-->
       <script src="js/main.js"></script>
 </body>
