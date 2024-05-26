@@ -22,11 +22,11 @@
     <div class="topnav topnav-pink">
         <a href=#></a>
         <!-- Navigation links (hidden by default) -->
-        <nav role="navigation" id="myLinks" class="mainnav">
+        <nav id="myLinks" class="mainnav">
           <div class="home"><a class="image" href="index.html"><img src="images/jw-designs-logo-edited.png" alt="a circular logo with the initials 'JW' on it" class="homeLogo"></a></div>
           <a href="about.html">About</a>
           <div class="dropdown">
-            <a href="#"><button class="dropbtn">Portfolio</button></a>
+            <a href="#"><div class="dropbtn">Portfolio</div></a>
             <div class="dropdown-content">
               <a href="portfolio.html#ux">UX Design</a>
               <a href="portfolio.html#web">Web Design</a>
@@ -37,8 +37,7 @@
           <a class="switch">
           <!--- Dark/light mode toggle from Codepen - https://codepen.io/bheberer/pen/BaNZKmq --> 
             <div class="mytoggle">
-              <label>
-              <input class='toggle-checkbox' type='checkbox'></input>
+              <div class='toggle-checkbox'></div>
                 <div class='toggle-slot'>
                   <div class='sun-icon-wrapper'>
                     <div class="iconify sun-icon" data-icon="feather-sun" data-inline="false"></div>
@@ -48,7 +47,6 @@
                     <div class="iconify moon-icon" data-icon="feather-moon" data-inline="false"></div>
                   </div>
                 </div>
-              </label>
             </div>
             </a>
         </nav>
@@ -66,14 +64,12 @@
             <p id="p1">Walking the fine line between art and function, I am a recent graduate of the Interactive Media Design program at Algonquin College. I am a full-time Project Officer at Natural Resources Canada, focusing on applying <span class="pink">user-centric design </span>accross CCMEO's web presence.<br><br>Designing with empathy and being committed to continuous improvement enables me to create products and services that meet business objectives and, more importantly, <span class=pink>enrich the lives of the people who use them.</span> Check out a high level of my process below.</p>
             <div class="process">
               <h2>My Design Thinking Process</h2>
-              <img src="images/uxDesignProcess.png" alt="" id="process">
+              <img src="images/uxDesignProcess.png" alt="" id="process">    <h4 class="stanford">5-stage model originally proposed by the Hasso-Plattner Institute of Design at Stanford</h4>
             </div>
-            <h7 class="stanford">5-stage model originally proposed by the Hasso-Plattner Institute of Design at Stanford</h7>
         </div>
       </div>
         <footer id="about-footer" class="copyright copyright-pink">
           <h4>Copyright &copy; 2024 jennywilsondesigns All Rights Reserved<span id="heart">❤</span></h4>
-            </a>
         </footer>
       </div>
       <!-- JS link at end of body tag to prevent broken rendering-->

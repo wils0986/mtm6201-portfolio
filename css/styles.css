@@ -843,8 +843,10 @@ div.about-info {
 }
 
 .stanford {
-  text-align: left;
-  top: 0px;
+  text-align: center;
+  position: relative;
+  top: -20px;
+  font-size: .95rem;
 }
 
   .shapes {
