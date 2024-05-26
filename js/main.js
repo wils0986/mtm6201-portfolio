@@ -56,15 +56,3 @@ function topFunction() {
   document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
 }
 
-// Form to send direct message to owner from Codepen - https://codepen.io/tutsplus/pen/ZNWQje //
-const checkbox = document.querySelector('.my-form input[type="checkbox"]');
-const btns = document.querySelectorAll(".my-form button");
-
-checkbox.addEventListener("change", function() {
-  const checked = this.checked;
-  for (const btn of btns) {
-    checked ? (btn.disabled = false) : (btn.disabled = true);
-  }
-});
-
-

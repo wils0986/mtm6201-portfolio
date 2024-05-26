@@ -7,7 +7,7 @@
 } 
 
 html {
-    padding-top: 90px;
+    padding-top: 100px;
     overflow-x: hidden;
 }
 
@@ -19,6 +19,82 @@ body {
   width: 100%;
 }
 
+.flex {
+  display: flex;
+}
+
+.card-body {
+  padding: 15px 10px;
+}
+
+.card {
+  border: 1px solid gray;
+  margin: 10px;
+  top: -100px;
+  position: relative;
+  border-radius: 10px;
+}
+
+.full-width {
+  width:100%;
+  max-height: 500px;
+  overflow: hidden;
+}
+
+.imgCards {
+  width: 100%;
+  transition: transform ease 300ms;
+}
+
+#products {
+width: 100%;
+height: 0px;
+/*  box-shadow:inset 1px 1px 40px 0 rgba(0,0,0,.45);
+*/
+/* background-size:cover; */
+/* overflow:hidden; */
+display: inline-block;
+z-index: 12;
+position: absolute;
+}
+
+#products a{
+text-decoration: none;
+z-index: 12;
+}
+
+.overlay {
+background-color: var(--bg-color);
+text-align: center;
+padding: 45% 0 45% 0;
+opacity: 0;
+-webkit-transition: opacity .25s ease;
+-moz-transition: opacity .25s ease;
+width: 100%;
+position: relative;
+top: -100px;
+}
+
+.cardP {
+  padding: 20px;
+}
+
+#product:hover .overlay, 
+#products:hover .overlay {
+opacity: 0.9;
+}
+
+.read-article {
+font-size: 2rem;
+color: var(--font-color);
+}
+
+.imgCards:hover {
+  transform: translate(0, -10px);
+  text-align: center;
+  margin: 0 auto;
+}
+
 .truly {
   font-style: italic;
 }
@@ -27,10 +103,15 @@ body {
     --lightgrey: #b3b3b3;
     --grey: #4f4f4f;
     --white: #FFFFFF;
-    --red: #E7759B;
+    --pink: #E7759B;
     --borderFormEls: (0, 0%, 10%);
     --bgFormEls: (0, 0%, 14%);
     --bgFormElsFocus: (0, 7%, 20%);
+    --typewriter-blink-duration: 1s;
+    --typewriter-duration: 5s;
+    --typewriter-color:var(--font-color);
+    --typewriter-spacing: 11px;
+    --typewriter-characters: 26;
 }
 
 [data-theme="dark"] {
@@ -46,7 +127,6 @@ body {
 .mainnav a {
   color: var(--font-color);
 }
-
 
 .homeLogo {
   width: 70px;
@@ -137,10 +217,6 @@ li a {
   width: 60%;
 }
 
-.process {
-  width: 97%;
-}
-
 h7 {
   font-style: italic;
   font-size: .90rem;
@@ -156,25 +232,9 @@ ul.uxDesign {
   padding-top: 20px;
 }
 
-
-#process {
-  width: 100%;
-  height: auto;
-}
-
-.process {
-  position: relative;
-  top: 0px;
-}
-
-.process h2 {
-  text-align: left;
-  position: relative;
-  top: -20px;
-}
-
 .container3 {
   width: 90%;
+  height: 450px;
 }
 
 .swap img:last-child{
@@ -287,161 +347,6 @@ div.container3 li {
 h2 {
     padding: 0;
 }
-
-
-/* FORM ELEMENTS
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
-.my-form h1 {
-  margin-bottom: 1.5rem;
-}
-
-.my-form li,
-.my-form .grid > *:not(:last-child) {
-  margin-bottom: 1.5rem;
-}
-
-.my-form select,
-.my-form input,
-.my-form textarea,
-.my-form button {
-  width: 100%;
-  line-height: 1.5;
-  padding: 15px 0px;
-  border: 2px solid #E7759B;
-  color: var(--font-color);
-  background: var(--bg-color);
-  transition: background-color 0.3s cubic-bezier(0.57, 0.21, 0.69, 1.25),
-    transform 0.3s cubic-bezier(0.57, 0.21, 0.69, 1.25);
-    font-family: 'bahnschrift', 'open sans', sans-serif;
-}
-
-.my-form textarea {
-  height: 170px;
-  background-color: var(--bg-color);
-}
-
-.my-form ::placeholder {
-  color: inherit;
-  /*Fix opacity issue on Firefox*/
-  opacity: 1;
-}
-
-.my-form select:focus,
-.my-form input:focus,
-.my-form textarea:focus,
-.my-form button:enabled:hover,
-.my-form button:focus,
-.my-form input[type="checkbox"]:focus + label {
-  background: var(--bg-color);
-}
-
-.my-form select:focus,
-.my-form input:focus,
-.my-form textarea:focus {
-  transform: scale(1.02);
-}
-
-.my-form *:required,
-.my-form select {
-  background-repeat: no-repeat;
-  background-position: center right 12px;
-  background-size: 15px 15px;
-}
-
-.my-form *:required {
-  background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/162656/asterisk.svg);  
-}
-
-.my-form select {
-  background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/162656/down.svg);
-}
-
-
-
-/* FORM BTNS
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
-.my-form .required-msg {
-  display: none;
-  background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/162656/asterisk.svg)
-    no-repeat center left / 15px 15px;
-  padding-left: 20px;
-}
-
-.my-form .btn-grid {
-  position: relative;
-  overflow: hidden;
-  transition: filter 0.2s;
-}
-
-.my-form button {
-  font-weight: bold;
-}
-
-.my-form button > * {
-  display: inline-block;
-  width: 100%;
-  transition: transform 0.4s ease-in-out;
-  font-family: 'bahnschrift', 'open sans', sans-serif;
-}
-
-.my-form button .back {
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-110%, -50%);
-}
-
-.my-form button:enabled:hover .back,
-.my-form button:focus .back {
-  transform: translate(-50%, -50%);
-}
-
-.my-form button:enabled:hover .front,
-.my-form button:focus .front {
-  transform: translateX(110%);
-}
-
-
-/* CUSTOM CHECKBOX
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
-.my-form input[type="checkbox"] {
-  position: absolute;
-  left: -9999px;
-}
-
-.my-form input[type="checkbox"] + label {
-  position: relative;
-  display: inline-block;
-  padding-left: 2rem;
-  transition: 0.3s cubic-bezier(0.57, 0.21, 0.69, 1.25);
-  font-family: 'bahnschrift', 'open sans', sans-serif;
-}
-
-.my-form input[type="checkbox"] + label::before,
-.my-form input[type="checkbox"] + label::after {
-  content: '';
-  position: absolute;
-}
-
-.my-form input[type="checkbox"] + label::before {
-  left: 0;
-  top: 0px;
-  width: 18px;
-  height: 18px;
-  border: 2px solid var(--red);
-}
-
-
-.my-form input[type="checkbox"]:checked + label::after {
-  left: 7px;
-  top: 0px;
-  width: 6px;
-  height: 14px;
-  border-bottom: 2px solid var(--font-color);
-  border-right: 2px solid var(--font-color);
-  transform: rotate(45deg);
-}
-
 
 .photo {
     width: 70%;
@@ -595,15 +500,14 @@ div.video {
 
 .videoimg {
     max-width: 70%;
-    box-shadow: 0px 3px 8px var(--font-color);
+    box-shadow: 0px 3px 8px var(--lightgrey);
   }
  
 
 
 #newPage, #oldPage, #geoPosterImg, #ccmeoPlacematImg, #yoshi, #loki, #joker, #joker2, #hybrid {
-  box-shadow: 0px 3px 8px var(--font-color);
+  box-shadow: 4px 4px 4px var(--lightgrey);
 }
-
 
 .shapes {
     position: relative;
@@ -629,28 +533,23 @@ div.phone {
 #myBtn {
     display: none; /* Hidden by default */
     position: fixed; /* Fixed/sticky position */
-    bottom: 20px; /* Place the button at the bottom of the page */
+    bottom: 0px; /* Place the button at the bottom of the page */
     right: 30px; /* Place the button 30px from the right */
     z-index: 99; /* Make sure it does not overlap */
     border: none; /* Remove borders */
     outline: none; /* Remove outline */
-    background-color: #e7759b81; /* Set a background color */
+    color: #e7759b81; /* Set a color */
     cursor: pointer; /* Add a mouse pointer on hover */
     padding-top: 10px;
-    border-radius: 50px; /* Rounded */
     font-size: 2rem; /* Increase font size */
     width: 50px;
     height: 50px;
-    color: var(--font-color);
+    background: none;
   }
   
   #myBtn:hover {
     opacity: 100%;
-    background-color: #E7759B; 
-  }
-
-  div.cat{
-    display: none;
+    color: #E7759B; 
   }
 
 hr {
@@ -712,8 +611,9 @@ hr {
 h1 {
     position: relative;
     margin-top: 0px;
-    top: -30px;
+    top: 0px;
     font-family: 'bahnschrift', 'open sans', sans-serif;
+    font-size: 2rem;
 }
 
 h2 {
@@ -847,7 +747,7 @@ nav {
     margin-bottom: 60px;
 }
 
-#dot1, #dot2, #dot3, #dot4 {
+#dot1, #dot2 {
     color: none;
     display: none;
 }
@@ -872,58 +772,80 @@ nav {
   color: var(--font-color);
   position: relative;
   top: -40px;
-  font-family: 'bahnschrift'
+  font-family: 'bahnschrift';
+  font-size: 1/76rem;
   }
   
   #CV:hover {
     color: #E7759B;
     }
     
+    .contact {
+      position: relative;
+      top: 100px;
+    }
+
 
   .fa-file-arrow-down{
-    font-size: 1.5rem;
+    font-size: 2rem;
     position: relative;
-    top: 38px;
     left: 20px;
     color: var(--font-color);
   }
-  
-  .fa-file-arrow-down:hover {
-   color: #E7759B;
-  }
 
-  h8 {
-    position: relative;
-    top: 40px;
-    left: 20px;
-    font-size: .75rem;
+  .fa-file-arrow-down:hover {
+    color: var(--pink);
   }
 
   .fa-linkedin {
-    font-size: 1.5rem;
+    font-size: 2rem;
     position: relative;
-    padding: 10px;
-    left: 20px;
-    top: 0px;
     color: var(--font-color);
+    top: 50px;
+    left: 20px;
   }
   
   .fa-linkedin:hover {
    color: #E7759B;
   }
 
-  
 #p1 {
   text-align: left;
   font-size: 1.3rem;
   position: relative;
-  padding: 20px;
   margin: 0 auto;
-  border: 2px solid #E7759B;
-  padding: 20px;
   width: 70%;
+  top: -50px;
+}
+
+div.about-info {
+  position: relative;
+  top: -0px;
+}
+
+.pink {
+  color: #E7759B;
 }
   
+#process {
+  width: 73%;
+  position: relative;
+  left: 30px;
+}
+
+.process {
+  padding-top: 50px;
+}
+
+.process h2 {
+  padding-bottom: 60px;
+  font-size: 1.75rem;
+}
+
+.stanford {
+  text-align: left;
+  top: 0px;
+}
 
   .shapes {
     top: -550px;
@@ -935,6 +857,13 @@ nav {
     padding-right: 20px;
   }
   
+  #about-footer {
+    position: relative;
+    top: 600px;
+    padding-bottom: 20px;
+    margin-top: 0px;
+  }
+
 /* styles the wrapper around content */
 .container {
     position: relative;
@@ -947,21 +876,21 @@ nav {
     border-top: 10px solid;
     border-image-slice: 1;
     border-width: 1px;
-    top: -130px;
+    top: -10px;
   }
+
   .copyright-pink {
     border-image-source: linear-gradient(to right, #E7759B, #ee5186, #ec286a);
     position: relative;
     left: 10px;
-    top: 10px;
-    padding-bottom: 10px;
+    top: 0px;
   }
 
   footer h4 {
     font-size: .85rem;
+    margin-top: 15px;
   }
   
-
 li a{
     text-decoration: none;
     position: relative;
@@ -1031,17 +960,6 @@ a:focus{
     color: #E7759B;
 }
 
-.typewrite {
-   color: var(--font-color);
-   position: relative;
-   top: 40px;
-}
-
-.typewrite:hover {
-  color: var(--font-color);
-  cursor: default;
-}
-
 .text {
     color: var(--font-color);
     font-size: 3rem;
@@ -1060,12 +978,6 @@ a:focus{
      top: 30px;
 }
 
-.image:hover {
-/* Start the vibrate animation with duration 0.5 seconds */
-   animation: vibrate 0.5s .25s; 
-/* When the animation is finished, start again */
-   animation-iteration-count: infinite;
-}
 
 .desk {
     position: relative;
@@ -1116,34 +1028,6 @@ svg {
     opacity: 0;
     animation: writing 0.5s 2s linear forwards;
   }
-  
-  @keyframes writing {
-    0% { width: 0px; opacity: 1;}
-    100% { width: 14px; opacity: 1;}
-  }
-
-@keyframes vibrate {
-    0% { transform: rotate(0deg); }
-    10% { transform: rotate(-1deg); }
-    20% { transform: rotate(1deg); }
-    30% { transform: rotate(0deg); }
-    40% { transform: rotate(1deg); }
-    50% { transform: rotate(-1deg); }
-    60% { transform: rotate(0deg); }
-    70% { transform: rotate(-1deg); }
-    80% { transform: rotate(1deg); }
-    90% { transform: rotate(0deg); }
-    100% { transform: rotate(-1deg); }
-  }
-
-.fade-in-image {
-    animation: fadeIn 5s ease-in; 
-}
-
-@keyframes fadeIn {
-    0% { opacity: 0; }
-    100% { opacity: 1; }
-  }
 
 .blobs {
 	background: linear-gradient(#E7759B, white);
@@ -1172,19 +1056,6 @@ svg {
 	height: 1em;
 	width: 1em;
 	border-radius: 50%;
-}
-
-#typewrite-2 {
-  position: relative;
-  top: -240px;
-}
-
-.Jenny {
-  position: relative;
-  left: -40px;
-  scale: 65%;
-  box-shadow: #242525 10px 10px 15px;
-  opacity: 100%;
 }
 
   /* progressive enhancement (mobile to tablet) */
@@ -1255,8 +1126,7 @@ top: -180px;
 
 h1 {
     position: relative;
-    top: -100px;
-    font-size: 3rem;
+    top: -150px;
 }
 
 h2 {
@@ -1335,7 +1205,6 @@ a.xdlink {
   left: 205px;
 }
 
-
 /* Hides hamburger menu and displays full horizontal navigation */
 .blobs {
     display: none;
@@ -1350,20 +1219,20 @@ nav#myLinks.mainnav {
     position: relative;
     background: none;
     padding-top: 0;
-    top: -20px;
+    top: -10px;
     z-index: 10;
 }
 
 nav#myLinks.mainnav a {
   margin-left: 80px;
   margin-right: 80px;
-  padding-bottom: 40px;
+  padding-bottom: 10px;
 }
 
 .topnav #myLinks a {
     visibility: visible;
     display: inline-flex;
-    font-size: 1.25rem;
+    font-size: 1rem;
   }
 
   .home {
@@ -1372,10 +1241,10 @@ nav#myLinks.mainnav a {
   }
 
   .homeLogo {
-    width: 100px;
+    width: 60px;
     position: relative;
     right: 0px;
-    top: 0px;
+    top: 20px;
   }
 
   a.image {
@@ -1434,7 +1303,7 @@ nav#myLinks.mainnav a {
       
   }
 
-    .skills li a, li#dot1, li#dot2, li#dot3, li#dot4 {
+    .skills li a, li#dot1, li#dot2 {
         position: relative;
         top: 200px;
         padding: 0px;
@@ -1467,22 +1336,6 @@ nav#myLinks.mainnav a {
         transform: scale(1.5); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
       }
 
-
- /* adds cat animatioin to bottom of navigation */
- div.cat {
-    position: relative;
-    display: flex;
-    justify-content: center; 
-    height: 0px;
-    left: -150px;
-}
-
-#cat {
-    filter: hue-rotate(160deg);
-    position: relative;
-    top: -200px;
-    left: -400px;
-}
 
 #ringing-phone {
   filter: hue-rotate(110deg) saturate(120%) brightness(140%);
@@ -1609,8 +1462,8 @@ div.toggle-slot {
   
   .toggle-button {
     position: relative;
-    top: -13px;
-    right: 65px;
+    top: -11px;
+    right: 52px;
     transform: translate(3em, .875em);
     position: absolute;
     height: 1em;
@@ -1626,7 +1479,7 @@ div.toggle-slot {
     box-shadow: inset 0px 0px 0px 0.105em white;
     transform: translate(.25em, .875em);
     left: 0px;
-    top: -13px;
+    top: -10px;
     height: 1em;
     width: 1em;
   }
@@ -1636,8 +1489,8 @@ div.toggle-slot {
     height: 1.2em;
     width: 1.2em;
     color: #ffbb52;
-    left: -25px;
-    top: -7px;
+    left: -20px;
+    top: -6px;
   }
   
   .sun-icon-wrapper {
@@ -1660,8 +1513,8 @@ div.toggle-slot {
     height: 1.2em;
     width: 1.2em;
     color: white;
-    left: -5px;
-    top: -15px;
+    left: -3px;
+    top: -12px;
   }
   
   .moon-icon-wrapper {
@@ -1685,8 +1538,6 @@ div.toggle-slot {
     z-index: 12;
     right: 20px;
   }
- 
-
 
   .my-form .grid {
     display: grid;
@@ -1711,7 +1562,7 @@ div.toggle-slot {
     display: block;
   }
 
-    #dot1, #dot2, #dot3, #dot4 {
+    #dot1, #dot2 {
         display: inline;
         top: -200px;
         left: -35px;
@@ -1788,7 +1639,7 @@ top: -155px;
 
 #fox-jag {
   width: 50%;
-  box-shadow: 0px 3px 8px var(--font-color);
+  box-shadow: 4px 4px 4px var(--lightgrey);
   float: right;
   margin-left: 80px;
   margin-right: 40px;
@@ -1804,7 +1655,7 @@ top: -155px;
 
 #myBtn {
  right: 60px;
- bottom: 20px;
+ bottom: 80px;
 }
 
 .info .web-p {
@@ -1821,6 +1672,7 @@ top: -155px;
   margin: 0 auto;
   padding: 0 1.5rem;
   position: relative;
+  margin-bottom: 70px;
 }
 
 .container3 p, .container3 p a{
@@ -1864,18 +1716,10 @@ h6.zoom-img {
   font-family: 'lato', 'open sans', sans-serif;
 }
 
-.Jenny {
-  position: relative;
-  scale: 70%;
-  box-shadow: #242525 10px 10px 15px;
-  opacity: 100%;
-  top: -440px;
-  left: 800px;
-}
 
 .about-text{
-  width: 70%;
-  padding-left: 0px;
+  width: 90%;
+  margin: 0 auto;
 }
 
 div.about-text{
@@ -1890,8 +1734,7 @@ div.about-text{
   font-size: 1.45rem;
   margin-bottom: 0px;
   margin-top: 0px;
-  border: 2px solid #E7759B;
-  padding: 20px;
+  padding: 0px;
 }
 
 
@@ -1908,7 +1751,7 @@ h7 {
   background-color: var(--bg-color);
   color: var(--font-color);
   padding: 16px;
-  font-size: 1.25rem;
+  font-size: 16px;
   border: none;
   z-index: 111;
 }
@@ -1961,30 +1804,6 @@ h7 {
   background-color: var(--bg-color);
 }
 
-#process {
-  width: 150%;
-  height: auto;
-  position: relative;
-  top: 150px;
-}
-
-.process {
-  position: relative;
-  top: -480px;
-  padding-left: 100px;
-}
-
-.process h2 {
-  position: relative;
-  top: 100px;
-}
-
-#about-footer {
-  position: relative;
-  top: 1250px;
-}
-
-
 hr {
   position: relative;
   left: 80px;
@@ -1995,13 +1814,13 @@ hr {
   border-image-source: linear-gradient(to right, #E7759B, #ee5186, #ec286a);
   position: relative;
   left: 0px;
-  top: 10px;
-  padding-bottom: 10px;
+  top: 0px;
 }
 
 .topnav-pink {
   border-image-source: linear-gradient(to right, #E7759B, #ee5186, #ec286a);
   left: 0px;
+  top: -200px;
 }
 
 /* Clear floats after image containers */
@@ -2055,7 +1874,7 @@ h3 {
 
 .videoimg {
   max-width: 50%;
-  box-shadow: 0px 3px 8px var(--font-color);
+  box-shadow: 4px 4px 4px var(--lightgrey);
   margin: 40px;
   float: right;
   position: relative;

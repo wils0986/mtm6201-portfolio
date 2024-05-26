@@ -32,7 +32,7 @@
             <a href="#"><button class="dropbtn">Portfolio</button></a>
             <div class="dropdown-content">
               <a href="portfolio.html#ux">UX Design</a>
-              <a href="portfolio.html#video">Videography</a>
+              <a href="portfolio.html#web">Web Design</a>
               <a href="portfolio.html#graphic">Graphic Design</a>
             </div>
           </div>
@@ -55,35 +55,52 @@
           </div>
           </a>
         </nav>
-        <!-- Cat animation for Desktop version Nav from Lottie - https://lottiefiles.com/78625-le-petit-chat-cat-noir -->
-        <div class="cat">
-          <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
-        <lottie-player src="https://assets9.lottiefiles.com/packages/lf20_8y3kzptg.json" id="cat" mode="bounce" background="transparent"  speed=".5"  style="width: 200px; height: 200px;" loop  autoplay></lottie-player>
-        </div>
         <!-- "Hamburger menu" / "Blob icon" to toggle the navigation links -->
         <a href="javascript:void(0);" class="icon" onclick="myFunction()"><i class="blobs"></i>
         </a>
       </div>
       <!--- Back to top button from W3 Schools - https://www.w3schools.com/howto/howto_js_scroll_to_top.asp -->
       <button onclick="topFunction()" id="myBtn" title="Go to top">^</button>
-      <!--- Logo on Home page fading in -->
-      <div class="fade-in-image">
-        <img src="images/jw-designs-logo-edited.png" alt="a circular logo with the initials 'JW' on it" class="image">
+      <h1>Projects</h1>
+     <!--- Project cards -->
+      <div class="flex">
+        <div class="full-width card">
+          <div id="products">
+            <a href="portfolio.html#ux">
+              <div class="overlay">
+                <span class="read-article">UX Design</span>
+                <p class="cardP">Lorem aidiqwr iuefhwejfh w uhr  if  f wbufwufujh w k kjfkef khfweehowehfw hfoh w h ohohefo h owfho o oof ofowh fo</p>
+              </div>
+            </a>
+          </div>
+            <img class="imgCards" src="images/Atlas Home EN.png" width="100%">
+        </div>
+        
+        <div class="full-width card">
+          <div id="products">
+            <a href="portfolio.html#web">
+              <div class="overlay">
+                <span class="read-article">Web Design</span>
+                <p class="cardP">Lorem aidiqwr iuefhwejfh w uhr  if  f wbufwufujh w k kjfkef khfweehowehfw hfoh w h ohohefo h owfho o oof ofowh fo</p>
+              </div>
+            </a>
+          </div>
+            <img class="imgCards" src="images/127.0.0.1_5500_index.html(2).jpg" width="100%">
+        </div>
+        <div class="full-width card">
+          <div id="products">
+            <a href="portfolio.html#graphic">
+              <div class="overlay">
+                <span class="read-article">Graphic Design</span>
+                <p class="cardP">Lorem aidiqwr iuefhwejfh w uhr  if  f wbufwufujh w k kjfkef khfweehowehfw hfoh w h ohohefo h owfho o oof ofowh fo</p>
+              </div>
+            </a>
+          </div>
+            <img class="imgCards" src="images/astro-yosh-2.png" width="100%">
+        </div>
       </div>
-       <!-- List of skills/services offered/displayed as links to specific section of portfolio page -->
-          <ul class="skills">
-              <li><a href="portfolio.html#ux">UX Design</a></li>
-              <li id="dot1">·</li>
-              <li><a href="portfolio.html#video">Videography</a></li>
-              <li id="dot3">·</li>
-              <li><a href="portfolio.html#graphic">Graphic Design</a></li>
-          </ul>
-          <footer class="copyright copyright-pink">
-            <h4>&copy; Copyright jennywilsondesigns.com. All Rights Reserved <span id="heart">❤</span>
-              <a href="https://www.linkedin.com/in/jenny-wilson-sewell/" target="blank"><i class="fa-brands fa-linkedin"></a></i></a>
-              <a href="/images/jennyCV.pdf" download id="CV"><i class="fa-solid fa-file-arrow-down"></i> <h8>Download my CV</h8>
-                <img src="/images/jennyCV.pdf" alt="">
-              </a>
+            <footer class="copyright copyright-pink">
+            <h4>Copyright &copy; 2024 jennywilsondesigns All Rights Reserved<span id="heart">❤</span>
           </footer>   
       </div>
           <!-- JS link at end of body tag to prevent broken rendering-->
